@@ -18,7 +18,7 @@ function Technologies() {
       <section className="text-gray-600 body-font font-serif">
         <div className="container  px-5 py-24 mx-auto">
           <div className="flex flex-col text-center w-full mb-12">
-            <h1 className="sm:text-3xl text-2xl font-semibold title-font mb-4 text-gray-800">
+            <h1 className="sm:text-3xl text-2xl font-semibold title-font mb-4 text-[#14406D] cursor-pointer transition">
               Technologies
             </h1>
             <p className="lg:w-2/3  mx-auto leading-relaxed text-lg">
@@ -31,7 +31,7 @@ function Technologies() {
 
 
 
-          <div className="flex item-center justify-center p-2 mb-2">
+          <div className="flex item-center justify-center p-2 mb-2 ">
           <div className="flex lg:item-center justify-center  p-2 mb-4 text-2xl transition  hover:scale-105 hover:underline decoration-[#14406D] text-slate-400 hover:text-sky-400">
             Web Developement
           </div>

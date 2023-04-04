@@ -23,7 +23,7 @@ function NavBar() {
           </Link>
         </div>
         <div className="hidden md:block ">
-          <div className="ml-10 flex items-baseline text-xl">
+          <div className="ml-10 flex items-baseline text-2xl">
             <Link to="/Service" className="mr-5 hover:text-gray-900 transition  hover:scale-105 hover:underline decoration-[#14406D]">
             Service
             </Link>

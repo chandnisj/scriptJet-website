@@ -11,11 +11,11 @@ function Service() {
       <section className=" text-gray-600  body-font bg-gradient-to-r from-cyan-50 via-fuchsia-50 to-blue-50">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col text-center w-full mb-12">
-            <h1 className="text-3xl  font-serif font-semibold  title-font mb-4 text-gray-900">
+            <h1 className="text-4xl  font-serif font-semibold  title-font mb-4 text-[#14406D] cursor-pointer transition  hover:scale-105">
               {" "}
               Service{" "}
             </h1>
-            <p className="w-2/3  mx-auto leading-relaxed text-md font-serif">
+            <p className="w-2/3  mx-auto leading-relaxed text-lg font-serif">
               Quality in a service or product is not what you put into it. It’s
               what the client or customer gets out of it
             </p>
