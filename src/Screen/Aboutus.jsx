@@ -15,7 +15,7 @@ function Aboutus() {
           style={{ filter: " contrast(1.1) brightness(65%)" }}
         />
         <div
-          className="flex  items-center  justify-center absolute h-full  w-screen"
+          className="flex   items-center  justify-center absolute h-full  w-screen"
         >
             <h1 className="lg:text-6xl md:text-5xl sm:text-7xl text-5xl text-center  text-white  font-bold  font-serif ">
               About Us
