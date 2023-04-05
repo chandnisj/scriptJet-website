@@ -189,153 +189,290 @@ function Home() {
           </div>
         </div>
       </section>
-    
-      <section  className="text-gray-600 body-font bg-gray-100"> 
-    <div  className="container px-5 py-24 mx-auto">
-    <div  className="text-center mb-20">
-      <h1  className="sm:text-3xl text-4xl font-serif  text-center  text-[#14406D] mb-4 transition  hover:scale-105 hover:underline decoration-[#14406D] ">Technologies We work</h1>
-      </div>
-    <div  className="flex flex-wrap -m-4">
-      <div  className="p-4 lg:w-1/4 sm:w-1/2 w-full ">
-        <h2  className=" tracking-widest text-gray-900 mb-4 text-2xl font-serif text-center sm:text-left cursor-pointer  ">FrontEnd</h2>
-        <nav  className="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5 font-serif text-lg  text-[#14406D] ">
-          <div>
-            <span  className="text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3"  className="w-3 h-3" viewBox="0 0 24 24">
-                <path d="M20 6L9 17l-5-5"></path>
-              </svg>
-            </span>ReactJS
+
+      <section className="text-gray-600 body-font bg-gray-100">
+        <div className="container px-5 py-24 mx-auto">
+          <div className="text-center mb-20">
+            <h1 className="sm:text-3xl text-4xl font-serif  text-center  text-[#14406D] mb-4 transition  hover:scale-105 hover:underline decoration-[#14406D] ">
+              Technologies We work
+            </h1>
           </div>
-          <div>
-            <span  className="text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3"  className="w-3 h-3" viewBox="0 0 24 24">
-                <path d="M20 6L9 17l-5-5"></path>
-              </svg>
-            </span>AngularJS
+          <div className="flex flex-wrap -m-4">
+            <div className="p-4 lg:w-1/4 sm:w-1/2 w-full ">
+              <h2 className=" tracking-widest text-gray-900 mb-4 text-2xl font-serif text-center sm:text-left cursor-pointer  ">
+                FrontEnd
+              </h2>
+              <nav className="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5 font-serif text-lg  text-[#14406D] ">
+                <div>
+                  <span className="text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="3"
+                      className="w-3 h-3"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  ReactJS
+                </div>
+                <div>
+                  <span className="text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="3"
+                      className="w-3 h-3"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  VueJs
+                </div>
+                <div>
+                  <span className=" text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="3"
+                      className="w-3 h-3"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  AngularJS
+                </div>
+                <div>
+                  <span className=" text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="3"
+                      className="w-3 h-3"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  NextJs
+                </div>
+                <div>
+                  <span className=" text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="3"
+                      className="w-3 h-3"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  Android
+                </div>
+                <div>
+                  <span className=" text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="3"
+                      className="w-3 h-3"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  iOS
+                </div>
+              </nav>
+            </div>
+
+            <div className="p-4 lg:w-1/4 sm:w-1/2 w-full ">
+              <h2 className="font-serif text-2xl tracking-widest text-gray-900 mb-4  text-center sm:text-left cursor-pointer">
+                BackEnd
+              </h2>
+              <nav className="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5 font-serif text-lg  text-[#14406D]">
+                <div>
+                  <span className=" text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="3"
+                      className="w-3 h-3"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  Nodejs
+                </div>
+                <div>
+                  <span className=" text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="3"
+                      className="w-3 h-3"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  PHP
+                </div>
+                <div>
+                  <span className=" text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="3"
+                      className="w-3 h-3"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  JAVA
+                </div>
+              </nav>
+            </div>
+
+            <div className="p-4 lg:w-1/4 sm:w-1/2 w-full">
+              <h2 className="font-serif  tracking-widest text-gray-900 mb-4 text-2xl text-center sm:text-left cursor-pointer">
+                Database
+              </h2>
+              <nav className="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5 font-serif text-lg  text-[#14406D]">
+                <div>
+                  <span className=" text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="3"
+                      className="w-3 h-3"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  SQL
+                </div>
+                <div>
+                  <span className=" text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="3"
+                      className="w-3 h-3"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  MYSQL
+                </div>
+                <div>
+                  <span className=" text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="3"
+                      className="w-3 h-3"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  MongoDB
+                </div>
+              </nav>
+            </div>
+            <div className="p-4 lg:w-1/4 sm:w-1/2 w-full">
+              <h2 className="font-serif  tracking-widest text-gray-900 mb-4 text-2xl text-center sm:text-left cursor-pointer">
+                Design
+              </h2>
+              <nav className="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5 font-serif text-lg  text-[#14406D]">
+                <div>
+                  <span className=" text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="3"
+                      className="w-3 h-3"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  UI/UX
+                </div>
+                <div>
+                  <span className=" text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="3"
+                      className="w-3 h-3"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  Boostrap
+                </div>
+                <div>
+                  <span className=" text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="3"
+                      className="w-3 h-3"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  Tailwind
+                </div>
+              </nav>
+            </div>
           </div>
-          <div>
-            <span  className=" text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3"  className="w-3 h-3" viewBox="0 0 24 24">
-                <path d="M20 6L9 17l-5-5"></path>
-              </svg>
-            </span>VueJs
-          </div>
-          <div>
-            <span  className=" text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3"  className="w-3 h-3" viewBox="0 0 24 24">
-                <path d="M20 6L9 17l-5-5"></path>
-              </svg>
-            </span>NextJs
-          </div>
-          <div>
-            <span  className=" text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3"  className="w-3 h-3" viewBox="0 0 24 24">
-                <path d="M20 6L9 17l-5-5"></path>
-              </svg>
-            </span>Android
-          </div>
-          <div>
-          <span  className=" text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-            <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3"  className="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>iOS
         </div>
-        </nav>
-      </div>
-
-
-
-
-
-
-
-      <div  className="p-4 lg:w-1/4 sm:w-1/2 w-full ">
-        <h2  className="font-serif text-2xl tracking-widest text-gray-900 mb-4  text-center sm:text-left cursor-pointer">BackEnd</h2>
-        <nav  className="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5 font-serif text-lg  text-[#14406D]">
-          <div>
-            <span  className=" text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3"  className="w-3 h-3" viewBox="0 0 24 24">
-                <path d="M20 6L9 17l-5-5"></path>
-              </svg>
-            </span>Nodejs
-          </div>
-          <div>
-            <span  className=" text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3"  className="w-3 h-3" viewBox="0 0 24 24">
-                <path d="M20 6L9 17l-5-5"></path>
-              </svg>
-            </span>PHP
-          </div>
-          <div>
-            <span  className=" text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3"  className="w-3 h-3" viewBox="0 0 24 24">
-                <path d="M20 6L9 17l-5-5"></path>
-              </svg>
-            </span>PHP
-          </div>
-        </nav>
-      </div>
-
-
-      <div  className="p-4 lg:w-1/4 sm:w-1/2 w-full">
-        <h2  className="font-serif  tracking-widest text-gray-900 mb-4 text-2xl text-center sm:text-left cursor-pointer">Database</h2>
-        <nav  className="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5 font-serif text-lg  text-[#14406D]">
-          <div>
-            <span  className=" text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3"  className="w-3 h-3" viewBox="0 0 24 24">
-                <path d="M20 6L9 17l-5-5"></path>
-              </svg>
-            </span>SQL
-          </div>
-          <div>
-            <span  className=" text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3"  className="w-3 h-3" viewBox="0 0 24 24">
-                <path d="M20 6L9 17l-5-5"></path>
-              </svg>
-            </span>MYSQL
-          </div>
-          <div>
-            <span  className=" text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3"  className="w-3 h-3" viewBox="0 0 24 24">
-                <path d="M20 6L9 17l-5-5"></path>
-              </svg>
-            </span>MongoDB
-          </div>
-            </nav>
-      </div>
-      <div  className="p-4 lg:w-1/4 sm:w-1/2 w-full">
-        <h2  className="font-serif  tracking-widest text-gray-900 mb-4 text-2xl text-center sm:text-left cursor-pointer">Design</h2>
-        <nav  className="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5 font-serif text-lg  text-[#14406D]">
-          <div>
-            <span  className=" text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3"  className="w-3 h-3" viewBox="0 0 24 24">
-                <path d="M20 6L9 17l-5-5"></path>
-              </svg>
-            </span>UI/UX
-          </div>
-          <div>
-            <span  className=" text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3"  className="w-3 h-3" viewBox="0 0 24 24">
-                <path d="M20 6L9 17l-5-5"></path>
-              </svg>
-            </span>Boostrap 
-          </div>
-          <div>
-            <span  className=" text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-              <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3"  className="w-3 h-3" viewBox="0 0 24 24">
-                <path d="M20 6L9 17l-5-5"></path>
-              </svg>
-            </span>Tailwind
-          </div>
-        </nav>
-      </div>
-    </div>
-  </div>
-     </section>
-
-
-     <div className="flex " style={{ position: "relative" }}>
+      </section>
+      
+      <div className="flex " style={{ position: "relative" }}>
         <img
           src={aboutus}
           alt=""
@@ -343,32 +480,26 @@ function Home() {
           className="min-w-full  h-3/6 max-h-96 backdrop-blur-xl "
           style={{ filter: " contrast(1.1) brightness(30%) " }}
         />
-        <div
-          className="flex items-center  justify-center absolute h-full  w-screen"
-        >
-            <h1 className="lg:text-6xl md:text-5xl sm:text-7xl text-5xl text-center  text-white  font-bold  font-serif ">
+        <div className="flex-col items-center  justify-center absolute h-full  w-screen py-20 ">
+          <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-xl text-center  text-white  font-bold  font-serif ">
             More productive Business?
-            </h1>
-           
-              <Link
-                to="/Contactus"
-                className=" bg-[#14406D] hover:bg-gray-400 hover:text-black text-white font-serif  text-lg border-0 py-2 px-3 focus:outline-none rounded-tr-xl rounded-bl-xl text-base mt-0"
-              >
-                Contact-Us
-              </Link>
-             
-          
+          </h1>
+          <div className="flex items-center justify-center p-4">
+            <Link
+              to="/Contactus"
+              className=" bg-[#14406D] hover:bg-gray-400 hover:text-black text-white font-serif  text-lg border-0 py-2 px-3 focus:outline-none rounded-tr-xl rounded-bl-xl text-base mt-0"
+            >
+              Contact-Us
+            </Link>
+          </div>
         </div>
       </div>
 
+  
 
 
-
-
-
-
-     </div>
-  )
+    </div>
+  );
 }
 
 export default Home;

@@ -14,7 +14,7 @@ function App() {
     <>
       <Router>
       <NavBar />
-        <div className="mt-20">
+        <div className="mt-10">
         <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/Service" element={<Service />} />

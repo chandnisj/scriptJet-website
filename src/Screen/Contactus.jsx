@@ -64,7 +64,7 @@ function Contactus() {
           </div>
           <div className="lg:w-1/3 md:w-1/3  bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
             <h2 className="text-[#14406D] text-2xl mb-1  title-font font-bold font-serif">
-              Contactus{" "}
+              Contact-Us{" "}
             </h2>
             <p className="leading-relaxed mb-5 text-gray-500 font-serif">
               Don’t hesitate to Contact us for any information.

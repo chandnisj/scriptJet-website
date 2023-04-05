@@ -32,7 +32,7 @@ function Service() {
         <div className="container px-5 mx-auto flex lg:flex-row md:flex-row sm:flex-col-reverse flex-col-reverse lg:my-auto md:my-10 my-10 items-center justify-center ">
             <div className="flex flex-col lg:w-1/2 md:w-full mx-12 justify-center md:my-auto sm:my-10 ">
               <h3 className="flex px-auto mx-auto mt-0 font-serif text-3xl font-bold ">
-                Web Devlopment{" "}
+                Web Development{" "}
               </h3>
               <p className="mx-auto py-6 text-base text-justify font-serif text-2xl ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
@@ -104,7 +104,7 @@ function Service() {
             </div>
             <div className="flex flex-col lg:w-1/2 md:w-full mx-10 my-10 justify-center md:my-auto sm:my-10 ">
               <h3 className="flex px-auto mx-auto mt-0 font-serif text-3xl font-bold ">
-                Mobil Devlopment{" "}
+                Mobil Development{" "}
               </h3>
               <p className=" mx-auto py-4 text-justify text-base font-serif text-2xl ">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe

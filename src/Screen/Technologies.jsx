@@ -28,7 +28,7 @@ function Technologies() {
             </p>
           </div>
           <div className="flex item-center justify-center p-2 mb-2 ">
-          <div className="flex lg:item-center justify-center  p-2 mb-4 text-2xl transition  hover:scale-105 hover:underline decoration-[#14406D] text-slate-400 hover:text-sky-400">
+          <div className="flex lg:item-center justify-center  p-2 mb-4 text-2xl transition  hover:scale-105 hover:underline decoration-[#14406D] text-slate-400 hover:text-sky-400 cursor-pointer">
             Web Developement
           </div>
           </div>
@@ -154,7 +154,7 @@ function Technologies() {
 
 
           <div className="flex item-center justify-center p-2 mb-2">
-          <div className="flex lg:item-center justify-center  p-2 mb-4 text-2xl transition  hover:scale-105 hover:underline decoration-[#14406D] text-slate-400 hover:text-sky-400">
+          <div className="flex lg:item-center justify-center  p-2 mb-4 text-2xl transition  hover:scale-105 hover:underline decoration-[#14406D] text-slate-400 hover:text-sky-400 cursor-pointer">
            Mobil App Developement
           </div>
           </div>
@@ -257,7 +257,7 @@ function Technologies() {
           </div>
 
           <div className="flex item-center justify-center p-2 mb-2">
-          <div className="flex lg:item-center justify-center  p-2 mb-4 text-2xl transition  hover:scale-105 hover:underline decoration-[#14406D] text-slate-400 hover:text-sky-400">
+          <div className="flex lg:item-center justify-center  p-2 mb-4 text-2xl transition  hover:scale-105 hover:underline decoration-[#14406D] text-slate-400 hover:text-sky-400 cursor-pointer">
            UI/UX Design
           </div>
           </div>
@@ -280,10 +280,25 @@ function Technologies() {
                 </div>
               </div>
             </div>
+            <div className="p-2 ">
+              <div className="h-full flex items-center md:flex-row sm:flex-col flex-col border-gray-200 border p-4 rounded-lg">
+                <img
+                  alt="team"
+                  className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-lg mr-4"
+                  src={ui}
+                />
+                <div className="sm:text-center text-center md:text-start">
+                  <h2 className="text-gray-900 title-font font-bold">Graphic design</h2>
+                  <p className="text-[#14406D]">
+                  Graphic design is a craft where professionals create visual content to communicate messages.By applying visual hierarchy and page layout techniques, designers use typography and pictures to meet users' specific needs
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="flex item-center justify-center p-2 mb-2">
-          <div className="flex lg:item-center justify-center  p-2 mb-4 text-2xl transition  hover:scale-105 hover:underline decoration-[#14406D] text-slate-400 hover:text-sky-400">
+          <div className="flex lg:item-center justify-center  p-2 mb-4 text-2xl transition  hover:scale-105 hover:underline decoration-[#14406D] text-slate-400 hover:text-sky-400 cursor-pointer">
            Database
           </div>
           </div>

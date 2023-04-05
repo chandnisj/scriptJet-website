@@ -6,7 +6,7 @@ function Career() {
     <section  className=" text-gray-600  body-font bg-gradient-to-r from-cyan-50 via-fuchsia-50 to-blue-50">
     <div  className="container px-4 py-24 mx-auto">
       <div  className="flex flex-col text-center w-full mb-12">
-        <h1  className="text-3xl text-5xl font-medium title-font mb-4 text-gray-900 font-serif">
+        <h1  className="text-3xl text-5xl font-medium title-font mb-4  font-serif text-[#14406D] cursor-pointer transition  hover:scale-105">
           {" "}
           Career At Script-Jet{" "}
         </h1>
@@ -94,7 +94,7 @@ function Career() {
           <div  className="border-2 border-gray-200 px-4 py-6 rounded-lg">
             <div  className="justify-center flex-col">
               <p  className=" text-center text-lg font-serif text-[#13304c] px-2 py-2 mb-2 border-2 border-gray-100  rounded-full w-22 bg-gray-100 ">
-               Web Devlopment
+               Web Development
               </p>
               <h5  className=" text-center font-bold font-serif text-[#13304c] px-2 py-2">
                 ReactJs 
@@ -230,7 +230,7 @@ function Career() {
           <div  className="border-2 border-gray-200 px-4 py-6 rounded-lg">
             <div  className="justify-center flex-col">
               <p  className=" text-center text-lg font-serif text-[#13304c] px-2 py-2 mb-2 border-2 border-gray-100  rounded-full w-22 bg-gray-100 ">
-               Backend Devlopment
+               Backend Development
               </p>
               <h5  className=" text-center font-bold font-serif text-[#13304c] px-2 py-2">
                 NodeJs 

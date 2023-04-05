@@ -1,23 +1,24 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import text from "../Image-logo/text.png";
 function Footer() {
   return (
     <div>
-      <footer className="text-gray-600 body-font font-serif    bg-gradient-to-r from-cyan-50 via-fuchsia-50 to-blue-50 ">
+      <footer className="text-gray-600 body-font font-serif  bg-gradient-to-r from-cyan-50 via-fuchsia-50 to-blue-50 ">
         <div className="container px-5 pt-10 pb-20  mx-auto my-0">
           <div className="flex flex-wrap lg:text-start md:text-start text-center -mb-10 -mx-4 grid md:grid-cols-3  lg:grid-cols-3  sm:grid-cols-1">
             <div className=" lg:w-1/2 md:w-1/2 sm:mb-10 mb-10 w-full  px-4 ">
-              <a
-                href="/"
+              <Link
+                to="/"
                 className="flex title-font font-medium  lg:inline-block items-center justify-center  text-gray-900  md:mb-0"
               >
                 {" "}
                 <img
                   src={text}
                   alt="Script-Jet"
-                  className="md:h-full md:w-48 w-48"
+                  className="md:h-full md:w-48 w-48 "
                 />
-              </a>
+              </Link>
               <p>
                 Quality in a service or product is not what you put into it.
                 It’s what the client or customer gets out of it.
@@ -70,7 +71,7 @@ function Footer() {
 
             <div className="lg:w-full md:w-full sm:item-center sm:justify-center item-center justify-center  sm:mb-10 mb-10    px-4  text-lg  ">
               <h2 className="title-font  text-2xl font-bold   text-gray-900 tracking-widest   mb-4">
-                Contact us
+                Contact-us
               </h2>
               <div className="flex lg:flex-row md:flex-row flex-col  item-center justify-center w-full ">
               <div className="sm:w-50 mx-auto">
@@ -99,7 +100,7 @@ function Footer() {
                 </svg>
               </div>
                 <div>
-                <p className="ml-2 font-serif text-md md:text-start lg:text-start text-[#13304c]">
+                <p className="ml-2  text-md md:text-start lg:text-start text-[#13304c]">
                   305, SNS Business Park, University Rd, opp. J H Ambani School,
                   Vesu, Surat, Gujarat 395007
                 </p>
