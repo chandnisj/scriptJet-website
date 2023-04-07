@@ -1,29 +1,65 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import home from "../Screen/Images/home.jpg";
 import h2 from "../Screen/Images/home-2.jpg";
 import aboutus from "../Screen/Images/about.jpg";
 import home3 from "../Screen/Images/home-3.jpg";
 function Home() {
-  // <div className="flex font-serif" style={{ position: "relative"}}>
-  //     <img
-  //       src={home3}
-  //       alt="home-3"
-  //       srcset=""
-  //       className=" backdrop-blur-xl"
-  //       style={{filter:"contrast(1) brightness(50%)"}}
-  //     />
-  //     <div className="flex-col sm:flex-row items-center justify-start absolute h-full  w-full py-20   ml-3 sm:ml-4  ">
-  //       <h1 className="text-start text-white  font-bold  text-2xl">
-  //         WHY US
-  //       </h1>
-  //       <div className="container min-w-1/4 flex-col sm:flex-row  text-black">
-  //       <p className="text-lg">
-  //       Our Consulting agency provides Consulting,ideas,and resources for people Working to create social change.we bring the right people together to challenge established thinking and drive transformation.We work with our client to build the capabilities that enable organizations to achieve sustainable advantage
-  //      </p>
-  //       </div>
-  //      </div>
-  //     </div>
+  const [expanded, setExpanded] = useState(false);
+  const dummyContent =
+    "Let us take you into a deeper experience, make a moment a lasting conveyable memory";
+  const handleClick = () => {
+    setExpanded(!expanded);
+  };
+  const Technologies = [
+    {
+      title: "FrontEnd",
+      value: ["React", "VueJs", "AngularJs", "NextJs", "Android", "Ios"],
+    },
+    { title: "BackEnd", value: ["NodeJs", "PHP", "JAVA"] },
+    { title: "Database", value: ["SQL", "MYSQL", "MongoDb"] },
+    { title: "Design", value: ["UI/UX", "Boostrap", "TailWind"] },
+  ];
+  const [Tech, setTech] = useState(Technologies);
+
+  const handleTechnology = (value) => {
+    console.log("CLICK ", value);
+  };
+
+  const contant = [
+    {
+      title: "ReactJs",
+      con: "The React.js framework is an open-source JavaScript framework and library developed by Facebook. Its used for building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript.",
+      src: "",
+    },
+    {
+      title: "VueJs",
+      con: "Vue (pronounced /vjuː/, like view) is a JavaScript framework for building user interfaces. It builds on top of standard HTML, CSS, and JavaScript and provides a declarative and component-based programming model that helps you efficiently develop user interfaces, be they simple or complex.",
+      src: "",
+    },
+    {
+      title :'AngularJs',
+      con :'AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTMLs syntax to express your applications components clearly and succinctly. AngularJSs data binding and dependency injection eliminate much of the code you would otherwise have to write.',
+      src : '',
+    },{
+      title :'NextJs',
+      con :'Nextjs is a React framework that gives you building blocks to create web applications.Byframework,we mean Next.js handles the tooling and configuration needed for React,and provides additional structure,features and optimizations for your application.',
+      src : '',
+    },{
+      title :'Android',
+      con :'Android is a mobile operating system based on a modified version of the Linux kernel and other open-source software, designed primarily for touchscreen mobile devices such as smartphones and tablets.',
+      src : '',
+    },{
+      title :'Ios',
+      con :'Apple iOS stands for iPhone operating system and is designed for use with Apples multitouch devices. The mobile OS supports input through direct manipulation and responds to various user gestures, such as pinching, tapping and swiping.',
+      src : '',
+    },{
+      title: "NodeJs",
+      con: "Node.js is an open-source, cross-platform JavaScript runtime environment and library for running web applications outside the client's browser. Ryan Dahl developed it in 2009, and its latest iteration, version 15.14, was released in April 2021. Developers use Node.",
+      src:"",
+    },
+  ];
+
   return (
     <div className="">
       <section className=" text-gray-600  body-font ">
@@ -67,37 +103,49 @@ function Home() {
             </h1>
           </div>
           <div className="grid lg:grid-cols-4  md:grid-cols-2 sm:grid-cols-2  grid-cols-1 -m-2 ">
-            <div className="p-2 ">
-              <div className=" p-4 rounded-lg border-2 border-gray-100 flex flex-col relative overflow-hidden bg-blue-50">
+            <div className="p-2 h-64 ">
+              <div className="h-full p-4 rounded-lg border-2 border-gray-100 flex flex-col relative overflow-hidden bg-blue-50">
                 <div className="sm:text-center text-center md:text-center h-full">
                   <Link to="/Technologies" className=" text-2xl font-semibold ">
                     Web Developement
                   </Link>
-                  <p className="flex items-center text-center mt-4 text-lg text-[#14406D] mb-8">
-                    Let us take you into a deeper experience, make a moment a
-                    lasting conveyable memory. .
+                  <p className="flex-row items-center text-center mt-4 text-lg text-[#14406D] mb-8">
+                    {dummyContent.substr(0, 80)}
+                    {expanded ? dummyContent.substr(50) : "..."}.
+                    <button
+                      className="flex-col  text-gray-300 font-semibold focus:outline-none"
+                      onClick={handleClick}
+                    >
+                      {expanded ? "Read less" : "Read more"}
+                    </button>
                   </p>
                 </div>
               </div>
             </div>
-            <div className="p-2 ">
-              <div className=" p-4 rounded-lg border-2 border-gray-100 flex  flex-col relative overflow-hidden bg-blue-50">
+            <div className="p-2 h-64  ">
+              <div className=" p-4 h-full rounded-lg border-2 border-gray-100 flex  flex-col relative overflow-hidden bg-blue-50">
                 <div className="sm:text-center text-center md:text-center">
                   <Link
                     to="/Technologies"
-                    className="text-2xl font-semibold text-center"
+                    className="text-2xl font-semibold text-center "
                   >
-                    Mobile App Devlopement
+                    Mobile App-Devlopement
                   </Link>
-                  <p className="flex items-center text-center mt-4 text-lg text-[#14406D]  mb-8">
-                    Let us take you into a deeper experience, make a moment a
-                    lasting conveyable memory. .
+                  <p className="flex-row items-center text-center mt-4 text-lg text-[#14406D]  mb-8">
+                    {dummyContent.substr(0, 80)}
+                    {expanded ? dummyContent.substr(50) : "..."}.
+                    <button
+                      className="flex-col  text-gray-300 font-semibold focus:outline-none"
+                      onClick={handleClick}
+                    >
+                      {expanded ? "Read less" : "Read more"}
+                    </button>
                   </p>
                 </div>
               </div>
             </div>
-            <div className="p-2">
-              <div className=" p-4 rounded-lg border-2 border-gray-100 flex flex-col relative overflow-hidden bg-blue-50">
+            <div className="p-2 h-64">
+              <div className=" p-4 h-full rounded-lg border-2 border-gray-100 flex flex-col relative overflow-hidden bg-blue-50">
                 <div className="sm:text-center text-center md:text-center">
                   <Link
                     to="/Technologies"
@@ -105,15 +153,21 @@ function Home() {
                   >
                     UI/Ux Design
                   </Link>
-                  <p className="flex items-center text-center mt-4 text-lg text-[#14406D]  mb-8">
-                    Let us take you into a deeper experience, make a moment a
-                    lasting conveyable memory. .
+                  <p className="flex-row items-center text-center mt-4 text-lg text-[#14406D]  mb-8">
+                    {dummyContent.substr(0, 80)}
+                    {expanded ? dummyContent.substr(50) : "..."}.
+                    <button
+                      className="flex-col  text-gray-300 font-semibold focus:outline-none"
+                      onClick={handleClick}
+                    >
+                      {expanded ? "Read less" : "Read more"}
+                    </button>
                   </p>
                 </div>
               </div>
             </div>
-            <div className="p-2 ">
-              <div className=" p-4 rounded-lg border-2 border-gray-100 flex flex-col relative overflow-hidden bg-blue-50">
+            <div className="p-2 h-64 ">
+              <div className=" p-4 h-full rounded-lg border-2 border-gray-100 flex flex-col relative overflow-hidden bg-blue-50">
                 <div className="sm:text-center text-center md:text-center">
                   <Link
                     to="/Technologies"
@@ -121,9 +175,15 @@ function Home() {
                   >
                     QA and Testing
                   </Link>
-                  <p className="flex items-center text-center mt-4 text-lg text-[#14406D] overflow-hidden  mb-8">
-                    Let us take you into a deeper experience, make a moment a
-                    lasting conveyable memory. .
+                  <p className="flex-row items-center text-center mt-4 text-lg text-[#14406D] overflow-hidden  mb-8">
+                    {dummyContent.substr(0, 80)}
+                    {expanded ? dummyContent.substr(50) : "..."}.
+                    <button
+                      className="flex-col  text-gray-300 font-semibold focus:outline-none"
+                      onClick={handleClick}
+                    >
+                      {expanded ? "Read less" : "Read more"}
+                    </button>
                   </p>
                 </div>
               </div>
@@ -132,13 +192,13 @@ function Home() {
         </div>
       </section>
 
-      <section class="text-gray-600 body-font font-serif bg-gradient-to-r from-cyan-50 via-fuchsia-50 to-blue-50">
-        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h1 class="sm:text-4xl text-3xl mb-4  font-semibold text-[#14406D] ">
+      <section className="text-gray-600 body-font font-serif bg-gradient-to-r from-cyan-50 via-fuchsia-50 to-blue-50">
+        <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <h1 className="sm:text-4xl text-3xl mb-4  font-semibold text-[#14406D] ">
               WHY US
             </h1>
-            <p class="mb-8 leading-relaxed text-lg  ">
+            <p className="mb-8 leading-relaxed text-lg  ">
               Our Consulting agency provides Consulting,ideas,and resources for
               people Working to create social change.we bring the right people
               together to challenge established thinking and drive
@@ -146,9 +206,9 @@ function Home() {
               that enable organizations to achieve sustainable advantage.
             </p>
           </div>
-          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
             <img
-              class="object-cover object-center rounded"
+              className="object-cover object-center rounded"
               alt="hero"
               src={home3}
             />
@@ -187,21 +247,6 @@ function Home() {
         </div>
       </section>
 
-      <section className={`bg-[url(${home3})] bg-[center_top_69rem] bg-cover`} style={{height:"55vh"}}>
-        <div className="font-serif flex-col sm:flex-row items-center justify-start h-full  w-full py-20   ml-3 sm:ml-4  ">
-          <h1 className="text-start font-bold  text-2xl">WHY US</h1>
-          <div className="container min-w-1/4 flex-col sm:flex-row  text-black">
-            <p className="text-lg">
-              Our Consulting agency provides Consulting,ideas,and resources for
-              people Working to create social change.we bring the right people
-              together to challenge established thinking and drive
-              transformation.We work with our client to build the capabilities
-              that enable organizations to achieve sustainable advantage
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section className="text-gray-600 body-font bg-gray-100">
         <div className="container px-5 py-24 mx-auto">
           <div className="text-center mb-20">
@@ -210,276 +255,42 @@ function Home() {
             </h1>
           </div>
           <div className="flex flex-wrap -m-4">
-            <div className="p-4 lg:w-1/4 sm:w-1/2 w-full ">
-              <h2 className=" tracking-widest text-gray-900 mb-4 text-2xl font-serif text-center sm:text-left cursor-pointer  ">
-                FrontEnd
-              </h2>
-              <nav className="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5 font-serif text-lg  text-[#14406D] ">
-                <div>
-                  <span className="text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="3"
-                      className="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  ReactJS
+            {Tech.map((tech) => {
+              return (
+                <div className="p-4 lg:w-1/4 sm:w-1/2 w-full flex flex-col items-center  ">
+                  <h2 className=" tracking-widest text-gray-900 mb-4 text-2xl font-serif text-center sm:text-left cursor-pointer  ">
+                    {tech.title}
+                  </h2>
+                  <nav className="flex flex-col sm:items-start sm:text-left text-center items-center justify-center -mb-1 space-y-2.5 font-serif text-lg  text-[#14406D] ">
+                    {tech.value.map((value) => {
+                      return (
+                        <div className="flex items-center justify-center ">
+                          <span className="text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                            <svg
+                              fill="none"
+                              stroke="currentColor"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="3"
+                              className="w-3 h-3"
+                              viewBox="0 0 24 24"
+                            >
+                              <path d="M20 6L9 17l-5-5"></path>
+                            </svg>
+                          </span>
+                          <div
+                            className="cursor-pointer"
+                            onClick={() => handleTechnology(value)}
+                          >
+                            {value}
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </nav>
                 </div>
-                <div>
-                  <span className="text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="3"
-                      className="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  VueJs
-                </div>
-                <div>
-                  <span className=" text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="3"
-                      className="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  AngularJS
-                </div>
-                <div>
-                  <span className=" text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="3"
-                      className="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  NextJs
-                </div>
-                <div>
-                  <span className=" text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="3"
-                      className="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Android
-                </div>
-                <div>
-                  <span className=" text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="3"
-                      className="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  iOS
-                </div>
-              </nav>
-            </div>
-
-            <div className="p-4 lg:w-1/4 sm:w-1/2 w-full ">
-              <h2 className="font-serif text-2xl tracking-widest text-gray-900 mb-4  text-center sm:text-left cursor-pointer">
-                BackEnd
-              </h2>
-              <nav className="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5 font-serif text-lg  text-[#14406D]">
-                <div>
-                  <span className=" text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="3"
-                      className="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Nodejs
-                </div>
-                <div>
-                  <span className=" text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="3"
-                      className="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  PHP
-                </div>
-                <div>
-                  <span className=" text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="3"
-                      className="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  JAVA
-                </div>
-              </nav>
-            </div>
-
-            <div className="p-4 lg:w-1/4 sm:w-1/2 w-full">
-              <h2 className="font-serif  tracking-widest text-gray-900 mb-4 text-2xl text-center sm:text-left cursor-pointer">
-                Database
-              </h2>
-              <nav className="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5 font-serif text-lg  text-[#14406D]">
-                <div>
-                  <span className=" text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="3"
-                      className="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  SQL
-                </div>
-                <div>
-                  <span className=" text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="3"
-                      className="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  MYSQL
-                </div>
-                <div>
-                  <span className=" text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="3"
-                      className="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  MongoDB
-                </div>
-              </nav>
-            </div>
-            <div className="p-4 lg:w-1/4 sm:w-1/2 w-full">
-              <h2 className="font-serif  tracking-widest text-gray-900 mb-4 text-2xl text-center sm:text-left cursor-pointer">
-                Design
-              </h2>
-              <nav className="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5 font-serif text-lg  text-[#14406D]">
-                <div>
-                  <span className=" text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="3"
-                      className="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  UI/UX
-                </div>
-                <div>
-                  <span className=" text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="3"
-                      className="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Boostrap
-                </div>
-                <div>
-                  <span className=" text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                    <svg
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="3"
-                      className="w-3 h-3"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  Tailwind
-                </div>
-              </nav>
-            </div>
+              );
+            })}
           </div>
         </div>
       </section>
