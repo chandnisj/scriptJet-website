@@ -14,7 +14,7 @@ function Home() {
   const Technologies = [
     {
       title: "FrontEnd",
-      value: ["React", "VueJs", "AngularJs", "NextJs", "Android", "Ios"],
+      value: ["React", "VueJs", "AngularJs", "NextJs", "Android", "Ios","Flutter","ReactNative"],
     },
     { title: "BackEnd", value: ["NodeJs", "PHP", "JAVA"] },
     { title: "Database", value: ["SQL", "MYSQL", "MongoDb"] },
@@ -38,25 +38,77 @@ function Home() {
       src: "",
     },
     {
-      title :'AngularJs',
-      con :'AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTMLs syntax to express your applications components clearly and succinctly. AngularJSs data binding and dependency injection eliminate much of the code you would otherwise have to write.',
-      src : '',
-    },{
-      title :'NextJs',
-      con :'Nextjs is a React framework that gives you building blocks to create web applications.Byframework,we mean Next.js handles the tooling and configuration needed for React,and provides additional structure,features and optimizations for your application.',
-      src : '',
-    },{
-      title :'Android',
-      con :'Android is a mobile operating system based on a modified version of the Linux kernel and other open-source software, designed primarily for touchscreen mobile devices such as smartphones and tablets.',
-      src : '',
-    },{
-      title :'Ios',
-      con :'Apple iOS stands for iPhone operating system and is designed for use with Apples multitouch devices. The mobile OS supports input through direct manipulation and responds to various user gestures, such as pinching, tapping and swiping.',
-      src : '',
-    },{
+      title: "AngularJs",
+      con: "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTMLs syntax to express your applications components clearly and succinctly. AngularJSs data binding and dependency injection eliminate much of the code you would otherwise have to write.",
+      src: "",
+    },
+    {
+      title: "NextJs",
+      con: "Nextjs is a React framework that gives you building blocks to create web applications.Byframework,we mean Next.js handles the tooling and configuration needed for React,and provides additional structure,features and optimizations for your application.",
+      src: "",
+    },
+    {
+      title: "Android",
+      con: "Android is a mobile operating system based on a modified version of the Linux kernel and other open-source software, designed primarily for touchscreen mobile devices such as smartphones and tablets.",
+      src: "",
+    },
+    {
+      title: "Ios",
+      con: "Apple iOS stands for iPhone operating system and is designed for use with Apples multitouch devices. The mobile OS supports input through direct manipulation and responds to various user gestures, such as pinching, tapping and swiping.",
+      src: "",
+    },
+    {
+      title : "Flutter",
+      con : "Flutter – a simple and high performance framework based on Dart language, provides high performance by rendering the UI directly in the operating system’s canvas rather than through native framework.",
+      src : "",
+    },
+    {
+      title : "ReactNative",
+      con : "React Native is a programming framework developed by Facebook that gives developers the ability to create full, native mobile apps for both iOS and Android using a universal programming language called JavaScript.",
+      src : "",
+    },
+
+    {
       title: "NodeJs",
       con: "Node.js is an open-source, cross-platform JavaScript runtime environment and library for running web applications outside the client's browser. Ryan Dahl developed it in 2009, and its latest iteration, version 15.14, was released in April 2021. Developers use Node.",
-      src:"",
+      src: "",
+    },
+    {
+      title: "PHP",
+      con: "PHP (Hypertext Preprocessor) is known as a general-purpose scripting language that can be used to develop dynamic and interactive websites. It was among the first server-side languages that could be embedded into HTML, making it easier to add functionality to web pages without needing to call external files for data.",
+      src: "",
+    },
+    {
+      title :"JAVA",
+      con : "Java was designed to be easy to use and is therefore easy to write, compile, debug, and learn than other programming languages. Java is object-oriented. This allows you to create modular programs and reusable code. Java is platform-independent.",
+      src :"",
+    },{
+      title : "SQL",
+      con : "SQL is used to communicate with a database. According to ANSI (American National Standards Institute), it is the standard language for relational database management systems. SQL statements are used to perform tasks such as update data on a database, or retrieve data from a database.",
+      src : "",
+    },
+    {
+      title : "MYSQL",
+      con : "It may be anything from a simple shopping list to a picture gallery or the vast amounts of information in a corporate network. To add, access, and process data stored in a computer database, you need a database management system such as MySQL Server.",
+      src : "",
+    },
+    {
+      title : "MongoDb",
+      con : "MongoDB is a document database used to build highly available and scalable internet applications. With its flexible schema approach, it's popular with development teams using agile methodologies.",
+      src : "",
+    },
+    {
+      title : "UI/UX",
+      con : "UI refers to the screens, buttons, toggles, icons, and other visual elements that you interact with when using a website, app, or other electronic device. UX refers to the entire interaction you have with a product, including how you feel about the interaction.",
+      src : "",
+    },{
+      title : "Boostrap",
+      con : "Bootstrap makes responsive web design a reality. It makes it possible for a web page or app to detect the visitor's screen size and orientation and automatically adapt the display accordingly.",
+      src : "",
+    },{
+      title : "TailWind",
+      con : "Tailwind is a CSS framework that provides us with single-purpose utility classes which are opinionated for the most part, and which help us design our web pages from right inside our markup or . js/. jsx/.",
+      src : "",
     },
   ];
 
