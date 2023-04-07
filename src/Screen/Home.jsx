@@ -1,20 +1,37 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import home from "../Screen/Images/home.jpg";
 import h2 from "../Screen/Images/home-2.jpg";
 import aboutus from "../Screen/Images/about.jpg";
 import home3 from "../Screen/Images/home-3.jpg";
+
 function Home() {
+  const navigate = useNavigate();
   const [expanded, setExpanded] = useState(false);
-  const dummyContent =
-    "Let us take you into a deeper experience, make a moment a lasting conveyable memory";
+  const webContent =
+    "Web development,refers to the tasks associated with creating, building, and maintaining websites and web applications that run online on a browser";
+  const mobilecontent =
+    "Establish a development team. Developing an app has become easier with the help of various software programs and online tools such as app builders";
+  const designcontent =
+    "UI refers to the screens, buttons, toggles, icons, and other visual elements that you interact with when using a website, app, or other electronic device.";
+  const testingcontent =
+    "Avail assistance from our QA & Testing experts and establish tangible control over the life cycle of your product.";
   const handleClick = () => {
     setExpanded(!expanded);
   };
   const Technologies = [
     {
       title: "FrontEnd",
-      value: ["React", "VueJs", "AngularJs", "NextJs", "Android", "Ios","Flutter","ReactNative"],
+      value: [
+        "ReactJs",
+        "VueJs",
+        "AngularJs",
+        "NextJs",
+        "Android",
+        "Ios",
+        "Flutter",
+        "ReactNative",
+      ],
     },
     { title: "BackEnd", value: ["NodeJs", "PHP", "JAVA"] },
     { title: "Database", value: ["SQL", "MYSQL", "MongoDb"] },
@@ -23,94 +40,9 @@ function Home() {
   const [Tech, setTech] = useState(Technologies);
 
   const handleTechnology = (value) => {
-    console.log("CLICK ", value);
+    localStorage.setItem("techValue", value);
+    navigate("/Technologies");
   };
-
-  const contant = [
-    {
-      title: "ReactJs",
-      con: "The React.js framework is an open-source JavaScript framework and library developed by Facebook. Its used for building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript.",
-      src: "",
-    },
-    {
-      title: "VueJs",
-      con: "Vue (pronounced /vjuː/, like view) is a JavaScript framework for building user interfaces. It builds on top of standard HTML, CSS, and JavaScript and provides a declarative and component-based programming model that helps you efficiently develop user interfaces, be they simple or complex.",
-      src: "",
-    },
-    {
-      title: "AngularJs",
-      con: "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTMLs syntax to express your applications components clearly and succinctly. AngularJSs data binding and dependency injection eliminate much of the code you would otherwise have to write.",
-      src: "",
-    },
-    {
-      title: "NextJs",
-      con: "Nextjs is a React framework that gives you building blocks to create web applications.Byframework,we mean Next.js handles the tooling and configuration needed for React,and provides additional structure,features and optimizations for your application.",
-      src: "",
-    },
-    {
-      title: "Android",
-      con: "Android is a mobile operating system based on a modified version of the Linux kernel and other open-source software, designed primarily for touchscreen mobile devices such as smartphones and tablets.",
-      src: "",
-    },
-    {
-      title: "Ios",
-      con: "Apple iOS stands for iPhone operating system and is designed for use with Apples multitouch devices. The mobile OS supports input through direct manipulation and responds to various user gestures, such as pinching, tapping and swiping.",
-      src: "",
-    },
-    {
-      title : "Flutter",
-      con : "Flutter – a simple and high performance framework based on Dart language, provides high performance by rendering the UI directly in the operating system’s canvas rather than through native framework.",
-      src : "",
-    },
-    {
-      title : "ReactNative",
-      con : "React Native is a programming framework developed by Facebook that gives developers the ability to create full, native mobile apps for both iOS and Android using a universal programming language called JavaScript.",
-      src : "",
-    },
-
-    {
-      title: "NodeJs",
-      con: "Node.js is an open-source, cross-platform JavaScript runtime environment and library for running web applications outside the client's browser. Ryan Dahl developed it in 2009, and its latest iteration, version 15.14, was released in April 2021. Developers use Node.",
-      src: "",
-    },
-    {
-      title: "PHP",
-      con: "PHP (Hypertext Preprocessor) is known as a general-purpose scripting language that can be used to develop dynamic and interactive websites. It was among the first server-side languages that could be embedded into HTML, making it easier to add functionality to web pages without needing to call external files for data.",
-      src: "",
-    },
-    {
-      title :"JAVA",
-      con : "Java was designed to be easy to use and is therefore easy to write, compile, debug, and learn than other programming languages. Java is object-oriented. This allows you to create modular programs and reusable code. Java is platform-independent.",
-      src :"",
-    },{
-      title : "SQL",
-      con : "SQL is used to communicate with a database. According to ANSI (American National Standards Institute), it is the standard language for relational database management systems. SQL statements are used to perform tasks such as update data on a database, or retrieve data from a database.",
-      src : "",
-    },
-    {
-      title : "MYSQL",
-      con : "It may be anything from a simple shopping list to a picture gallery or the vast amounts of information in a corporate network. To add, access, and process data stored in a computer database, you need a database management system such as MySQL Server.",
-      src : "",
-    },
-    {
-      title : "MongoDb",
-      con : "MongoDB is a document database used to build highly available and scalable internet applications. With its flexible schema approach, it's popular with development teams using agile methodologies.",
-      src : "",
-    },
-    {
-      title : "UI/UX",
-      con : "UI refers to the screens, buttons, toggles, icons, and other visual elements that you interact with when using a website, app, or other electronic device. UX refers to the entire interaction you have with a product, including how you feel about the interaction.",
-      src : "",
-    },{
-      title : "Boostrap",
-      con : "Bootstrap makes responsive web design a reality. It makes it possible for a web page or app to detect the visitor's screen size and orientation and automatically adapt the display accordingly.",
-      src : "",
-    },{
-      title : "TailWind",
-      con : "Tailwind is a CSS framework that provides us with single-purpose utility classes which are opinionated for the most part, and which help us design our web pages from right inside our markup or . js/. jsx/.",
-      src : "",
-    },
-  ];
 
   return (
     <div className="">
@@ -162,8 +94,8 @@ function Home() {
                     Web Developement
                   </Link>
                   <p className="flex-row items-center text-center mt-4 text-lg text-[#14406D] mb-8">
-                    {dummyContent.substr(0, 80)}
-                    {expanded ? dummyContent.substr(50) : "..."}.
+                    {webContent.substr(0, 80)}
+                    {expanded ? webContent.substr(50) : "..."}.
                     <button
                       className="flex-col  text-gray-300 font-semibold focus:outline-none"
                       onClick={handleClick}
@@ -184,8 +116,8 @@ function Home() {
                     Mobile App-Devlopement
                   </Link>
                   <p className="flex-row items-center text-center mt-4 text-lg text-[#14406D]  mb-8">
-                    {dummyContent.substr(0, 80)}
-                    {expanded ? dummyContent.substr(50) : "..."}.
+                    {mobilecontent.substr(0, 80)}
+                    {expanded ? mobilecontent.substr(50) : "..."}.
                     <button
                       className="flex-col  text-gray-300 font-semibold focus:outline-none"
                       onClick={handleClick}
@@ -206,8 +138,8 @@ function Home() {
                     UI/Ux Design
                   </Link>
                   <p className="flex-row items-center text-center mt-4 text-lg text-[#14406D]  mb-8">
-                    {dummyContent.substr(0, 80)}
-                    {expanded ? dummyContent.substr(50) : "..."}.
+                    {designcontent.substr(0, 80)}
+                    {expanded ? designcontent.substr(50) : "..."}.
                     <button
                       className="flex-col  text-gray-300 font-semibold focus:outline-none"
                       onClick={handleClick}
@@ -228,8 +160,8 @@ function Home() {
                     QA and Testing
                   </Link>
                   <p className="flex-row items-center text-center mt-4 text-lg text-[#14406D] overflow-hidden  mb-8">
-                    {dummyContent.substr(0, 80)}
-                    {expanded ? dummyContent.substr(50) : "..."}.
+                    {testingcontent.substr(0, 80)}
+                    {expanded ? testingcontent.substr(50) : "..."}.
                     <button
                       className="flex-col  text-gray-300 font-semibold focus:outline-none"
                       onClick={handleClick}
@@ -302,7 +234,7 @@ function Home() {
       <section className="text-gray-600 body-font bg-gray-100">
         <div className="container px-5 py-24 mx-auto">
           <div className="text-center mb-20">
-            <h1 className="sm:text-3xl text-4xl font-serif  text-center  text-[#14406D] mb-4 transition  hover:scale-105 hover:underline decoration-[#14406D] ">
+            <h1 className="sm:text-3xl text-4xl font-serif font-semibold text-center  text-[#14406D] mb-4 transition  hover:scale-105 hover:underline decoration-[#14406D] ">
               Technologies We work
             </h1>
           </div>
@@ -310,7 +242,7 @@ function Home() {
             {Tech.map((tech) => {
               return (
                 <div className="p-4 lg:w-1/4 sm:w-1/2 w-full flex flex-col items-center  ">
-                  <h2 className=" tracking-widest text-gray-900 mb-4 text-2xl font-serif text-center sm:text-left cursor-pointer  ">
+                  <h2 className=" tracking-widest text-gray-900 mb-4 text-2xl font-bold font-serif text-center sm:text-left cursor-pointer  ">
                     {tech.title}
                   </h2>
                   <nav className="flex flex-col sm:items-start sm:text-left text-center items-center justify-center -mb-1 space-y-2.5 font-serif text-lg  text-[#14406D] ">

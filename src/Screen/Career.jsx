@@ -26,10 +26,10 @@ function Career() {
           <div  className="border-2 border-gray-200 px-4 py-6 rounded-lg h-full ">
             <div  className="justify-center flex-col">
               <p  className=" text-center text-lg font-bold font-serif text-[#13304c] px-2 py-2 mb-2 border-2 border-gray-100  rounded-full w-22  bg-gray-100   ">
-                Design
+              Web Development
               </p>
               <h5  className=" text-center text-lg  font-serif text-[#13304c] px-2 py-2">
-                UI/UX Designer
+              ReactJs 
               </h5>
               <div  className="grid grid-col-1 mt-6 items-center justify-center">
                 <div  className="flex text-center">
@@ -97,10 +97,10 @@ function Career() {
           <div  className="border-2 border-gray-200 px-4 py-6 rounded-lg h-full">
             <div  className="justify-center flex-col">
               <p  className=" text-center text-lg font-bold font-serif text-[#13304c] px-2 py-2 mb-2 whitespace-nowrap border-2 border-gray-100  rounded-full w-22  bg-gray-100 ">
-               Web Development
+               Mobile App Development
               </p>
               <h5  className=" text-center  text-lg  font-serif text-[#13304c] px-2 py-2">
-                ReactJs 
+               ReactNative
               </h5>
               <div  className="grid grid-col-1 mt-6 items-center justify-center">
                 <div  className="flex text-center ">
@@ -166,10 +166,10 @@ function Career() {
         <div  className="border-2 h-full border-gray-200 px-4 py-6 rounded-lg">
           <div  className="justify-center flex-col">
             <p  className="text-center  text-lg font-bold font-serif text-[#13304c] px-2 py-2 mb-2 border-2 border-gray-100  rounded-full w-22  bg-gray-100  ">
-             Mobile App Development
+            Design
             </p>
             <h5  className=" text-cente  text-lg  font-serif text-[#13304c] px-2 py-2">
-              ReactNative
+             UI/UX
             </h5>
             <div  className="grid grid-col-1 mt-6 items-center justify-center">
               <div  className="flex text-center">
