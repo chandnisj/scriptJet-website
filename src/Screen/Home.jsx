@@ -7,7 +7,6 @@ import home3 from "../Screen/Images/home-3.jpg";
 
 function Home() {
   const navigate = useNavigate();
-
   const webContent =
     "Web development,refers to the tasks associated with creating, building, and maintaining websites and web applications that run online on a browser";
   const mobilecontent =
