@@ -1,21 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import cs from "../Screen/Images/contact.jpg";
 import { UserAddOutlined } from "@ant-design/icons";
 import { Input } from "antd";
 import { Link } from "react-router-dom";
 function Contactus() {
+  const [Contact, setContact] = useState({
+    name: "",
+    email: "",
+    msg: "",
+  });
+  const [data, setdata] = useState([]);
+  const handalchnage = (event) => {
+    setContact({ ...Contact, [event.target.name]: event.target.value });
+  };
+  const handalclick = (event) => {
+    event.preventDefault();
+    setdata([...data, Contact]);
+    setContact({
+      name: "",
+      email: "",
+      msg: "",
+    });
+    //console.log(Contact)
+  };
+
   return (
     <div>
       <section className=" text-gray-600  body-font">
-        <div
-          className="flex"
-          style={{ position: "relative" }}
-        >
+        <div className="flex" style={{ position: "relative" }}>
           <img
             src={cs}
             alt=""
-            srcset=""
-            className= "min-w-full  h-3/6 max-h-96 backdrop-blur-xl"
+            className="min-w-full  h-3/6 max-h-96 backdrop-blur-xl"
             style={{ filter: " contrast(1.1) opacity(0.6)" }}
           />
           <div className="flex items-center justify-center absolute h-full   w-screen">
@@ -34,9 +50,9 @@ function Contactus() {
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1681.5078489552639!2d72.77447927570404!3d21.151529266853636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04dab2edc2817%3A0x559ac3e15857f407!2sSNS%20Business%20Park!5e0!3m2!1sen!2sin!4v1679913792009!5m2!1sen!2sin"
               className="inset-0"
               style={{ width: "100%", height: "100%", border: "0" }}
-              allowfullscreen=""
+              allowFullScreen=""
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
             <div className="bg-white  flex flex-wrap py-6 rounded shadow-md">
               <div className=" px-6">
@@ -74,28 +90,39 @@ function Contactus() {
                 size="large"
                 placeholder="Name"
                 prefix={<UserAddOutlined />}
+                onChange={handalchnage}
+                name="name"
+                value={Contact.name}
               />
             </div>
             <div className="relative mb-4">
-              <Input size="large" placeholder="Email-Id" />
+              <Input
+                size="large"
+                placeholder="Email-Id"
+                onChange={handalchnage}
+                name="email"
+                value={Contact.email}
+              />
             </div>
             <div className="relative mb-4">
               <textarea
                 id="message"
-                name="message"
                 placeholder="Message"
                 className="w-full bg-white rounded border border-gray-300  h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                onChange={handalchnage}
+                value={Contact.msg}
+                name="msg"
               ></textarea>
             </div>
             <div className="lg:w-24 md:w-20 sm:w-auto text-center">
-            <Link
-              to="/Contactus"
-              className="bg-[#14406D] hover:bg-gray-400 hover:text-black text-white font-serif  text-lg border-0 py-1 px-3 focus:outline-none rounded-tr-xl rounded-bl-xl text-base mt-4 md:mt-0"
-            >
-              Send
-            </Link>
+              <Link
+                to="/Contactus"
+                className="bg-[#14406D] hover:bg-gray-400 hover:text-black text-white font-serif  text-lg border-0 py-1 px-3 focus:outline-none rounded-tr-xl rounded-bl-xl text-base mt-4 md:mt-0"
+                onClick={handalclick}
+              >
+                Send
+              </Link>
             </div>
-            
           </div>
         </div>
       </section>

@@ -32,8 +32,8 @@ function NavBar() {
               />
             </Link>
           </div>
-          <div className="hidden lg:block lg:items-center ">
-            <div className=" flex items-center justify-center text-xl space-x-9 ">
+          <div className="hidden lg:block lg:items-center  ">
+            <div className="flex items-center justify-center text-xl space-x-16 ">
               <Link
                 to="/Service"
                 className="hover:text-gray-900 transition hover:scale-105 hover:underline decoration-[#14406D]"
@@ -46,14 +46,14 @@ function NavBar() {
                 className="hover:text-gray-900 transition hover:scale-105 hover:underline decoration-[#14406D]"
                 onClick={() => handleTechnology()}
               >
-                Technologies
+                Technology
               </Link>
               <Link
                 to="/Aboutus"
                 className="whitespace-nowrap hover:text-gray-900 transition hover:scale-105 hover:underline decoration-[#14406D]"
                 onClick={() => handleTechnology()}
               >
-                About us
+                About-us
               </Link>
               <Link
                 to="/Career"
@@ -64,7 +64,7 @@ function NavBar() {
               </Link>
               <Link
                 to="/Contactus"
-                className=" bg-[#14406D] whitespace-nowrap hover:bg-gray-400 hover:text-black text-white font-serif  text-lg  border-0 py-2 px-3 focus:outline-none rounded-tr-xl rounded-bl-xl  mt-4 md:mt-0"
+                className="bg-[#14406D] whitespace-nowrap hover:bg-gray-400 hover:text-black text-white font-serif  text-lg  border-0 py-2 px-3 focus:outline-none rounded-tr-xl rounded-bl-xl  mt-4 md:mt-0"
                 onClick={() => handleTechnology()}
               >
                 Contact-Us
@@ -117,7 +117,7 @@ function NavBar() {
       </div>
 
       <div className={`${isOpen ? "block" : "hidden"} lg:hidden`}>
-        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-2xl font-serif">
+        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-2xl font-serif font-bold text-[#14406D] ">
           <Link
             to="/Service"
             className="hover:text-gray block px-3 py-2 rounded-md  "

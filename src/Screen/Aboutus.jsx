@@ -1,26 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import aboutus from "../Screen/Images/about.jpg";
 import about from "../Screen/Images/about-2.jpg";
 import { Link } from "react-router-dom";
 
 function Aboutus() {
+  const [Mission, setMission] = useState(false);
+  const [vision, setvision] = useState(false);
+  const [work, setWork] = useState(false);
+  const ourMIssion = "";
+  const ourvision = "";
+  const ourwork = "";
+  const handalmission = () => {
+    setMission(!Mission);
+  };
+  const handalvision = () => {
+    setvision(!vision);
+  };
+  const handalwork = () => {
+    setWork(!work);
+  };
+
   return (
     <div>
       <div className="flex " style={{ position: "relative" }}>
         <img
           src={aboutus}
           alt=""
-          srcset=""
           className="min-w-full  h-3/6 max-h-96 backdrop-blur-xl "
           style={{ filter: " contrast(1.1) brightness(65%)" }}
         />
-        <div
-          className="flex items-center  justify-center absolute h-full  w-screen"
-        >
-            <h1 className="lg:text-6xl md:text-5xl sm:text-7xl text-5xl text-center  text-white  font-bold  font-serif ">
-              About Us
-            </h1>
-          
+        <div className="flex items-center  justify-center absolute h-full  w-screen">
+          <h1 className="lg:text-6xl md:text-5xl sm:text-7xl text-5xl text-center  text-white  font-bold  font-serif ">
+            About Us
+          </h1>
         </div>
       </div>
       <section className="text-gray-600 body-font">
@@ -46,6 +58,7 @@ function Aboutus() {
           </div>
         </div>
       </section>
+
       <section className="text-gray-600 body-font ">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap -m-4">
@@ -58,10 +71,14 @@ function Aboutus() {
                 </div>
                 <div className="flex-grow">
                   <p className="leading-relaxed text-base">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quia nemo, quos iusto repellat enim unde nisi aperiam
-                    adipisci in corporis tempora numquam quisquam ea dignissimos
-                    dolorum consequuntur nobis animi aliquam.
+                    {ourMIssion.substr(0, 80)}
+                    {Mission ? ourMIssion.substr(50) : "..."}.
+                    <button
+                      className="flex-col  text-gray-300 font-semibold focus:outline-none"
+                      onClick={handalmission}
+                    >
+                      {Mission ? "Read less" : "Read more"}
+                    </button>
                   </p>
                 </div>
               </div>
@@ -75,11 +92,14 @@ function Aboutus() {
                 </div>
                 <div className="flex-grow">
                   <p className="leading-relaxed text-base">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Reiciendis nisi beatae non, laudantium iure distinctio
-                    labore excepturi. Quasi aut asperiores nobis corporis, est
-                    molestiae exercitationem impedit suscipit provident aliquam
-                    iste?
+                    {ourvision.substr(0, 80)}
+                    {vision ? ourvision.substr(50) : "..."}.
+                    <button
+                      className="flex-col  text-gray-300 font-semibold focus:outline-none"
+                      onClick={handalvision}
+                    >
+                      {vision ? "Read less" : "Read more"}
+                    </button>
                   </p>
                 </div>
               </div>
@@ -93,11 +113,14 @@ function Aboutus() {
                 </div>
                 <div className="flex-grow">
                   <p className="leading-relaxed text-base">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Amet voluptates nostrum placeat eius quisquam ducimus
-                    consequuntur error iste sequi, quibusdam adipisci velit
-                    autem incidunt voluptatem saepe maxime reiciendis esse
-                    quam!.
+                    {ourwork.substr(0, 80)}
+                    {work ? ourwork.substr(50) : "..."}.
+                    <button
+                      className="flex-col  text-gray-300 font-semibold focus:outline-none"
+                      onClick={handalwork}
+                    >
+                      {work ? "Read less" : "Read more"}
+                    </button>
                   </p>
                 </div>
               </div>

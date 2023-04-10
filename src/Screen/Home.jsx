@@ -7,7 +7,7 @@ import home3 from "../Screen/Images/home-3.jpg";
 
 function Home() {
   const navigate = useNavigate();
-  const [expanded, setExpanded] = useState(false);
+
   const webContent =
     "Web development,refers to the tasks associated with creating, building, and maintaining websites and web applications that run online on a browser";
   const mobilecontent =
@@ -16,9 +16,23 @@ function Home() {
     "UI refers to the screens, buttons, toggles, icons, and other visual elements that you interact with when using a website, app, or other electronic device.";
   const testingcontent =
     "Avail assistance from our QA & Testing experts and establish tangible control over the life cycle of your product.";
+  const [expanded, setExpanded] = useState(false);
+  const [mobile, setMobile] = useState(false);
+  const [Design, setdesign] = useState(false);
+  const [testting, setTesting] = useState(false);
   const handleClick = () => {
     setExpanded(!expanded);
   };
+  const handalchange = () => {
+    setMobile(!mobile);
+  };
+  const Designchange = () => {
+    setdesign(!Design);
+  };
+  const Testchange = () => {
+    setTesting(!testting);
+  };
+
   const Technologies = [
     {
       title: "FrontEnd",
@@ -35,8 +49,9 @@ function Home() {
     },
     { title: "BackEnd", value: ["NodeJs", "PHP", "JAVA"] },
     { title: "Database", value: ["SQL", "MYSQL", "MongoDb"] },
-    { title: "Design", value: ["UI/UX", "Boostrap", "TailWind"] },
+    { title: "Design", value: ["UIUX", "Boostrap", "TailWind"] },
   ];
+  // eslint-disable-next-line
   const [Tech, setTech] = useState(Technologies);
 
   const handleTechnology = (value) => {
@@ -87,10 +102,13 @@ function Home() {
             </h1>
           </div>
           <div className="grid lg:grid-cols-4  md:grid-cols-2 sm:grid-cols-2  grid-cols-1 -m-2 ">
-            <div className="p-2 h-64 ">
+            <div className="p-2 h-64">
               <div className="h-full p-4 rounded-lg border-2 border-gray-100 flex flex-col relative overflow-hidden bg-blue-50">
                 <div className="sm:text-center text-center md:text-center h-full">
-                  <Link to="/Technologies" className=" text-2xl font-semibold ">
+                  <Link
+                    to="/Service#webdev"
+                    className=" text-2xl font-semibold "
+                  >
                     Web Developement
                   </Link>
                   <p className="flex-row items-center text-center mt-4 text-lg text-[#14406D] mb-8">
@@ -106,23 +124,23 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="p-2 h-64  ">
+            <div className="p-2 h-64">
               <div className=" p-4 h-full rounded-lg border-2 border-gray-100 flex  flex-col relative overflow-hidden bg-blue-50">
                 <div className="sm:text-center text-center md:text-center">
                   <Link
-                    to="/Technologies"
+                    to="/Service#mobile"
                     className="text-2xl font-semibold text-center "
                   >
                     Mobile App-Devlopement
                   </Link>
                   <p className="flex-row items-center text-center mt-4 text-lg text-[#14406D]  mb-8">
                     {mobilecontent.substr(0, 80)}
-                    {expanded ? mobilecontent.substr(50) : "..."}.
+                    {mobile ? mobilecontent.substr(50) : "..."}.
                     <button
                       className="flex-col  text-gray-300 font-semibold focus:outline-none"
-                      onClick={handleClick}
+                      onClick={handalchange}
                     >
-                      {expanded ? "Read less" : "Read more"}
+                      {mobile ? "Read less" : "Read more"}
                     </button>
                   </p>
                 </div>
@@ -132,19 +150,19 @@ function Home() {
               <div className=" p-4 h-full rounded-lg border-2 border-gray-100 flex flex-col relative overflow-hidden bg-blue-50">
                 <div className="sm:text-center text-center md:text-center">
                   <Link
-                    to="/Technologies"
+                    to="/Service#uiux"
                     className="text-2xl font-semibold text-center  "
                   >
                     UI/Ux Design
                   </Link>
                   <p className="flex-row items-center text-center mt-4 text-lg text-[#14406D]  mb-8">
                     {designcontent.substr(0, 80)}
-                    {expanded ? designcontent.substr(50) : "..."}.
+                    {Design ? designcontent.substr(50) : "..."}.
                     <button
                       className="flex-col  text-gray-300 font-semibold focus:outline-none"
-                      onClick={handleClick}
+                      onClick={Designchange}
                     >
-                      {expanded ? "Read less" : "Read more"}
+                      {Design ? "Read less" : "Read more"}
                     </button>
                   </p>
                 </div>
@@ -154,19 +172,19 @@ function Home() {
               <div className=" p-4 h-full rounded-lg border-2 border-gray-100 flex flex-col relative overflow-hidden bg-blue-50">
                 <div className="sm:text-center text-center md:text-center">
                   <Link
-                    to="/Technologies"
+                    to="/Service#testing"
                     className="text-2xl font-semibold text-center  "
                   >
                     QA and Testing
                   </Link>
                   <p className="flex-row items-center text-center mt-4 text-lg text-[#14406D] overflow-hidden  mb-8">
                     {testingcontent.substr(0, 80)}
-                    {expanded ? testingcontent.substr(50) : "..."}.
+                    {testting ? testingcontent.substr(50) : "..."}.
                     <button
                       className="flex-col  text-gray-300 font-semibold focus:outline-none"
-                      onClick={handleClick}
+                      onClick={Testchange}
                     >
-                      {expanded ? "Read less" : "Read more"}
+                      {testting ? "Read less" : "Read more"}
                     </button>
                   </p>
                 </div>
@@ -235,20 +253,23 @@ function Home() {
         <div className="container px-5 py-24 mx-auto">
           <div className="text-center mb-20">
             <h1 className="sm:text-3xl text-4xl font-serif font-semibold text-center  text-[#14406D] mb-4 transition  hover:scale-105 hover:underline decoration-[#14406D] ">
-              Technologies We work
+              Technology We work
             </h1>
           </div>
           <div className="flex flex-wrap -m-4">
-            {Tech.map((tech) => {
+            {Tech.map((tech, index) => {
               return (
-                <div className="p-4 lg:w-1/4 sm:w-1/2 w-full flex flex-col items-center  ">
+                <div
+                  className="p-4 lg:w-1/4 sm:w-1/2 w-full flex flex-col items-center"
+                  key={index}
+                >
                   <h2 className=" tracking-widest text-gray-900 mb-4 text-2xl font-bold font-serif text-center sm:text-left cursor-pointer  ">
                     {tech.title}
                   </h2>
                   <nav className="flex flex-col sm:items-start sm:text-left text-center items-center justify-center -mb-1 space-y-2.5 font-serif text-lg  text-[#14406D] ">
-                    {tech.value.map((value) => {
+                    {tech.value.map((value,i) => {
                       return (
-                        <div className="flex items-center justify-center ">
+                        <div className="flex items-center justify-center " key={i}>
                           <span className="text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                             <svg
                               fill="none"
@@ -262,12 +283,13 @@ function Home() {
                               <path d="M20 6L9 17l-5-5"></path>
                             </svg>
                           </span>
-                          <div
+                          <Link
                             className="cursor-pointer"
+                            to="/Technologies"
                             onClick={() => handleTechnology(value)}
                           >
-                            {value}
-                          </div>
+                            {value === "UIUX" ? "UI/UX" : value}
+                          </Link>
                         </div>
                       );
                     })}
@@ -284,17 +306,17 @@ function Home() {
           src={aboutus}
           alt=""
           srcSet=""
-          className="min-w-full  h-3/6 max-h-96 backdrop-blur-xl "
-          style={{ filter: " contrast(1.1) brightness(30%) " }}
+          className="min-w-full  h-3/6  max-h-96 backdrop-blur-xl "
+          style={{ filter: " contrast(1.1) brightness(45%) " }}
         />
         <div className="flex-col items-center  justify-center absolute h-full  w-screen py-20 ">
           <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-xl text-center  text-white  font-bold  font-serif ">
             More productive Business?
           </h1>
-          <div className="flex items-center justify-center p-4">
+          <div className="flex items-center justify-center p-10">
             <Link
               to="/Contactus"
-              className=" bg-[#14406D] hover:bg-gray-400 hover:text-black text-white font-serif  text-lg border-0 py-2 px-3 focus:outline-none rounded-tr-xl rounded-bl-xl text-base mt-0"
+              className="bg-[#14406D] hover:bg-gray-400 hover:text-black text-white font-serif  text-lg border-0 py-2 px-3 focus:outline-none rounded-tr-xl rounded-bl-xl text-base mt-0"
             >
               Contact-Us
             </Link>

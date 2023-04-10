@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import react from "../Screen/Images/Technologies/reactjs.jpg";
 import vue from "../Screen/Images/Technologies/Vuejs.jpeg";
 import angular from "../Screen/Images/Technologies/angular.jpeg";
@@ -19,6 +19,7 @@ import boostrap from "../Screen/Images/Technologies/bootstrap.png";
 import tailwind from "../Screen/Images/Technologies/tailwind.jpg";
 
 function Technologies() {
+  const [isRender, setIsRender] = useState(false);
   const contants = [
     {
       title: "ReactJs",
@@ -91,7 +92,7 @@ function Technologies() {
       src: mongodb,
     },
     {
-      title: "UI/UX",
+      title: "UIUX",
       con: "UI refers to the screens, buttons, toggles, icons, and other visual elements that you interact with when using a website, app, or other electronic device. UX refers to the entire interaction you have with a product, including how you feel about the interaction.",
       src: ui,
     },
@@ -106,19 +107,58 @@ function Technologies() {
       src: tailwind,
     },
   ];
+  // eslint-disable-next-line
   const [filterContent, setFilterContent] = useState({});
+  const WrapTech = ({ items }) => {
+    setIsRender(true);
+    return (
+      <section className="text-gray-600 body-font font-serif">
+        {items.map((text, i) => {
+          return (
+            <div
+              className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
+              key={i}
+              id={text.title}
+            >
+              <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                <img
+                  className="object-cover object-center rounded"
+                  alt="hero"
+                  src={text.src}
+                />
+              </div>
+              <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                <h1 className="title-font sm:text-4xl text-3xl mb-4 font-semibold  text-[#14406D] ">
+                  {text.title === "UIUX" ? "UI/UX" : text.title}
+                </h1>
+                <p className="mb-8 leading-relaxed">{text.con}</p>
+                <div className="flex justify-center">
+                  <Link
+                    to="/Contactus"
+                    className="bg-[#14406D] hover:bg-gray-400 hover:text-black text-white font-serif  text-lg border-0 px-3 py-2 focus:outline-none rounded-tr-xl rounded-bl-xl text-base mt-0"
+                  >
+                    Connect-Us
+                  </Link>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </section>
+    );
+  };
 
-  useEffect(() => {
-    const clickTech = localStorage.getItem("techValue");
-    if (clickTech) {
-      const contant = contants.filter((value) => {
-        return value.title === clickTech;
-      });
-      console.log("clickContant ", contant[0]);
-      setFilterContent(contant[0]);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  // useEffect(() => {
+  //   const clickTech = localStorage.getItem("techValue");
+  //   if (clickTech) {
+  //     const contant = contants.filter((value) => {
+  //       return value.title === clickTech;
+  //     });
+  //     //console.log("clickContant ", contant[0]);
+  //     setFilterContent(contant[0]);
+  //   }
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, []);
   const Technologies = [
     {
       title: "FrontEnd",
@@ -135,8 +175,9 @@ function Technologies() {
     },
     { title: "BackEnd", value: ["NodeJs", "PHP", "JAVA"] },
     { title: "Database", value: ["SQL", "MYSQL", "MongoDb"] },
-    { title: "Design", value: ["UI/UX", "Boostrap", "TailWind"] },
+    { title: "Design", value: ["UIUX", "Boostrap", "TailWind"] },
   ];
+  // eslint-disable-next-line
   const [Tech, setTech] = useState(Technologies);
 
   const handleClick = (v) => {
@@ -145,7 +186,20 @@ function Technologies() {
     });
     setFilterContent(contant[0]);
     localStorage.removeItem("techValue");
+    const click = document.querySelector(`#${v}`);
+    click.scrollIntoView({ behavior: "smooth" });
   };
+
+  const location = useLocation();
+  useEffect(() => {
+    const clickTech = localStorage.getItem("techValue");
+    if (clickTech) {
+      setTimeout(() => {
+        const click = document.querySelector(`#${clickTech}`);
+        click.scrollIntoView({ behavior: "smooth", block: "center" });
+      }, 200);
+    }
+  }, [location.hash, isRender]);
 
   return (
     <div>
@@ -153,8 +207,7 @@ function Technologies() {
         <div className="container px-4 py-24 mx-auto">
           <div className="flex flex-col text-center w-full mb-12">
             <h1 className="text-3xl text-5xl font-medium title-font mb-4  font-serif text-[#14406D] cursor-pointer transition  hover:scale-105">
-              {" "}
-              Technologies{" "}
+              Technology
             </h1>
             <p className="w-2/3  mx-auto leading-relaxed text-lg font-serif">
               Quality in a service or product is not what you put into it. It’s
@@ -168,20 +221,26 @@ function Technologies() {
         <div className="container px-5 py-20 mx-auto">
           <div className="text-center mb-20">
             <h1 className="sm:text-3xl text-4xl font-serif font-bold text-center  text-[#14406D] mb-4 transition  hover:scale-105 hover:underline decoration-[#14406D] ">
-              Technologies We work
+              Technology We work
             </h1>
           </div>
           <div className="flex flex-wrap -m-4">
-            {Tech.map((tech) => {
+            {Tech.map((tech, i) => {
               return (
-                <div className="p-4 lg:w-1/4 sm:w-1/2 w-full flex flex-col items-center  ">
+                <div
+                  className="p-4 lg:w-1/4 sm:w-1/2 w-full flex flex-col items-center  "
+                  key={i}
+                >
                   <h2 className="tracking-widest text-gray-900 mb-4 text-2xl font-serif font-bold   text-center sm:text-left cursor-pointer  ">
                     {tech.title}
                   </h2>
                   <nav className="flex flex-col sm:items-start sm:text-left text-center items-center justify-center -mb-1 space-y-2.5 font-serif text-lg  text-[#14406D] ">
-                    {tech.value.map((value) => {
+                    {tech.value.map((value, id) => {
                       return (
-                        <div className="flex items-center justify-center ">
+                        <div
+                          className="flex items-center justify-center "
+                          key={id}
+                        >
                           <span className="text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                             <svg
                               fill="none"
@@ -212,64 +271,7 @@ function Technologies() {
         </div>
       </section>
 
-      {filterContent.title && (
-        <section className="text-gray-600 body-font font-serif  bg-gradient-to-r from-cyan-50 via-fuchsia-50 to-blue-50">
-          <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-              <img
-                className="object-cover object-center rounded"
-                alt="hero"
-                src={filterContent.src}
-              />
-            </div>
-            <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-              <h1 className="title-font sm:text-4xl text-3xl mb-4 font-semibold  text-[#14406D]">
-                {filterContent.title}
-              </h1>
-              <p className="mb-8 leading-relaxed">{filterContent.con}</p>
-              <div className="flex justify-center">
-                <Link
-                  to="/Contactus"
-                  className="bg-[#14406D] hover:bg-gray-400 hover:text-black text-white font-serif  text-lg border-0 px-3 py-2 focus:outline-none rounded-tr-xl rounded-bl-xl text-base mt-0"
-                >
-                  Connect-Us
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
-      )}
-
-      <section className="text-gray-600 body-font font-serif  ">
-      {contants.map((text)=>{
-        return (
-          <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-            <img
-              className="object-cover object-center rounded"
-              alt="hero"
-              src={text.src}
-            />
-          </div>
-          <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-semibold  text-[#14406D]">
-              {text.title}
-            </h1>
-            <p className="mb-8 leading-relaxed">{text.con}</p>
-            <div className="flex justify-center">
-              <Link
-                to="/Contactus"
-                className="bg-[#14406D] hover:bg-gray-400 hover:text-black text-white font-serif  text-lg border-0 px-3 py-2 focus:outline-none rounded-tr-xl rounded-bl-xl text-base mt-0"
-              >
-                Connect-Us
-              </Link>
-            </div>
-          </div>
-        </div>
-        )
-      })}
-     
-    </section>
+      <WrapTech items={contants} />
     </div>
   );
 }

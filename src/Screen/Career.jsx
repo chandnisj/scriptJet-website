@@ -25,7 +25,7 @@ function Career() {
         <div  className="p-4 h-62  md:w-1/3 sm:w-1/2 w-full">
           <div  className="border-2 border-gray-200 px-4 py-6 rounded-lg h-full ">
             <div  className="justify-center flex-col">
-              <p  className=" text-center text-lg font-bold font-serif text-[#13304c] px-2 py-2 mb-2 border-2 border-gray-100  rounded-full w-22  bg-gray-100   ">
+              <p  className=" text-center text-lg font-bold font-serif text-[#13304c] px-2 py-2 mb-2 border-2 border-gray-100  rounded-full w-22  bg-gray-100 cursor-pointer  ">
               Web Development
               </p>
               <h5  className=" text-center text-lg  font-serif text-[#13304c] px-2 py-2">
@@ -96,7 +96,7 @@ function Career() {
         <div  className="p-4 h-62 md:w-1/3 sm:w-1/2 w-full">
           <div  className="border-2 border-gray-200 px-4 py-6 rounded-lg h-full">
             <div  className="justify-center flex-col">
-              <p  className=" text-center text-lg font-bold font-serif text-[#13304c] px-2 py-2 mb-2 whitespace-nowrap border-2 border-gray-100  rounded-full w-22  bg-gray-100 ">
+              <p  className=" text-center text-lg font-bold font-serif text-[#13304c] px-2 py-2 mb-2 whitespace-nowrap border-2 border-gray-100  rounded-full w-22  bg-gray-100 cursor-pointer ">
                Mobile App Development
               </p>
               <h5  className=" text-center  text-lg  font-serif text-[#13304c] px-2 py-2">
@@ -165,7 +165,7 @@ function Career() {
         <div  className="p-4 h-62 md:w-1/3 sm:w-1/2 w-full  ">
         <div  className="border-2 h-full border-gray-200 px-4 py-6 rounded-lg">
           <div  className="justify-center flex-col">
-            <p  className="text-center  text-lg font-bold font-serif text-[#13304c] px-2 py-2 mb-2 border-2 border-gray-100  rounded-full w-22  bg-gray-100  ">
+            <p  className="text-center  text-lg font-bold font-serif text-[#13304c] px-2 py-2 mb-2 border-2 border-gray-100  rounded-full w-22  bg-gray-100 cursor-pointer ">
             Design
             </p>
             <h5  className=" text-cente  text-lg  font-serif text-[#13304c] px-2 py-2">
@@ -234,7 +234,7 @@ function Career() {
       <div  className="p-4 h-62 md:w-1/3 sm:w-1/2 w-full">
           <div  className="border-2 border-gray-200 px-4 py-6 rounded-lg h-full">
             <div  className="justify-center flex-col">
-              <p  className=" text-center text-lg font-bold font-serif text-[#13304c] px-2 py-2 mb-2 border-2 border-gray-100  rounded-full w-22 bg-gray-100 ">
+              <p  className=" text-center text-lg font-bold font-serif text-[#13304c] px-2 py-2 mb-2 border-2 border-gray-100  rounded-full w-22 bg-gray-100 cursor-pointer ">
                Backend Development
               </p>
               <h5  className=" text-center  text-lg text-lg  font-serif text-[#13304c] px-2 py-2">
@@ -304,7 +304,7 @@ function Career() {
         <div  className="p-4 h-62 md:w-1/3  sm:w-1/2 w-full">
           <div  className="border-2 border-gray-200 px-4 py-6 rounded-lg h-full">
             <div  className="justify-center flex-col">
-              <p  className=" text-center text-lg font-serif font-bold text-[#13304c] px-2 py-2 mb-2 border-2 border-gray-100  rounded-full w-22 bg-gray-100 ">
+              <p  className=" text-center text-lg font-serif font-bold text-[#13304c] px-2 py-2 mb-2 border-2 border-gray-100  rounded-full w-22 bg-gray-100 cursor-pointer ">
                Mangement Department
               </p>
               <h5  className=" text-center  text-lg  font-serif text-[#13304c] px-2 py-2">
@@ -375,7 +375,7 @@ function Career() {
         <div  className="p-4 h-62 md:w-1/3 sm:w-1/2 w-full">
           <div  className="border-2 border-gray-200 px-4 py-6 rounded-lg h-full">
             <div  className="justify-center flex-col">
-              <p  className=" text-center text-lg font-serif font-bold text-[#13304c] px-2 py-2 mb-2 border-2 border-gray-100  rounded-full w-22 bg-gray-100 ">
+              <p  className=" text-center text-lg font-serif font-bold text-[#13304c] px-2 py-2 mb-2 border-2 border-gray-100  rounded-full w-22 bg-gray-100 cursor-pointer ">
               Mangement Department
               </p>
               <h5  className=" text-center  text-lg font-serif  text-[#13304c]    px-2 py-2">

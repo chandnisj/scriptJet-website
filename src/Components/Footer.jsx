@@ -25,14 +25,14 @@ function Footer() {
                 It’s what the client or customer gets out of it.
               </p>
             </div>
-            <div className="lg:w-1/2 md:w-1/2 w-full  px-4  text-lg ">
+            <div className="lg:w-1/2 md:w-1/2 w-full  px-4  text-lg whitespace-nowrap" >
               <h2 className="title-font text-2xl font-bold  text-gray-900 tracking-widest  mb-4">
                 Sloutions
               </h2>
               <nav className="list-none mb-5">
                 <li>
                   <Link
-                    to="/Service "
+                    to="/Service#webdev"
                     className="text-gray-600 hover:text-gray-800 py-2 "
               
                   >
@@ -41,15 +41,15 @@ function Footer() {
                 </li>
                 <li>
                   <Link
-                    to="/Technologies"
+                    to="/Service#mobile"
                     className="text-black-600 hover:text-gray-800 py-2"
                   >
-                    Mobil App Devlopement
+                  Mobile App Devlopement
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="/Technologies"
+                    to="/Service#uiux"
                     className="text-gray-600 hover:text-gray-800 py-2"
                   >
                     UI/UX Design
@@ -57,7 +57,7 @@ function Footer() {
                 </li>
                 <li>
                   <Link
-                    to="/Technologies"
+                    to="/Service#testing"
                     className="text-gray-600 hover:text-gray-800 py-2"
                   >
                     QA and Testing
@@ -65,7 +65,7 @@ function Footer() {
                 </li>
                 <li>
                   <Link
-                    to="/Technologies"
+                    to="/Career"
                     className="text-gray-600 hover:text-gray-800"
                   >
                     Human-resource
