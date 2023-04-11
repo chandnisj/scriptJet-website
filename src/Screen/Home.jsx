@@ -306,7 +306,7 @@ function Home() {
           alt=""
           srcSet=""
           className="min-w-full  h-3/6  max-h-96 backdrop-blur-xl "
-          style={{ filter: " contrast(1.1) brightness(45%) " }}
+          style={{ filter: " contrast(1.1) brightness(60%) " }}
         />
         <div className="flex-col items-center  justify-center absolute h-full  w-screen py-20 ">
           <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-xl text-center  text-white  font-bold  font-serif ">

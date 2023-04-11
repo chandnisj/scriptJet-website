@@ -35,7 +35,7 @@ function Contactus() {
             style={{ filter: " contrast(1.1) opacity(0.6)" }}
           />
           <div className="flex items-center justify-center absolute h-full   w-screen">
-            <h1 className=" text-3xl  title-font   text-white  font-bold  font-serif ">
+            <h1 className=" text-3xl   text-white  font-semibold  font-serif cursor-pointer ">
               {" "}
               Contact-Us{" "}
             </h1>
