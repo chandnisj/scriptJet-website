@@ -2,9 +2,15 @@ import React, { useEffect } from "react";
 import screen from "../Screen/Images/Screen-Image/screen-1.jpg";
 import sc from "../Screen/Images/Screen-Image/screen-2.png";
 import sc3 from "../Screen/Images/Screen-Image/screen-3.jpg";
-import mb3 from "../Screen/Images/Screen-Image/mb-sc.jpg";
+import mb3 from "../Screen/Images/Screen-Image/mb1.jpg";
+import mb2 from "../Screen/Images/Screen-Image/mb2.jpg";
+import mb1 from "../Screen/Images/Screen-Image/mb3.jpeg"
 import us1 from "../Screen/Images/Screen-Image/ui-sc.jpg";
 import test from "../Screen/Images/Screen-Image/Test.jpg";
+import ui2 from "../Screen/Images/Screen-Image/UI-UX2.jpeg";
+import ui3 from "../Screen/Images/Screen-Image/UI-UX3.jpeg";
+import qa2 from "../Screen/Images/Screen-Image/QA2.jpeg";
+import qa3 from "../Screen/Images/Screen-Image/QA3.jpeg";
 import { Link, useLocation } from "react-router-dom";
 function Service() {
   const location = useLocation();
@@ -17,16 +23,15 @@ function Service() {
 
   return (
     <div>
-      <section className=" text-gray-600  body-font bg-gradient-to-r from-cyan-50 via-fuchsia-50 to-blue-50">
+      <section className=" text-gray-600  body-font bg-gradient-to-r from-orange-50 to-blue-50">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col text-center w-full mb-12">
-            <h1 className="text-4xl  font-serif font-semibold  title-font mb-4 text-[#14406D] cursor-pointer transition  hover:scale-105">
+            <h1 className="text-4xl  font-serif font-semibold  title-font mb-4 text-[#14406D] cursor-pointer transition  hover:scale-105 hover:text-[#FE9800]">
               {" "}
               Service{" "}
             </h1>
             <p className="w-2/3  mx-auto leading-relaxed text-lg font-serif">
-              Quality in a service or product is not what you put into it. It’s
-              what the client or customer gets out of it
+            At Script-jet, we offer a wide range of services to meet the needs of businesses of all sizes. Our Services component is designed to provide our clients with the support and expertise they need to optimize their technology infrastructure and achieve their business goals. Our team of experienced professionals is dedicated to delivering customized solutions that are tailored to meet the unique needs of each client. Whether it's network design and implementation, cloud migration, or software development, we have the expertise to deliver results that exceed expectations.
             </p>
           </div>
         </div>
@@ -35,20 +40,16 @@ function Service() {
       <section className="text-gray-600 body-font font-serif " id="webdev">
         <div className="container px-5 mx-auto flex lg:flex-row md:flex-row sm:flex-col-reverse flex-col-reverse lg:my-auto md:my-10 my-10 items-center justify-center ">
           <div className="flex flex-col lg:w-1/2 md:w-full mx-12 justify-center md:my-auto sm:my-10 ">
-            <Link className="flex px-auto mx-auto mt-0 font-serif text-3xl font-bold">
+            <Link className="flex px-auto mx-auto mt-0 font-serif text-3xl font-bold text-[#14406D] hover:text-[#FE9800] transition ">
               Web-Development
             </Link>
             <p className="mx-auto py-6 text-base text-justify font-serif text-2xl ">
-              Web development is the work involved in developing a website for
-              the Internet (World Wide Web) or an intranet (a private network).
-              Web development can range from developing a simple single static
-              page of plain text to complex web applications, electronic
-              businesses, and social network services.
+            Our web development service is designed to help businesses build high-quality websites that drive results. We specialize in creating custom websites that are tailored to meet the unique needs of each client. Our team of experienced developers uses the latest technologies and best practices to create websites that are fast, secure, and easy to navigate. We work closely with our clients to ensure that their website not only looks great but also delivers a superior user experience. 
             </p>
             <div>
               <Link
                 to="/Contactus"
-                className=" bg-[#14406D] hover:bg-gray-400 hover:text-black text-white text-lg border-0 py-2 px-3 focus:outline-none rounded-tr-xl rounded-bl-xl text-base mt-0"
+                className=" bg-[#14406D] hover:bg-[#FE9800] hover:text-black text-white text-lg border-0 py-2 px-3 focus:outline-none rounded-tr-xl rounded-bl-xl text-base mt-0"
               >
                 Contact-Us
               </Link>
@@ -97,32 +98,28 @@ function Service() {
               <img
                 alt="gallery"
                 className="w-full object-cover h-full object-center block"
-                src={sc}
+                src={mb2}
               />
             </div>
             <div className="p-2 p-1 w-1/2">
               <img
                 alt="gallery"
                 className="w-full object-cover h-full object-center block"
-                src={sc3}
+                src={mb1}
               />
             </div>
           </div>
           <div className="flex flex-col lg:w-1/2 md:w-full mx-10 my-10 justify-center md:my-auto sm:my-10 ">
-            <h3 className="flex px-auto mx-auto mt-0 font-serif text-3xl font-bold ">
+            <h3 className="flex px-auto mx-auto mt-0 font-serif text-3xl font-bold hover:text-[#FE9800] transition  text-[#14406D] ">
               Mobile Development{" "}
             </h3>
-            <p className=" mx-auto py-4 text-justify text-base  text-2xl ">
-              Mobile application development is the process to making software
-              for smartphones and digital assistants, most commonly for Android
-              and iOS. The software can be preinstalled on the device,
-              downloaded from a mobile app store or accessed through a mobile
-              web browser.
+            <p className=" mx-auto py-4 text-justify text-base  text-2xl  ">
+            Our mobile development service is designed to help businesses build mobile applications that are user-friendly, high-performing, and reliable. Our team of experienced developers specializes in creating custom mobile applications that are tailored to meet the unique needs of each client. We use the latest technologies and best practices to deliver mobile applications that are fast, secure, and scalable. Whether you're looking to build an iOS, Android, or hybrid mobile application, we have the expertise to help you achieve your goals. 
             </p>
             <div>
               <Link
                 to="/Contactus"
-                className=" bg-[#14406D] hover:bg-gray-400 hover:text-black text-white font-serif  text-lg border-0 py-2 px-3 focus:outline-none rounded-tr-xl rounded-bl-xl text-base mt-0"
+                className=" bg-[#14406D] hover:bg-[#FE9800] hover:text-black text-white font-serif  text-lg border-0 py-2 px-3 focus:outline-none rounded-tr-xl rounded-bl-xl text-base mt-0"
               >
                 Contact-Us
               </Link>
@@ -134,20 +131,17 @@ function Service() {
       <section className="text-gray-600 body-font font-serif" id="uiux">
         <div className="container px-5 mx-auto flex lg:flex-row md:flex-row sm:flex-col-reverse flex-col-reverse lg:my-auto md:my-10 my-10 items-center justify-center ">
           <div className="flex flex-col lg:w-1/2 md:w-full mx-12 justify-center md:my-12 sm:my-10 xl:my-auto">
-            <h3 className="flex px-auto mx-auto mt-0 font-serif text-3xl font-bold">
+            <h3 className="flex px-auto mx-auto mt-0 font-serif text-3xl font-bold hover:text-[#FE9800] transition  text-[#14406D]">
               UI-UX Design
             </h3>
             <p className="mx-auto py-6 text-base text-justify font-serif text-2xl">
-              UI refers to the screens, buttons, toggles, icons, and other
-              visual elements that you interact with when using a website, app,
-              or other electronic device. UX refers to the entire interaction
-              you have with a product, including how you feel about the
-              interaction.
+            Our UI/UX design service is designed to help businesses create visually stunning and user-friendly digital experiences. Our team of expert designers creates custom designs that are tailored to meet the unique needs of each client. We understand the importance of user experience, and we use the latest design trends and technologies to create designs that are not only visually appealing but also easy to navigate.
+
             </p>
             <div>
               <Link
                 to="/Contactus"
-                className=" bg-[#14406D] hover:bg-gray-400 hover:text-black text-white   text-lg border-0 py-2 px-3 focus:outline-none rounded-tr-xl rounded-bl-xl text-base mt-0"
+                className=" bg-[#14406D] hover:bg-[#FE9800] hover:text-black text-white   text-lg border-0 py-2 px-3 focus:outline-none rounded-tr-xl rounded-bl-xl text-base mt-0"
               >
                 Contact-Us
               </Link>
@@ -165,14 +159,14 @@ function Service() {
               <img
                 alt="gallery"
                 className="w-50 object-cover h-full object-center block"
-                src={sc}
+                src={ui2}
               />
             </div>
             <div className="p-2 p-1 w-1/2">
               <img
                 alt="gallery"
                 className="w-full object-cover h-full object-center block"
-                src={sc3}
+                src={ui3}
               />
             </div>
           </div>
@@ -196,31 +190,29 @@ function Service() {
               <img
                 alt="gallery"
                 className="w-full object-cover h-full object-center block"
-                src={sc}
+                src={qa2}
               />
             </div>
             <div className="p-2 p-1 w-1/2">
               <img
                 alt="gallery"
                 className="w-full object-cover h-full object-center block"
-                src={sc3}
+                src={qa3}
               />
             </div>
           </div>
           <div className="flex flex-col lg:w-1/2 md:w-full mx-10 my-10 justify-center md:my-auto sm:my-10 ">
-            <h3 className="flex px-auto mx-auto mt-0 font-serif text-3xl font-bold ">
+            <h3 className="flex px-auto mx-auto mt-0 font-serif text-3xl font-bold hover:text-[#FE9800] transition  text-[#14406D] ">
               QA and Testing
             </h3>
             <p className="mx-auto py-4 text-justify text-base  text-2xl ">
-              There are three main ways you can do testing: manual, automated,
-              and continuous. Let us take a closer look at each option. Manual
-              testing is the most hands-on type of testing and is employed by
-              every team at some point.
+            Our QA and testing service is designed to ensure that your software and applications are of the highest quality. Our team of experienced testers uses a range of testing techniques and tools to identify and eliminate defects, ensuring that your software is reliable, secure, and easy to use. Whether you're looking to test an existing product or a new one, we have the expertise to help you achieve your goals. 
+
             </p>
             <div>
               <Link
                 to="/Contactus"
-                className="bg-[#14406D] hover:bg-gray-400 hover:text-black text-white   text-lg border-0 py-2 px-3 focus:outline-none rounded-tr-xl rounded-bl-xl text-base mt-0"
+                className="bg-[#14406D] hover:bg-[#FE9800] hover:text-black text-white   text-lg border-0 py-2 px-3 focus:outline-none rounded-tr-xl rounded-bl-xl text-base mt-0"
               >
                 Contact-Us
               </Link>

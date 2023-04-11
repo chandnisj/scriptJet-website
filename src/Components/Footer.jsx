@@ -5,10 +5,10 @@ function Footer() {
   
   return (
     <div>
-      <footer className="text-gray-600 body-font font-serif  bg-gradient-to-r from-cyan-50 via-fuchsia-50 to-blue-50 ">
+      <footer className="text-gray-600 body-font font-serif  bg-gradient-to-r from-orange-50 to-blue-50 ">
         <div className="container px-5 pt-10 pb-20  mx-auto my-0">
           <div className="flex flex-wrap lg:text-start md:text-start text-center -mb-10 -mx-4 grid md:grid-cols-3  lg:grid-cols-3  sm:grid-cols-1">
-            <div className=" lg:w-1/2 md:w-1/2 sm:mb-10 mb-10 w-full  px-4 ">
+            <div className=" lg:w-1/2 md:w-1/2 sm:mb-10 mb-10 w-full  px-4 text-[#14406D] ">
               <Link
                 to="/"
                 className="flex title-font font-medium  lg:inline-block items-center justify-center  text-gray-900  md:mb-0"
@@ -21,19 +21,18 @@ function Footer() {
                 />
               </Link>
               <p>
-                Quality in a service or product is not what you put into it.
-                It’s what the client or customer gets out of it.
+              To revolutionize the IT industry with innovative solutions.
               </p>
             </div>
             <div className="lg:w-1/2 md:w-1/2 w-full  px-4  text-lg whitespace-nowrap" >
-              <h2 className="title-font text-2xl font-bold  text-gray-900 tracking-widest  mb-4">
+              <h2 className="title-font text-2xl font-bold  text-[#FE9800] tracking-widest  mb-4">
                 Sloutions
               </h2>
               <nav className="list-none mb-5">
                 <li>
                   <Link
                     to="/Service#webdev"
-                    className="text-gray-600 hover:text-gray-800 py-2 "
+                    className="text-[#14406D] hover:text-[#FE9800] py-2 "
               
                   >
                     Web Devlopement
@@ -42,7 +41,7 @@ function Footer() {
                 <li>
                   <Link
                     to="/Service#mobile"
-                    className="text-black-600 hover:text-gray-800 py-2"
+                    className="text-[#14406D] hover:text-[#FE9800] py-2"
                   >
                   Mobile App Devlopement
                   </Link>
@@ -50,7 +49,7 @@ function Footer() {
                 <li>
                   <Link
                     to="/Service#uiux"
-                    className="text-gray-600 hover:text-gray-800 py-2"
+                    className="text-[#14406D] hover:text-[#FE9800] py-2"
                   >
                     UI/UX Design
                   </Link>
@@ -58,7 +57,7 @@ function Footer() {
                 <li>
                   <Link
                     to="/Service#testing"
-                    className="text-gray-600 hover:text-gray-800 py-2"
+                    className="text-[#14406D] hover:text-[#FE9800] py-2"
                   >
                     QA and Testing
                   </Link>
@@ -66,7 +65,7 @@ function Footer() {
                 <li>
                   <Link
                     to="/Career"
-                    className="text-gray-600 hover:text-gray-800"
+                    className="text-[#14406D] hover:text-[#FE9800] py-2"
                   >
                     Human-resource
                   </Link>
@@ -75,7 +74,7 @@ function Footer() {
             </div>
 
             <div className="lg:w-full md:w-full sm:item-center sm:justify-center item-center justify-center  sm:mb-10 mb-10    px-4  text-lg  ">
-              <h2 className="title-font  text-2xl font-bold   text-gray-900 tracking-widest   mb-4">
+              <h2 className="title-font  text-2xl font-bold   text-[#FE9800] tracking-widest   mb-4">
                 Contact-us
               </h2>
               <div className="flex lg:flex-row md:flex-row flex-col  item-center justify-center w-full ">
@@ -105,7 +104,7 @@ function Footer() {
                   </svg>
                 </div>
                 <div>
-                  <p className="ml-2  text-md md:text-start lg:text-start text-[#13304c]">
+                  <p className="ml-2  text-md md:text-start lg:text-start text-[#14406D]">
                     305, SNS Business Park, University Rd, opp. J H Ambani
                     School, Vesu, Surat, Gujarat 395007
                   </p>
@@ -116,7 +115,7 @@ function Footer() {
         </div>
         <div className=" ">
           <div className="mx-auto items-center justify-center  py-4 px-5 flex flex-col sm:flex-row">
-            <span className="sm:mt-0 mt-0 sm:w-auto w-full sm:text-center text-center  text-black text-lg">
+            <span className="sm:mt-0 mt-0 sm:w-auto w-full sm:text-center text-center  text-[#FE9800] text-lg">
               Copyright 2023. All Rights Reserved by{" "}
               <span className="hover:text-[#14406D] cursor-pointer ">
                 Script-Jet

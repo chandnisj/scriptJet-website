@@ -11,13 +11,10 @@ function NavBar() {
 
   return (
     <nav
-      className="bg-blue-50 font-serif fixed top-0 w-full"
+      className="bg-neutral-100 font-serif fixed top-0 w-full"
       style={{ zIndex: "100" }}
     >
-      <div
-        className=" mx-auto px-2 sm:px-6 md:px-6 lg:px-8 py-4"
-        style={{ maxWidth: "80%" }}
-      >
+      <div className=" mx-auto px-2 sm:px-6 md:px-6 lg:px-8 py-4 xl:max-w-[80%] lg:max-w-[90%]  max-w-[80%]">
         <div className="flex items-center justify-between  h-full">
           <div className="flex items-center justify-center">
             <Link
@@ -28,43 +25,43 @@ function NavBar() {
               <img
                 src={text}
                 alt="Script-Jet"
-                className="md:h-full md:w-50 w-48 sm:h-full"
+                className="w-48 min-w-[192px] "
               />
             </Link>
           </div>
           <div className="hidden lg:block lg:items-center  ">
-            <div className="flex items-center justify-center text-xl space-x-16 ">
+            <div className="flex items-center justify-center text-xl space-x-16 text-[#14406D] ">
               <Link
                 to="/Service"
-                className="hover:text-gray-900 transition hover:scale-105 hover:underline decoration-[#14406D]"
+                className="hover:text-[#FE9800] transition hover:scale-105 hover:underline decoration-[#14406D]"
                 onClick={() => handleTechnology()}
               >
                 Service
               </Link>
               <Link
                 to="/Technologies"
-                className="hover:text-gray-900 transition hover:scale-105 hover:underline decoration-[#14406D]"
+                className="hover:text-[#FE9800] transition hover:scale-105 hover:underline decoration-[#14406D]"
                 onClick={() => handleTechnology()}
               >
                 Technology
               </Link>
               <Link
                 to="/Aboutus"
-                className="whitespace-nowrap hover:text-gray-900 transition hover:scale-105 hover:underline decoration-[#14406D]"
+                className="whitespace-nowrap hover:text-[#FE9800] transition hover:scale-105 hover:underline decoration-[#14406D]"
                 onClick={() => handleTechnology()}
               >
                 About-us
               </Link>
               <Link
                 to="/Career"
-                className="hover:text-gray-900 transition hover:scale-105 hover:underline decoration-[#14406D]"
+                className="hover:text-[#FE9800] transition hover:scale-105 hover:underline decoration-[#14406D]"
                 onClick={() => handleTechnology()}
               >
                 Career
               </Link>
               <Link
                 to="/Contactus"
-                className="bg-[#14406D] whitespace-nowrap hover:bg-gray-400 hover:text-black text-white font-serif  text-lg  border-0 py-2 px-3 focus:outline-none rounded-tr-xl rounded-bl-xl  mt-4 md:mt-0"
+                className="bg-[#14406D] whitespace-nowrap hover:bg-[#FE9800] hover:text-black text-white font-serif  text-lg  border-0 py-2 px-3 focus:outline-none rounded-tr-xl rounded-bl-xl  mt-4 md:mt-0"
                 onClick={() => handleTechnology()}
               >
                 Contact-Us
@@ -74,7 +71,7 @@ function NavBar() {
           <div className="-mr-2 flex lg:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+              className="inline-flex items-center justify-center p-2 rounded-md text-[#FE9800] hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
               aria-expanded="false"
             >
               <span className="sr-only">Open main menu</span>

@@ -2,19 +2,19 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import home from "../Screen/Images/home.jpg";
 import h2 from "../Screen/Images/home-2.jpg";
-import aboutus from "../Screen/Images/about.jpg";
-import home3 from "../Screen/Images/home-3.jpg";
+import aboutus from "../Screen/Images/more.jpeg";
+import home3 from "../Screen/Images/why-us.jpg";
 
 function Home() {
   const navigate = useNavigate();
   const webContent =
-    "Web development,refers to the tasks associated with creating, building, and maintaining websites and web applications that run online on a browser";
+    " Web development involves creating websites and web applications, using programming languages like HTML, CSS, JavaScript, and frameworks like React and Angular.";
   const mobilecontent =
-    "Establish a development team. Developing an app has become easier with the help of various software programs and online tools such as app builders";
+    "Mobile development involves creating apps for smartphones and tablets, using programming languages like Java, Swift, Kotlin, Flutter and React Native.";
   const designcontent =
-    "UI refers to the screens, buttons, toggles, icons, and other visual elements that you interact with when using a website, app, or other electronic device.";
+    "UI/UX design involves creating interfaces that are visually appealing, easy to navigate, and intuitive for users to interact with.";
   const testingcontent =
-    "Avail assistance from our QA & Testing experts and establish tangible control over the life cycle of your product.";
+    "QA and testing involve ensuring software quality, identifying and fixing bugs, and ensuring user experience meets expectations through testing methodologies";
   const [expanded, setExpanded] = useState(false);
   const [mobile, setMobile] = useState(false);
   const [Design, setdesign] = useState(false);
@@ -60,7 +60,7 @@ function Home() {
 
   return (
     <div className="">
-      <section className=" text-gray-600  body-font ">
+      <section className=" text-gray-600  body-font font-serif ">
         <div
           className="flex items-end justify-end w-screen"
           style={{ position: "relative" }}
@@ -71,22 +71,25 @@ function Home() {
             srcSet=""
             className="w-full "
             style={{
-              filter: "opacity(0.7)",
-              maxHeight: "50vh",
-              minHeight: "70vh",
+              filter: "opacity(0.8)",
+              maxHeight: "550px",
+              minHeight: "550px",
             }}
           />
           <div
-            className="w-screen flex  items-center justify-end  h-full"
+            className="w-screen flex  items-center justify-start  h-full"
             style={{ position: "absolute" }}
           >
-            <div className="flex-col text-center ">
-              <h1 className="text-5xl  text-[#14406D]  font-semibold  font-serif ">
-                Work Together
+            <div className="flex-col text-start md:w-1/2 sm:w-full w-full  ">
+              <h1 className="sm:text-3xl text-2xl   mx-10 text-[#14406D]  font-semibold  font-serif ">
+                Transforming your vision into a digital reality
               </h1>
-              <p className="sm:text-lg text-xl mx-10 text-black ">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Corporis optio ipsum reiciendis.
+              <p className="sm:text-lg text-md min-[320px]:text-lg mx-10  text-white  ">
+                Welcome to our IT company, where we specialize in providing
+                innovative web solutions to businesses of all sizes. Our team of
+                highly skilled professionals has years of experience in
+                developing customized websites, mobile applications, and
+                software solutions that meet the unique needs of our clients.
               </p>
             </div>
           </div>
@@ -96,7 +99,7 @@ function Home() {
       <section className="text-gray-600 body-font overflow-hidden font-serif ">
         <div className="mx-10 py-24 flex items-center justify-center flex-col  ">
           <div className="flex flex-col text-center w-full mb-20">
-            <h1 className="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">
+            <h1 className="sm:text-4xl text-3xl font-medium text-[#14406D] title-font mb-2 hover:text-[#FE9800] transition hover:scale-105 hover:underline decoration-[#14406D] ">
               Our Service
             </h1>
           </div>
@@ -106,7 +109,7 @@ function Home() {
                 <div className="sm:text-center text-center md:text-center h-full">
                   <Link
                     to="/Service#webdev"
-                    className=" text-2xl font-semibold "
+                    className=" text-2xl font-semibold text-[#14406D] hover:text-[#FE9800] transition "
                   >
                     Web Developement
                   </Link>
@@ -128,7 +131,7 @@ function Home() {
                 <div className="sm:text-center text-center md:text-center">
                   <Link
                     to="/Service#mobile"
-                    className="text-2xl font-semibold text-center "
+                    className="text-2xl font-semibold text-center text-[#14406D] hover:text-[#FE9800] transition "
                   >
                     Mobile App-Devlopement
                   </Link>
@@ -150,7 +153,7 @@ function Home() {
                 <div className="sm:text-center text-center md:text-center">
                   <Link
                     to="/Service#uiux"
-                    className="text-2xl font-semibold text-center  "
+                    className="text-2xl font-semibold text-center text-[#14406D] hover:text-[#FE9800] transition "
                   >
                     UI/Ux Design
                   </Link>
@@ -172,7 +175,7 @@ function Home() {
                 <div className="sm:text-center text-center md:text-center">
                   <Link
                     to="/Service#testing"
-                    className="text-2xl font-semibold text-center  "
+                    className="text-2xl font-semibold text-center text-[#14406D] hover:text-[#FE9800] transition  "
                   >
                     QA and Testing
                   </Link>
@@ -193,18 +196,18 @@ function Home() {
         </div>
       </section>
 
-      <section className="text-gray-600 body-font font-serif bg-gradient-to-r from-cyan-50 via-fuchsia-50 to-blue-50">
+      <section className="text-gray-600 body-font font-serif bg-gradient-to-r from-orange-50 to-blue-50">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <h1 className="sm:text-4xl text-3xl mb-4  font-semibold text-[#14406D] ">
               WHY US
             </h1>
             <p className="mb-8 leading-relaxed text-lg  ">
-              Our Consulting agency provides Consulting,ideas,and resources for
-              people Working to create social change.we bring the right people
-              together to challenge established thinking and drive
-              transformation.We work with our client to build the capabilities
-              that enable organizations to achieve sustainable advantage.
+              Script-jet provides Consulting,ideas,and resources for people
+              Working to create social change.we bring the right people together
+              to challenge established thinking and drive transformation.We work
+              with our client to build the capabilities that enable
+              organizations to achieve sustainable advantage.
             </p>
           </div>
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
@@ -227,19 +230,19 @@ function Home() {
             />
           </div>
           <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-semibold  text-[#14406D]">
+            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-semibold  text-[#14406D] hover:text-[#FE9800] transition">
               Hire Dedicated Developer
             </h1>
             <p className="mb-8 leading-relaxed">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore
-              doloremque inventore consequuntur nisi accusantium illum magni
-              quibusdam temporibus molestias fugiat quasi animi, eos laborum
-              voluptatem consequatur natus reiciendis ut totam.
+              Our dedicated developers are highly skilled,experienced and
+              cost-Effective in their respective fields. We bring a wealth of
+              knowledge and expertise to your project, ensuring that it is
+              delivered on time and to the highest quality.
             </p>
             <div className="flex justify-center">
               <Link
                 to="/Contactus"
-                className="bg-[#14406D] hover:bg-gray-400 hover:text-black text-white font-serif  text-lg border-0 px-3 py-2 focus:outline-none rounded-tr-xl rounded-bl-xl text-base mt-0"
+                className="bg-[#14406D] hover:bg-[#FE9800] hover:text-black text-white font-serif  text-lg border-0 px-3 py-2 focus:outline-none rounded-tr-xl rounded-bl-xl text-base mt-0"
               >
                 Hire-Now
               </Link>
@@ -248,10 +251,10 @@ function Home() {
         </div>
       </section>
 
-      <section className="text-gray-600 body-font bg-gray-100">
+      <section className="text-gray-600 body-font ">
         <div className="container px-5 py-24 mx-auto">
           <div className="text-center mb-20">
-            <h1 className="sm:text-3xl text-4xl font-serif font-semibold text-center  text-[#14406D] mb-4 transition  hover:scale-105 hover:underline decoration-[#14406D] ">
+            <h1 className="sm:text-3xl text-4xl font-serif font-semibold text-center  text-[#14406D] mb-4 transition hover:text-[#FE9800]  hover:scale-105 hover:underline decoration-[#14406D] ">
               Technology We work
             </h1>
           </div>
@@ -262,13 +265,16 @@ function Home() {
                   className="p-4 lg:w-1/4 sm:w-1/2 w-full flex flex-col items-center"
                   key={index}
                 >
-                  <h2 className=" tracking-widest text-gray-900 mb-4 text-2xl font-bold font-serif text-center sm:text-left cursor-pointer  ">
+                  <h2 className="tracking-widest text-[#FE9800] hover:text-[#14406D] mb-4 text-2xl font-bold font-serif text-center sm:text-left cursor-pointer  ">
                     {tech.title}
                   </h2>
                   <nav className="flex flex-col sm:items-start sm:text-left text-center items-center justify-center -mb-1 space-y-2.5 font-serif text-lg  text-[#14406D] ">
-                    {tech.value.map((value,i) => {
+                    {tech.value.map((value, i) => {
                       return (
-                        <div className="flex items-center justify-center " key={i}>
+                        <div
+                          className="flex items-center justify-center "
+                          key={i}
+                        >
                           <span className="text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                             <svg
                               fill="none"
@@ -315,7 +321,7 @@ function Home() {
           <div className="flex items-center justify-center p-10">
             <Link
               to="/Contactus"
-              className="bg-[#14406D] hover:bg-gray-400 hover:text-black text-white font-serif  text-lg border-0 py-2 px-3 focus:outline-none rounded-tr-xl rounded-bl-xl text-base mt-0"
+              className="bg-[#14406D] hover:bg-[#FE9800] hover:text-black text-white font-serif  text-lg border-0 py-2 px-3 focus:outline-none rounded-tr-xl rounded-bl-xl text-base mt-0"
             >
               Contact-Us
             </Link>

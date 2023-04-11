@@ -19,134 +19,97 @@ import boostrap from "../Screen/Images/Technologies/bootstrap.png";
 import tailwind from "../Screen/Images/Technologies/tailwind.jpg";
 
 function Technologies() {
+  // eslint-disable-next-line
   const [isRender, setIsRender] = useState(false);
   const contants = [
     {
       title: "ReactJs",
-      con: "The React.js framework is an open-source JavaScript framework and library developed by Facebook. Its used for building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript.",
+      con: "React.js is a popular JavaScript library for building user interfaces. It allows developers to create reusable UI components that can be easily rendered and updated based on changes in data. React uses a declarative programming style, which means that developers can focus on describing what the UI should look like, rather than how to update it. With its virtual DOM and efficient rendering approach, React provides a fast and responsive user experience for web applications. It is widely used by companies like Facebook, Netflix, and Airbnb.",
       src: react,
     },
     {
       title: "VueJs",
-      con: "Vue (pronounced /vjuː/, like view) is a JavaScript framework for building user interfaces. It builds on top of standard HTML, CSS, and JavaScript and provides a declarative and component-based programming model that helps you efficiently develop user interfaces, be they simple or complex.",
+      con: "Vue.js is a progressive JavaScript framework used for building user interfaces. It is designed to be incrementally adoptable, meaning developers can easily integrate it into an existing project. Vue.js offers a simple and flexible syntax, making it easy to learn and use. With its reactive data binding and component-based architecture, Vue.js allows developers to create complex applications with ease. It also has a vibrant community and a rich ecosystem of plugins and tools that make development even easier. Vue.js is widely used by companies like Alibaba, Xiaomi, and GitLab.",
       src: vue,
     },
     {
       title: "AngularJs",
-      con: "AngularJS is a structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTMLs syntax to express your applications components clearly and succinctly. AngularJSs data binding and dependency injection eliminate much of the code you would otherwise have to write.",
+      con: "AngularJS is a popular JavaScript framework developed by Google for building dynamic and scalable web applications. It allows developers to create reusable components and use declarative templates to build complex user interfaces. AngularJS also provides features like two-way data binding, dependency injection, and routing, making it a powerful tool for building single-page applications. With its active community and extensive documentation, AngularJS is a popular choice for enterprise-level applications. It has been used by companies like Microsoft, IBM, and PayPal.",
       src: angular,
     },
     {
       title: "NextJs",
-      con: "Nextjs is a React framework that gives you building blocks to create web applications.Byframework,we mean Next.js handles the tooling and configuration needed for React,and provides additional structure,features and optimizations for your application.",
+      con: "Next.js is a popular React framework that allows developers to build server-rendered applications with ease. It provides features like automatic code splitting, server-side rendering, and static site generation, making it a powerful tool for building high-performance web applications. Next.js also has a strong focus on developer experience, with features like zero-config setup and easy deployment to popular hosting platforms. It has been used by companies like Twitch, Hulu, and Nike.",
       src: next,
     },
     {
       title: "Android",
-      con: "Android is a mobile operating system based on a modified version of the Linux kernel and other open-source software, designed primarily for touchscreen mobile devices such as smartphones and tablets.",
+      con: "Android is the most widely used mobile operating system developed by Google. It is based on the Linux kernel and is used on a range of devices, including smartphones, tablets, and TVs. Android offers a customizable user interface, a vast app ecosystem through the Google Play Store, and access to Google's suite of apps and services. It also supports multi-tasking, multi-touch, and gesture-based inputs, making it a powerful and flexible platform for both users and developers. Android is used by millions of people around the world and is constantly evolving with new updates and features.",
       src: android,
     },
     {
       title: "Ios",
-      con: "Apple iOS stands for iPhone operating system and is designed for use with Apples multitouch devices. The mobile OS supports input through direct manipulation and responds to various user gestures, such as pinching, tapping and swiping.",
+      con: "iOS is the mobile operating system developed by Apple for its iPhone, iPad, and iPod Touch devices. It is known for its intuitive user interface, high security, and seamless integration with other Apple devices and services. iOS offers a vast app ecosystem through the App Store, and its features include Siri, FaceTime, and iMessage. iOS is also used by developers to build high-quality, native apps for Apple devices. It is a popular choice for users who prioritize privacy and a seamless user experience",
       src: ios,
     },
     {
       title: "Flutter",
-      con: "Flutter – a simple and high performance framework based on Dart language, provides high performance by rendering the UI directly in the operating system’s canvas rather than through native framework.",
+      con: "Flutter is a popular open-source UI toolkit developed by Google for building high-performance, natively compiled applications for mobile, web, and desktop platforms. It provides a rich set of pre-built widgets and tools, allowing developers to create beautiful and responsive apps with ease. Flutter uses the Dart programming language, which offers features like JIT and AOT compilation, making it fast and efficient. With its active community and extensive documentation, Flutter has gained popularity among developers and has been used by companies like Alibaba, Google, and Square",
       src: flutter,
     },
     {
       title: "ReactNative",
-      con: "React Native is a programming framework developed by Facebook that gives developers the ability to create full, native mobile apps for both iOS and Android using a universal programming language called JavaScript.",
+      con: "React Native is a popular open-source framework developed by Facebook for building mobile applications using the React library. It allows developers to build high-quality, native mobile apps for both iOS and Android platforms using a single codebase. React Native provides a fast and efficient way to develop cross-platform apps with native-like performance and look-and-feel. It has a vibrant community and an extensive library of pre-built components and modules, making development easier and faster. React Native has been used by companies like Bloomberg, Instagram, and Airbnb.",
       src: reactnative,
     },
     {
       title: "NodeJs",
-      con: "Node.js is an open-source, cross-platform JavaScript runtime environment and library for running web applications outside the client's browser. Ryan Dahl developed it in 2009, and its latest iteration, version 15.14, was released in April 2021. Developers use Node.",
+      con: "Node.js is an open-source, server-side JavaScript runtime environment that allows developers to build fast and scalable web applications. It uses an event-driven, non-blocking I/O model, which makes it lightweight and efficient. Node.js provides a rich set of libraries and modules, making it easy to build robust web applications. It also allows developers to easily build RESTful APIs and real-time applications. With its active community and large ecosystem of tools and frameworks, Node.js is widely used by companies like Netflix, LinkedIn, and Walmart.",
       src: node,
     },
     {
       title: "PHP",
-      con: "PHP (Hypertext Preprocessor) is known as a general-purpose scripting language that can be used to develop dynamic and interactive websites. It was among the first server-side languages that could be embedded into HTML, making it easier to add functionality to web pages without needing to call external files for data.",
+      con: "PHP is a popular, open-source server-side scripting language used for web development. It is designed to create dynamic web pages, process form data, and manage databases. PHP is easy to learn and widely supported by most web hosting providers. It offers a rich set of libraries and frameworks, making it easy to build powerful and scalable web applications. With its large community and extensive documentation, PHP has been used to develop a wide range of applications across various industries. It is a popular choice for content management systems like WordPress, Drupal, and Joomla.",
       src: php,
     },
     {
       title: "JAVA",
-      con: "Java was designed to be easy to use and is therefore easy to write, compile, debug, and learn than other programming languages. Java is object-oriented. This allows you to create modular programs and reusable code. Java is platform-independent.",
+      con: "Java is a popular, general-purpose programming language that is widely used for developing desktop, web, and mobile applications. It is known for its portability, scalability, and security. Java offers features like object-oriented programming, automatic memory management, and platform independence, making it a versatile and powerful language. With its vast community and rich ecosystem of libraries and frameworks, Java has been used to develop a wide range of applications across various industries. It is a popular choice for enterprise-level applications and has been used by companies like Oracle, Amazon, and Google.",
       src: java,
     },
     {
       title: "SQL",
-      con: "SQL is used to communicate with a database. According to ANSI (American National Standards Institute), it is the standard language for relational database management systems. SQL statements are used to perform tasks such as update data on a database, or retrieve data from a database.",
+      con: "SQL (Structured Query Language) is a popular programming language used to manage and manipulate relational databases. It provides a way to insert, update, retrieve, and delete data from databases. SQL is used by a wide range of applications and is supported by most relational database management systems (RDBMS). It offers a simple and intuitive syntax, making it easy for developers to write and manage database queries. With its rich set of features and functionality, SQL is widely used by businesses of all sizes for data management and analysis.",
       src: sql,
     },
     {
       title: "MYSQL",
-      con: "It may be anything from a simple shopping list to a picture gallery or the vast amounts of information in a corporate network. To add, access, and process data stored in a computer database, you need a database management system such as MySQL Server.",
+      con: "MySQL is a popular, open-source relational database management system (RDBMS) based on SQL. It is widely used for managing and storing data for web applications and websites. MySQL offers a range of features such as fast performance, high scalability, and ease of use. It is compatible with most programming languages and platforms, making it a versatile choice for developers. With its active community and support, MySQL has been used by companies like Facebook, Airbnb, and Twitter for data storage and management.",
       src: mysql,
     },
     {
       title: "MongoDb",
-      con: "MongoDB is a document database used to build highly available and scalable internet applications. With its flexible schema approach, it's popular with development teams using agile methodologies.",
+      con: "MongoDB is a popular open-source, document-oriented NoSQL database used for storing and managing unstructured data. It is designed to be flexible, scalable, and easily accessible. MongoDB uses a document model to store data in JSON-like format, making it easy to work with and query. It provides a rich set of features like dynamic schema, high availability, and automatic sharding, making it ideal for web applications that require fast and scalable data management. MongoDB is widely used by companies like eBay, Forbes, and Adobe for big data processing and management.",
       src: mongodb,
     },
     {
       title: "UIUX",
-      con: "UI refers to the screens, buttons, toggles, icons, and other visual elements that you interact with when using a website, app, or other electronic device. UX refers to the entire interaction you have with a product, including how you feel about the interaction.",
+      con: "UI (User Interface) and UX (User Experience) are important aspects of designing digital products like websites, mobile apps, and software. UI refers to the visual and interactive elements of a product, while UX focuses on how users interact with the product and the overall experience. A good UI/UX design can help improve user engagement, increase customer satisfaction, and drive business growth. It involves research, wireframing, prototyping, and testing to ensure that the product meets the needs and expectations of its users",
       src: ui,
     },
     {
       title: "Boostrap",
-      con: "Bootstrap makes responsive web design a reality. It makes it possible for a web page or app to detect the visitor's screen size and orientation and automatically adapt the display accordingly.",
+      con: "Bootstrap is a popular open-source front-end framework used for designing responsive and mobile-first web applications. It provides a set of HTML, CSS, and JavaScript templates and tools, making it easy for developers to create modern and responsive designs. Bootstrap offers a range of pre-built components and widgets such as navigation bars, forms, modals, and carousels, allowing developers to build complex UI elements quickly and easily. With its active community and extensive documentation, Bootstrap has been used by companies like Spotify, NASA, and Airbnb for web development.",
       src: boostrap,
     },
     {
       title: "TailWind",
-      con: "Tailwind is a CSS framework that provides us with single-purpose utility classes which are opinionated for the most part, and which help us design our web pages from right inside our markup or . js/. jsx/.",
+      con: "Tailwind CSS is a popular utility-first CSS framework used for building modern and responsive web applications. It provides a comprehensive set of pre-built classes and utilities for styling HTML elements, making it easy for developers to create custom designs without writing complex CSS code. Tailwind CSS allows developers to build a consistent design system by using predefined color, typography, and layout options. With its flexible and scalable design, Tailwind CSS has been used by companies like Atlassian, Amazon, and Slack for front-end development.",
       src: tailwind,
     },
   ];
   // eslint-disable-next-line
   const [filterContent, setFilterContent] = useState({});
-  const WrapTech = ({ items }) => {
-    setIsRender(true);
-    return (
-      <section className="text-gray-600 body-font font-serif">
-        {items.map((text, i) => {
-          return (
-            <div
-              className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
-              key={i}
-              id={text.title}
-            >
-              <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-                <img
-                  className="object-cover object-center rounded"
-                  alt="hero"
-                  src={text.src}
-                />
-              </div>
-              <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                <h1 className="title-font sm:text-4xl text-3xl mb-4 font-semibold  text-[#14406D] ">
-                  {text.title === "UIUX" ? "UI/UX" : text.title}
-                </h1>
-                <p className="mb-8 leading-relaxed">{text.con}</p>
-                <div className="flex justify-center">
-                  <Link
-                    to="/Contactus"
-                    className="bg-[#14406D] hover:bg-gray-400 hover:text-black text-white font-serif  text-lg border-0 px-3 py-2 focus:outline-none rounded-tr-xl rounded-bl-xl text-base mt-0"
-                  >
-                    Connect-Us
-                  </Link>
-                </div>
-              </div>
-            </div>
-          );
-        })}
-      </section>
-    );
-  };
 
   // useEffect(() => {
   //   const clickTech = localStorage.getItem("techValue");
@@ -206,12 +169,11 @@ function Technologies() {
       <section className=" text-gray-600  body-font ">
         <div className="container px-4 py-24 mx-auto">
           <div className="flex flex-col text-center w-full mb-12">
-            <h1 className="text-3xl text-5xl font-medium title-font mb-4  font-serif text-[#14406D] cursor-pointer transition  hover:scale-105">
+            <h1 className="text-3xl text-5xl font-medium title-font mb-4  font-serif text-[#14406D] hover:text-[#FE9800] cursor-pointer transition  hover:scale-105">
               Technology
             </h1>
             <p className="w-2/3  mx-auto leading-relaxed text-lg font-serif">
-              Quality in a service or product is not what you put into it. It’s
-              what the client or customer gets out of it
+            At Script-jet, We offer a comprehensive suite of technology solutions to help businesses of all sizes leverage the power of technology to achieve their goals. We specialize in providing end-to-end services that cover everything from infrastructure design and implementation to software development and maintenance. Our team of highly skilled technology experts has years of experience in delivering cutting-edge solutions that drive business success. We understand the importance of staying ahead of the curve when it comes to technology, which is why we are constantly exploring new tools and methodologies to ensure our clients get the best possible outcomes.
             </p>
           </div>
         </div>
@@ -220,7 +182,7 @@ function Technologies() {
       <section className="text-gray-600 body-font bg-gray-100 ">
         <div className="container px-5 py-20 mx-auto">
           <div className="text-center mb-20">
-            <h1 className="sm:text-3xl text-4xl font-serif font-bold text-center  text-[#14406D] mb-4 transition  hover:scale-105 hover:underline decoration-[#14406D] ">
+            <h1 className="sm:text-3xl text-4xl font-serif font-bold text-center  text-[#14406D] hover:text-[#FE9800] mb-4 transition  hover:scale-105 hover:underline decoration-[#14406D] ">
               Technology We work
             </h1>
           </div>
@@ -231,7 +193,7 @@ function Technologies() {
                   className="p-4 lg:w-1/4 sm:w-1/2 w-full flex flex-col items-center  "
                   key={i}
                 >
-                  <h2 className="tracking-widest text-gray-900 mb-4 text-2xl font-serif font-bold   text-center sm:text-left cursor-pointer  ">
+                  <h2 className="tracking-widest text-gray-900 mb-4 text-2xl font-serif font-bold text-[#FE9800]   text-center sm:text-left cursor-pointer  ">
                     {tech.title}
                   </h2>
                   <nav className="flex flex-col sm:items-start sm:text-left text-center items-center justify-center -mb-1 space-y-2.5 font-serif text-lg  text-[#14406D] ">
@@ -271,7 +233,39 @@ function Technologies() {
         </div>
       </section>
 
-      <WrapTech items={contants} />
+      <section className="text-gray-600 body-font font-serif">
+        {contants.map((text, i) => {
+          return (
+            <div
+              className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center "
+              key={i}
+              id={text.title}
+            >
+              <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                <img
+                  className="object-cover object-center rounded"
+                  alt="hero"
+                  src={text.src}
+                />
+              </div>
+              <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                <h1 className="title-font sm:text-4xl text-3xl mb-4 font-semibold  text-[#FE9800] cursor-pointer ">
+                  {text.title === "UIUX" ? "UI/UX" : text.title}
+                </h1>
+                <p className="mb-8 leading-relaxed text-[#14406D]">{text.con}</p>
+                <div className="flex justify-center">
+                  <Link
+                    to="/Contactus"
+                    className="bg-[#FE9800] hover:bg-[#14406D] hover:text-white text-white font-serif  text-lg border-0 px-3 py-2 focus:outline-none rounded-tr-xl rounded-bl-xl text-base mt-0"
+                  >
+                    Connect-Us
+                  </Link>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </section>
     </div>
   );
 }
