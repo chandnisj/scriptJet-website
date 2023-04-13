@@ -116,9 +116,9 @@ function Footer() {
         <div className=" ">
           <div className="mx-auto items-center justify-center  py-4 px-5 flex flex-col sm:flex-row">
             <span className="sm:mt-0 mt-0 sm:w-auto w-full sm:text-center text-center  text-[#FE9800] text-lg">
-              Copyright 2023. All Rights Reserved by{" "}
-              <span className="hover:text-[#14406D] cursor-pointer ">
-                Script-Jet
+              Copyright 2023. All Rights Reserved by
+              <span className="text-[#14406D] cursor-pointer mx-1 ">
+                 Script-Jet
               </span>
             </span>
           </div>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import {  useLocation } from "react-router-dom";
 import react from "../Screen/Images/Technologies/reactjs.jpg";
 import vue from "../Screen/Images/Technologies/Vuejs.jpeg";
 import angular from "../Screen/Images/Technologies/angular.jpeg";
@@ -179,11 +179,11 @@ function Technologies() {
         </div>
       </section>
 
-      <section className="text-gray-600 body-font bg-gray-100 ">
+      <section className="text-gray-600 body-font bg-gradient-to-r from-orange-50 to-blue-50 ">
         <div className="container px-5 py-20 mx-auto">
           <div className="text-center mb-20">
-            <h1 className="sm:text-3xl text-4xl font-serif font-bold text-center  text-[#14406D] hover:text-[#FE9800] mb-4 transition  hover:scale-105 hover:underline decoration-[#14406D] ">
-              Technology We work
+            <h1 className="sm:text-3xl text-4xl font-serif font-bold text-center  text-[#14406D] hover:text-[#FE9800] mb-4 transition  hover:scale-105 hover:underline underline-offset-8 decoration-[#14406D] ">
+              Technology We work with
             </h1>
           </div>
           <div className="flex flex-wrap -m-4">
@@ -193,7 +193,7 @@ function Technologies() {
                   className="p-4 lg:w-1/4 sm:w-1/2 w-full flex flex-col items-center  "
                   key={i}
                 >
-                  <h2 className="tracking-widest text-gray-900 mb-4 text-2xl font-serif font-bold text-[#FE9800]   text-center sm:text-left cursor-pointer  ">
+                  <h2 className="tracking-widest  mb-4 text-2xl font-serif font-bold text-[#14406D] hover:text-[#FE9800]  text-center sm:text-left cursor-pointer  ">
                     {tech.title}
                   </h2>
                   <nav className="flex flex-col sm:items-start sm:text-left text-center items-center justify-center -mb-1 space-y-2.5 font-serif text-lg  text-[#14406D] ">
@@ -249,18 +249,11 @@ function Technologies() {
                 />
               </div>
               <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                <h1 className="title-font sm:text-4xl text-3xl mb-4 font-semibold  text-[#FE9800] cursor-pointer ">
+                <h1 className="title-font sm:text-4xl text-3xl mb-4 font-semibold  text-[#14406D] cursor-pointer ">
                   {text.title === "UIUX" ? "UI/UX" : text.title}
                 </h1>
-                <p className="mb-8 leading-relaxed text-[#14406D]">{text.con}</p>
-                <div className="flex justify-center">
-                  <Link
-                    to="/Contactus"
-                    className="bg-[#FE9800] hover:bg-[#14406D] hover:text-white text-white font-serif  text-lg border-0 px-3 py-2 focus:outline-none rounded-tr-xl rounded-bl-xl text-base mt-0"
-                  >
-                    Connect-Us
-                  </Link>
-                </div>
+                <p className="mb-8 leading-relaxed text-gray-600">{text.con}</p>
+                
               </div>
             </div>
           );

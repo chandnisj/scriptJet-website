@@ -32,10 +32,10 @@ function Contactus() {
             src={cs}
             alt=""
             className="min-w-full  h-3/6 max-h-96 backdrop-blur-xl"
-            style={{ filter: " contrast(1.1) opacity(0.6)" }}
+            style={{ filter: " contrast(1.1) opacity(0.8)" }}
           />
           <div className="flex items-center justify-center absolute h-full   w-screen">
-            <h1 className=" text-3xl   text-white  font-semibold  font-serif cursor-pointer ">
+            <h1 className=" text-5xl   text-white  font-semibold  font-serif cursor-pointer ">
               {" "}
               Contact-Us{" "}
             </h1>
@@ -117,7 +117,7 @@ function Contactus() {
             <div className="lg:w-24 md:w-20 sm:w-auto text-center">
               <Link
                 to="/Contactus"
-                className="bg-[#14406D] hover:bg-gray-400 hover:text-black text-white font-serif  text-lg border-0 py-1 px-3 focus:outline-none rounded-tr-xl rounded-bl-xl text-base mt-4 md:mt-0"
+                className="bg-[#14406D] hover:bg-[#FE9800] hover:text-white text-white font-serif  text-lg border-0 py-1 px-3 focus:outline-none rounded-tr-xl rounded-bl-xl text-base mt-4 md:mt-0"
                 onClick={handalclick}
               >
                 Send

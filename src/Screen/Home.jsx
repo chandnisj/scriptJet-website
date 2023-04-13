@@ -7,32 +7,7 @@ import home3 from "../Screen/Images/why-us.jpg";
 
 function Home() {
   const navigate = useNavigate();
-  const webContent =
-    " Web development involves creating websites and web applications, using programming languages like HTML, CSS, JavaScript, and frameworks like React and Angular.";
-  const mobilecontent =
-    "Mobile development involves creating apps for smartphones and tablets, using programming languages like Java, Swift, Kotlin, Flutter and React Native.";
-  const designcontent =
-    "UI/UX design involves creating interfaces that are visually appealing, easy to navigate, and intuitive for users to interact with.";
-  const testingcontent =
-    "QA and testing involve ensuring software quality, identifying and fixing bugs, and ensuring user experience meets expectations through testing methodologies";
-  const [expanded, setExpanded] = useState(false);
-  const [mobile, setMobile] = useState(false);
-  const [Design, setdesign] = useState(false);
-  const [testting, setTesting] = useState(false);
-  const handleClick = () => {
-    setExpanded(!expanded);
-  };
-  const handalchange = () => {
-    setMobile(!mobile);
-  };
-  const Designchange = () => {
-    setdesign(!Design);
-  };
-  const Testchange = () => {
-    setTesting(!testting);
-  };
-
-  const Technologies = [
+    const Technologies = [
     {
       title: "FrontEnd",
       value: [
@@ -81,7 +56,7 @@ function Home() {
             style={{ position: "absolute" }}
           >
             <div className="flex-col text-start md:w-1/2 sm:w-full w-full  ">
-              <h1 className="sm:text-3xl text-2xl   mx-10 text-[#14406D]  font-semibold  font-serif ">
+              <h1 className="sm:text-3xl text-2xl   mx-10 text-[#FE9800]  font-semibold  font-serif ">
                 Transforming your vision into a digital reality
               </h1>
               <p className="sm:text-lg text-md min-[320px]:text-lg mx-10  text-white  ">
@@ -99,13 +74,13 @@ function Home() {
       <section className="text-gray-600 body-font overflow-hidden font-serif ">
         <div className="mx-10 py-24 flex items-center justify-center flex-col  ">
           <div className="flex flex-col text-center w-full mb-20">
-            <h1 className="sm:text-4xl text-3xl font-medium text-[#14406D] title-font mb-2 hover:text-[#FE9800] transition hover:scale-105 hover:underline decoration-[#14406D] ">
-              Our Service
+            <h1 className="sm:text-4xl text-3xl font-medium text-[#14406D] title-font mb-2  transition hover:scale-105 hover:underline underline-offset-8 decoration-[#14406D] ">
+              Our <span className="text-[#FE9800]">Service</span>
             </h1>
           </div>
           <div className="grid lg:grid-cols-4  md:grid-cols-2 sm:grid-cols-2  grid-cols-1 -m-2 ">
-            <div className="p-2 h-64">
-              <div className="h-full p-4 rounded-lg border-2 border-gray-100 flex flex-col relative overflow-hidden bg-blue-50">
+            <div className="p-2 h-auto">
+              <div className="h-full p-4 rounded-lg border-2 border-gray-100 flex flex-col relative overflow-hidden bg-gradient-to-r from-orange-50 to-blue-50">
                 <div className="sm:text-center text-center md:text-center h-full">
                   <Link
                     to="/Service#webdev"
@@ -114,20 +89,13 @@ function Home() {
                     Web Developement
                   </Link>
                   <p className="flex-row items-center text-center mt-4 text-lg text-[#14406D] mb-8">
-                    {webContent.substr(0, 80)}
-                    {expanded ? webContent.substr(50) : "..."}.
-                    <button
-                      className="flex-col  text-gray-300 font-semibold focus:outline-none"
-                      onClick={handleClick}
-                    >
-                      {expanded ? "Read less" : "Read more"}
-                    </button>
+                   Web development involves creating websites and web applications, using programming languages like HTML, CSS, JavaScript, and frameworks like React and Angular.
                   </p>
                 </div>
               </div>
             </div>
             <div className="p-2 h-64">
-              <div className=" p-4 h-full rounded-lg border-2 border-gray-100 flex  flex-col relative overflow-hidden bg-blue-50">
+              <div className=" p-4 h-full rounded-lg border-2 border-gray-100 flex  flex-col relative overflow-hidden bg-gradient-to-r from-orange-50 to-blue-50">
                 <div className="sm:text-center text-center md:text-center">
                   <Link
                     to="/Service#mobile"
@@ -136,20 +104,13 @@ function Home() {
                     Mobile App-Devlopement
                   </Link>
                   <p className="flex-row items-center text-center mt-4 text-lg text-[#14406D]  mb-8">
-                    {mobilecontent.substr(0, 80)}
-                    {mobile ? mobilecontent.substr(50) : "..."}.
-                    <button
-                      className="flex-col  text-gray-300 font-semibold focus:outline-none"
-                      onClick={handalchange}
-                    >
-                      {mobile ? "Read less" : "Read more"}
-                    </button>
+                  Mobile development involves creating apps for smartphones and tablets, using programming languages like Java, Swift, Kotlin, Flutter and React Native.
                   </p>
                 </div>
               </div>
             </div>
             <div className="p-2 h-64">
-              <div className=" p-4 h-full rounded-lg border-2 border-gray-100 flex flex-col relative overflow-hidden bg-blue-50">
+              <div className=" p-4 h-full rounded-lg border-2 border-gray-100 flex flex-col relative overflow-hidden bg-gradient-to-r from-orange-50 to-blue-50">
                 <div className="sm:text-center text-center md:text-center">
                   <Link
                     to="/Service#uiux"
@@ -158,20 +119,13 @@ function Home() {
                     UI/Ux Design
                   </Link>
                   <p className="flex-row items-center text-center mt-4 text-lg text-[#14406D]  mb-8">
-                    {designcontent.substr(0, 80)}
-                    {Design ? designcontent.substr(50) : "..."}.
-                    <button
-                      className="flex-col  text-gray-300 font-semibold focus:outline-none"
-                      onClick={Designchange}
-                    >
-                      {Design ? "Read less" : "Read more"}
-                    </button>
+                  UI/UX design involves creating interfaces that are visually appealing, easy to navigate, and intuitive for users to interact with.
                   </p>
                 </div>
               </div>
             </div>
             <div className="p-2 h-64 ">
-              <div className=" p-4 h-full rounded-lg border-2 border-gray-100 flex flex-col relative overflow-hidden bg-blue-50">
+              <div className=" p-4 h-full rounded-lg border-2 border-gray-100 flex flex-col relative overflow-hidden bg-gradient-to-r from-orange-50 to-blue-50">
                 <div className="sm:text-center text-center md:text-center">
                   <Link
                     to="/Service#testing"
@@ -180,14 +134,7 @@ function Home() {
                     QA and Testing
                   </Link>
                   <p className="flex-row items-center text-center mt-4 text-lg text-[#14406D] overflow-hidden  mb-8">
-                    {testingcontent.substr(0, 80)}
-                    {testting ? testingcontent.substr(50) : "..."}.
-                    <button
-                      className="flex-col  text-gray-300 font-semibold focus:outline-none"
-                      onClick={Testchange}
-                    >
-                      {testting ? "Read less" : "Read more"}
-                    </button>
+                  QA and testing involve ensuring software quality, identifying and fixing bugs, and ensuring user experience meets expectations through testing methodologies
                   </p>
                 </div>
               </div>
@@ -242,7 +189,7 @@ function Home() {
             <div className="flex justify-center">
               <Link
                 to="/Contactus"
-                className="bg-[#14406D] hover:bg-[#FE9800] hover:text-black text-white font-serif  text-lg border-0 px-3 py-2 focus:outline-none rounded-tr-xl rounded-bl-xl text-base mt-0"
+                className="bg-[#14406D] hover:bg-[#FE9800] hover:text-white text-white font-serif  text-lg border-0 px-3 py-2 focus:outline-none rounded-lg text-base mt-0"
               >
                 Hire-Now
               </Link>
@@ -251,21 +198,21 @@ function Home() {
         </div>
       </section>
 
-      <section className="text-gray-600 body-font ">
+      <section className="text-gray-600 body-font bg-gradient-to-r from-orange-50 to-blue-50">
         <div className="container px-5 py-24 mx-auto">
           <div className="text-center mb-20">
             <h1 className="sm:text-3xl text-4xl font-serif font-semibold text-center  text-[#14406D] mb-4 transition hover:text-[#FE9800]  hover:scale-105 hover:underline decoration-[#14406D] ">
-              Technology We work
+              Technology We work with
             </h1>
           </div>
           <div className="flex flex-wrap -m-4">
-            {Tech.map((tech, index) => {
+            {Tech.map((tech,index) => {
               return (
                 <div
                   className="p-4 lg:w-1/4 sm:w-1/2 w-full flex flex-col items-center"
                   key={index}
                 >
-                  <h2 className="tracking-widest text-[#FE9800] hover:text-[#14406D] mb-4 text-2xl font-bold font-serif text-center sm:text-left cursor-pointer  ">
+                  <h2 className="tracking-widest text-[#FE9800]  mb-4 text-2xl font-bold font-serif text-center sm:text-left cursor-pointer  ">
                     {tech.title}
                   </h2>
                   <nav className="flex flex-col sm:items-start sm:text-left text-center items-center justify-center -mb-1 space-y-2.5 font-serif text-lg  text-[#14406D] ">
@@ -306,22 +253,15 @@ function Home() {
         </div>
       </section>
 
-      <div className="flex " style={{ position: "relative" }}>
-        <img
-          src={aboutus}
-          alt=""
-          srcSet=""
-          className="min-w-full  h-3/6  max-h-96 backdrop-blur-xl "
-          style={{ filter: " contrast(1.1) brightness(60%) " }}
-        />
-        <div className="flex-col items-center  justify-center absolute h-full  w-screen py-20 ">
-          <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-xl text-center  text-white  font-bold  font-serif ">
+      <div className="bg-cover bg-center brightness-75  " style={{ position: "relative",backgroundImage:`url(${aboutus})`,filter:'',height:'50vh' }}>
+        <div className="flex-col items-center  justify-center  h-full  w-screen py-20 ">
+          <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-xl text-center  text-[#14406D]  font-bold  font-serif ">
             More productive Business?
           </h1>
           <div className="flex items-center justify-center p-10">
             <Link
               to="/Contactus"
-              className="bg-[#14406D] hover:bg-[#FE9800] hover:text-black text-white font-serif  text-lg border-0 py-2 px-3 focus:outline-none rounded-tr-xl rounded-bl-xl text-base mt-0"
+              className="bg-[#14406D] hover:bg-[#FE9800] hover:text-white text-white font-serif  text-lg border-0 py-2 px-3 focus:outline-none rounded-lg text-base mt-0"
             >
               Contact-Us
             </Link>
