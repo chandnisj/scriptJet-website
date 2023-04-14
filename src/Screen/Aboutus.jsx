@@ -4,22 +4,25 @@ import about from "../Screen/Images/about-2.jpg";
 import { Link } from "react-router-dom";
 
 function Aboutus() {
- 
   return (
     <div>
-      <div className="flex " style={{ position: "relative" }}>
-        <img
-          src={aboutus}
-          alt=""
-          className="min-w-full  h-3/6 max-h-96 backdrop-blur-xl "
-          style={{ filter: " contrast(1.1) brightness(75%)" }}
-        />
-        <div className="flex items-center  justify-center absolute h-full  w-screen">
-          <h5 className="lg:text-6xl md:text-5xl sm:text-7xl text-5xl text-center  text-white  font-bold  font-serif ">
+      <div
+        className="bg-cover bg-center flex flex-col items-center  justify-center contrast-50  "
+        style={{
+          backgroundImage: `url(${aboutus})`,
+          filter: "",
+          height: "550px",
+          maxHeight: "550px",
+          minHeight: "550px",
+        }}
+      >
+        <div className="flex flex-col items-center  justify-center  h-full  w-screen   ">
+          <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-2xl text-center  text-[#14406D]  font-bold  font-serif cursor-pointer  ">
             About-Us
-          </h5>
+          </h1>
         </div>
       </div>
+
       <section className="text-gray-600 body-font font-serif">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
@@ -30,11 +33,11 @@ function Aboutus() {
             />
           </div>
           <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium font-serif text-[#14406D] ">
+            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium font-serif text-[#14406D] cursor-pointer ">
               Technology like art is a soaring exercise of the human
               imagination.
             </h1>
-            <p className="mb-8 leading-relaxed text-gray-500 text-lg">
+            <p className="mb-8 leading-relaxed text-gray-600 text-lg">
               At our core, we believe in delivering exceptional customer service
               and exceeding expectations. Our team is comprised of experienced
               developers, designers, and consultants who are passionate about
@@ -42,7 +45,7 @@ function Aboutus() {
               receive the best possible outcomes and achieve their business
               objectives.
             </p>
-            <p className="mb-8 leading-relaxed  text-gray-500 text-lg">
+            <p className="mb-8 leading-relaxed  text-gray-600 text-lg">
               We offer a comprehensive range of services, including software
               development, website design and development, IT consulting, cloud
               computing, cybersecurity, and digital marketing. We are committed
@@ -55,24 +58,25 @@ function Aboutus() {
         </div>
       </section>
 
-      <section  className="text-gray-600 body-font font-serif">
-        <div  className="py-24 ">
-          <div  className="flex flex-wrap  mx-4  text-center items-center justify-center ">
-            <div  className="md:w-1/3 sm:w-1/3 w-full h-48    mb-10 px-4 mx-2 rounded-lg  bg-gradient-to-r from-orange-100 to-blue-100">
-              <h2  className="text-2xl  font-medium text-[#FE9800]  mt-6 mb-3 whitespace-nowrap cursor-pointer">
-                Our <span className="text-[#14406D]"> Mission</span> 
+      <section className="text-gray-600 body-font font-serif">
+        <div className="py-24 ">
+          <div className="flex flex-wrap  mx-4  text-center items-center justify-center ">
+            <div className="md:w-1/3 sm:w-1/3 w-full h-48    mb-10 px-4 mx-2 rounded-lg  bg-gradient-to-r from-orange-100 to-blue-100">
+              <h2 className="text-2xl  font-medium text-[#FE9800]  mt-6 mb-3 whitespace-nowrap cursor-pointer">
+                Our <span className="text-[#14406D]"> Mission</span>
               </h2>
-              <p  className="leading-relaxed text-base text-[#14406D]">
-              To provide exceptional IT services and deliver value to clients through innovation, expertise, and collaboration.
+              <p className="leading-relaxed text-base text-[#14406D]">
+                To provide exceptional IT services and deliver value to clients
+                through innovation, expertise, and collaboration.
               </p>
             </div>
-            <div  className="h-48 md:w-1/3 sm:w-1/3 w-full mb-10 px-4 mx-2 rounded-lg  bg-gradient-to-r from-orange-100 to-blue-100">
-              <h2  className="text-2xl font-medium  text-[#FE9800] mt-6 mb-3 whitespace-nowrap cursor-pointer">
+            <div className="h-48 md:w-1/3 sm:w-1/3 w-full mb-10 px-4 mx-2 rounded-lg  bg-gradient-to-r from-orange-100 to-blue-100">
+              <h2 className="text-2xl font-medium  text-[#FE9800] mt-6 mb-3 whitespace-nowrap cursor-pointer">
                 {" "}
-                Our <span className="text-[#14406D]">Vision</span> 
+                Our <span className="text-[#14406D]">Vision</span>
               </h2>
-              <p  className="leading-relaxed text-base text-[#14406D]">
-              To revolutionize the IT industry with innovative solutions.
+              <p className="leading-relaxed text-base text-[#14406D]">
+                To revolutionize the IT industry with innovative solutions.
               </p>
             </div>
           </div>

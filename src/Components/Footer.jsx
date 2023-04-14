@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import text from "../Image-logo/text.png";
+//import text from "../Image-logo/text.png";
 function Footer() {
   
   return (
@@ -14,18 +14,19 @@ function Footer() {
                 className="flex title-font font-medium  lg:inline-block items-center justify-center  text-gray-900  md:mb-0"
               >
                 {" "}
-                <img
-                  src={text}
-                  alt="Script-Jet"
-                  className="md:h-full md:w-48 w-48 "
-                />
+                <span className="text-4xl text-[#14406D] leading-relaxed font-['Arial'] tracking-wider font-semibold">
+                Script-
+              </span>
+              <span className="text-4xl text-[#FE9800] leading-relaxed font-['Arial'] tracking-wider font-semibold">
+                Jet
+              </span>
               </Link>
               <p>
               To revolutionize the IT industry with innovative solutions.
               </p>
             </div>
             <div className="lg:w-1/2 md:w-1/2 w-full  px-4  text-lg whitespace-nowrap" >
-              <h2 className="title-font text-2xl font-bold  text-[#FE9800] tracking-widest  mb-4">
+              <h2 className="title-font text-2xl font-bold  text-[#FE9800] tracking-widest  mb-4 cursor-pointer">
                 Sloutions
               </h2>
               <nav className="list-none mb-5">
@@ -73,7 +74,7 @@ function Footer() {
               </nav>
             </div>
 
-            <div className="lg:w-full md:w-full sm:item-center sm:justify-center item-center justify-center  sm:mb-10 mb-10    px-4  text-lg  ">
+            <div className="lg:w-full md:w-full sm:item-center sm:justify-center item-center justify-center  sm:mb-10 mb-10    px-4  text-lg cursor-pointer ">
               <h2 className="title-font  text-2xl font-bold   text-[#FE9800] tracking-widest   mb-4">
                 Contact-us
               </h2>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import text from "../Image-logo/text.png";
-import { Link, useNavigate,useLocation } from "react-router-dom";
+//import text from "../Image-logo/text.png";
+//import text2 from "../Image-logo/text2.png";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 function NavBar() {
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +12,7 @@ function NavBar() {
   const location = useLocation();
   return (
     <nav
-      className=" bg-orange-100  font-serif fixed top-0 w-full"
+      className="bg-slate-50  font-serif fixed top-0 w-full"
       style={{ zIndex: "100" }}
     >
       <div className=" mx-auto px-2 sm:px-6 md:px-6 lg:px-8 py-4 xl:max-w-[80%] lg:max-w-[90%]  max-w-[80%]">
@@ -19,33 +20,37 @@ function NavBar() {
           <div className="flex items-center justify-center">
             <Link
               to="/"
-              className="flex title-font font-medium items-center justify-center  text-gray-900  md:mb-0"
+              className="flex title-font font-medium items-center justify-center    md:mb-0"
               onClick={() => handleTechnology()}
             >
-              <img
-                src={text}
-                alt="Script-Jet"
-                className="w-48 min-w-[192px] "
-              />
+              <span className="text-6xl text-[#14406D] leading-relaxed font-['Arial'] tracking-wider font-semibold">
+                Script-
+              </span>
+              <span className="text-6xl text-[#FE9800] leading-relaxed font-['Arial'] tracking-wider font-semibold">
+                Jet
+              </span>
             </Link>
           </div>
-          <div className="hidden lg:block lg:items-center  ">
+          <div className=" hidden lg:block lg:items-center  ">
             <div className="flex items-center justify-center text-xl space-x-16 text-[#14406D] ">
               <Link
                 to="/Service"
                 className={`mr-4 hover:text-[#FE9800] active:text-[#FE9800]  transition hover:scale-105  hover:underline underline-offset-8 decoration-[#FE9800] ${
-                  location.pathname === "/Service" ? "text-[#FE9800] underline underline-offset-8 " : ""
-                }`}  
+                  location.pathname === "/Service"
+                    ? "text-[#FE9800] underline underline-offset-8 "
+                    : ""
+                }`}
                 onClick={() => handleTechnology()}
-
               >
                 Service
               </Link>
               <Link
                 to="/Technologies"
                 className={`mr-4 hover:text-[#FE9800] active:text-[#FE9800]  transition hover:scale-105  hover:underline underline-offset-8 decoration-[#FE9800] ${
-                  location.pathname === "/Technologies" ? "text-[#FE9800] underline underline-offset-8 " : ""
-                }`}  
+                  location.pathname === "/Technologies"
+                    ? "text-[#FE9800] underline underline-offset-8 "
+                    : ""
+                }`}
                 onClick={() => handleTechnology()}
               >
                 Technology
@@ -53,8 +58,10 @@ function NavBar() {
               <Link
                 to="/Aboutus"
                 className={`mr-4 hover:text-[#FE9800] active:text-[#FE9800] whitespace-nowrap   transition hover:scale-105  hover:underline underline-offset-8 decoration-[#FE9800] ${
-                  location.pathname === "/Aboutus" ? "text-[#FE9800] underline underline-offset-8 " : ""
-                }`}  
+                  location.pathname === "/Aboutus"
+                    ? "text-[#FE9800] underline underline-offset-8 "
+                    : ""
+                }`}
                 onClick={() => handleTechnology()}
               >
                 About-us
@@ -62,15 +69,17 @@ function NavBar() {
               <Link
                 to="/Career"
                 className={`mr-4 hover:text-[#FE9800] active:text-[#FE9800] whitespace-nowrap   transition hover:scale-105  hover:underline underline-offset-8 decoration-[#FE9800] ${
-                  location.pathname === "/Career" ? "text-[#FE9800] underline underline-offset-8 " : ""
-                }`}  
+                  location.pathname === "/Career"
+                    ? "text-[#FE9800] underline underline-offset-8 "
+                    : ""
+                }`}
                 onClick={() => handleTechnology()}
               >
                 Career
               </Link>
               <Link
                 to="/Contactus"
-                className="bg-[#14406D] whitespace-nowrap hover:bg-[#FE9800] hover:text-black text-white font-serif  text-lg  border-0 py-2 px-3 focus:outline-none rounded-lg  mt-4 md:mt-0"
+                className="bg-[#14406D] whitespace-nowrap hover:bg-[#FE9800] hover:text-white text-white font-serif  text-lg  border-0 py-2 px-3 focus:outline-none rounded-lg  mt-4 md:mt-0"
                 onClick={() => handleTechnology()}
               >
                 Contact-Us

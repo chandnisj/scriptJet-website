@@ -7,7 +7,7 @@ import home3 from "../Screen/Images/why-us.jpg";
 
 function Home() {
   const navigate = useNavigate();
-    const Technologies = [
+  const Technologies = [
     {
       title: "FrontEnd",
       value: [
@@ -32,6 +32,8 @@ function Home() {
     localStorage.setItem("techValue", value);
     navigate("/Technologies");
   };
+
+  
 
   return (
     <div className="">
@@ -59,7 +61,7 @@ function Home() {
               <h1 className="sm:text-3xl text-2xl   mx-10 text-[#FE9800]  font-semibold  font-serif ">
                 Transforming your vision into a digital reality
               </h1>
-              <p className="sm:text-lg text-md min-[320px]:text-lg mx-10  text-white  ">
+              <p className="sm:text-lg text-md  min-[320px]:text-lg mx-10  text-white  ">
                 Welcome to our IT company, where we specialize in providing
                 innovative web solutions to businesses of all sizes. Our team of
                 highly skilled professionals has years of experience in
@@ -89,7 +91,9 @@ function Home() {
                     Web Developement
                   </Link>
                   <p className="flex-row items-center text-center mt-4 text-lg text-[#14406D] mb-8">
-                   Web development involves creating websites and web applications, using programming languages like HTML, CSS, JavaScript, and frameworks like React and Angular.
+                    Web development involves creating websites and web
+                    applications, using programming languages like HTML, CSS,
+                    JavaScript, and frameworks like React and Angular.
                   </p>
                 </div>
               </div>
@@ -104,7 +108,9 @@ function Home() {
                     Mobile App-Devlopement
                   </Link>
                   <p className="flex-row items-center text-center mt-4 text-lg text-[#14406D]  mb-8">
-                  Mobile development involves creating apps for smartphones and tablets, using programming languages like Java, Swift, Kotlin, Flutter and React Native.
+                    Mobile development involves creating apps for smartphones
+                    and tablets, using programming languages like Java, Swift,
+                    Kotlin, Flutter and React Native.
                   </p>
                 </div>
               </div>
@@ -119,7 +125,9 @@ function Home() {
                     UI/Ux Design
                   </Link>
                   <p className="flex-row items-center text-center mt-4 text-lg text-[#14406D]  mb-8">
-                  UI/UX design involves creating interfaces that are visually appealing, easy to navigate, and intuitive for users to interact with.
+                    UI/UX design involves creating interfaces that are visually
+                    appealing, easy to navigate, and intuitive for users to
+                    interact with.
                   </p>
                 </div>
               </div>
@@ -134,7 +142,9 @@ function Home() {
                     QA and Testing
                   </Link>
                   <p className="flex-row items-center text-center mt-4 text-lg text-[#14406D] overflow-hidden  mb-8">
-                  QA and testing involve ensuring software quality, identifying and fixing bugs, and ensuring user experience meets expectations through testing methodologies
+                    QA and testing involve ensuring software quality,
+                    identifying and fixing bugs, and ensuring user experience
+                    meets expectations through testing methodologies.
                   </p>
                 </div>
               </div>
@@ -146,8 +156,8 @@ function Home() {
       <section className="text-gray-600 body-font font-serif bg-gradient-to-r from-orange-50 to-blue-50">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h1 className="sm:text-4xl text-3xl mb-4  font-semibold text-[#14406D] ">
-              WHY US
+            <h1 className="sm:text-4xl text-3xl mb-4  font-semibold text-[#14406D] cursor-pointer ">
+              WHY <spna className='text-[#FE9800]'>US</spna> 
             </h1>
             <p className="mb-8 leading-relaxed text-lg  ">
               Script-jet provides Consulting,ideas,and resources for people
@@ -177,7 +187,7 @@ function Home() {
             />
           </div>
           <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-semibold  text-[#14406D] hover:text-[#FE9800] transition">
+            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-semibold  text-[#14406D] hover:text-[#FE9800] transition cursor-pointer">
               Hire Dedicated Developer
             </h1>
             <p className="mb-8 leading-relaxed">
@@ -201,12 +211,12 @@ function Home() {
       <section className="text-gray-600 body-font bg-gradient-to-r from-orange-50 to-blue-50">
         <div className="container px-5 py-24 mx-auto">
           <div className="text-center mb-20">
-            <h1 className="sm:text-3xl text-4xl font-serif font-semibold text-center  text-[#14406D] mb-4 transition hover:text-[#FE9800]  hover:scale-105 hover:underline decoration-[#14406D] ">
+            <h1 className="sm:text-3xl text-4xl font-serif font-semibold text-center cursor-pointer  text-[#14406D] mb-4 transition hover:text-[#FE9800]  hover:scale-105 hover:underline underline-offset-8 decoration-[#14406D] ">
               Technology We work with
             </h1>
           </div>
           <div className="flex flex-wrap -m-4">
-            {Tech.map((tech,index) => {
+            {Tech.map((tech, index) => {
               return (
                 <div
                   className="p-4 lg:w-1/4 sm:w-1/2 w-full flex flex-col items-center"
@@ -253,12 +263,20 @@ function Home() {
         </div>
       </section>
 
-      <div className="bg-cover bg-center brightness-75  " style={{ position: "relative",backgroundImage:`url(${aboutus})`,filter:'',height:'50vh' }}>
-        <div className="flex-col items-center  justify-center  h-full  w-screen py-20 ">
-          <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-xl text-center  text-[#14406D]  font-bold  font-serif ">
-            More productive Business?
+      <div
+        className="bg-cover bg-center brightness-75  "
+        style={{
+          position: "relative",
+          backgroundImage: `url(${aboutus})`,
+          filter: "",
+          height: "50vh",
+        }}
+      >
+        <div className="flex flex-col items-center  justify-center  h-full  w-screen ">
+          <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-xl text-center  text-[#14406D]  font-bold  font-serif cursor-pointer  ">
+            More <spna className="text-[#FE9800]"> productive </spna> Business?
           </h1>
-          <div className="flex items-center justify-center p-10">
+          <div className="flex items-center justify-center pt-10">
             <Link
               to="/Contactus"
               className="bg-[#14406D] hover:bg-[#FE9800] hover:text-white text-white font-serif  text-lg border-0 py-2 px-3 focus:outline-none rounded-lg text-base mt-0"

@@ -17,7 +17,7 @@ import mongodb from "../Screen/Images/Technologies/mongoDB.jpeg";
 import ui from "../Screen/Images/Technologies/ui.jpg";
 import boostrap from "../Screen/Images/Technologies/bootstrap.png";
 import tailwind from "../Screen/Images/Technologies/tailwind.jpg";
-
+import aboutus from "../Screen/Images/more.jpeg";
 function Technologies() {
   // eslint-disable-next-line
   const [isRender, setIsRender] = useState(false);
@@ -166,18 +166,28 @@ function Technologies() {
 
   return (
     <div>
-      <section className=" text-gray-600  body-font ">
-        <div className="container px-4 py-24 mx-auto">
-          <div className="flex flex-col text-center w-full mb-12">
-            <h1 className="text-3xl text-5xl font-medium title-font mb-4  font-serif text-[#14406D] hover:text-[#FE9800] cursor-pointer transition  hover:scale-105">
-              Technology
-            </h1>
-            <p className="w-2/3  mx-auto leading-relaxed text-lg font-serif">
-            At Script-jet, We offer a comprehensive suite of technology solutions to help businesses of all sizes leverage the power of technology to achieve their goals. We specialize in providing end-to-end services that cover everything from infrastructure design and implementation to software development and maintenance. Our team of highly skilled technology experts has years of experience in delivering cutting-edge solutions that drive business success. We understand the importance of staying ahead of the curve when it comes to technology, which is why we are constantly exploring new tools and methodologies to ensure our clients get the best possible outcomes.
-            </p>
-          </div>
-        </div>
-      </section>
+    <div
+    className="bg-cover bg-center flex flex-col items-center  justify-center  "
+    style={{
+      backgroundImage: `url(${aboutus})`,
+      filter: "",
+      height: "450px",
+      maxHeight: "450px",
+      minHeight: "450px",
+    }}
+  >
+    <div className="flex flex-col items-center  justify-center  h-full  w-screen  backdrop-opacity-10 backdrop-invert bg-white/50  ">
+      <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-2xl text-center  text-[#14406D]  font-bold  font-serif cursor-pointer  ">
+      Technology
+      </h1>
+      <div className="flex items-center justify-center pt-4 ">
+        <p className="sm:w-2/3  sm:leading-relaxed  text-center sm:mx-auto mx-5 lg:text-lg md:text-xl sm:text-lg min-[320px]:text-md text-md font-serif text-gray-600">
+        At Script-jet, We offer a comprehensive suite of technology solutions to help businesses of all sizes leverage the power of technology to achieve their goals. We specialize in providing end-to-end services that cover everything from infrastructure design and implementation to software development and maintenance. Our team of highly skilled technology experts has years of experience in delivering cutting-edge solutions that drive business success. We understand the importance of staying ahead of the curve when it comes to technology, which is why we are constantly exploring new tools and methodologies to ensure our clients get the best possible outcomes.
+        </p>
+      </div>
+    </div>
+  </div>
+      
 
       <section className="text-gray-600 body-font bg-gradient-to-r from-orange-50 to-blue-50 ">
         <div className="container px-5 py-20 mx-auto">
