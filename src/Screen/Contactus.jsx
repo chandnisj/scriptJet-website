@@ -42,6 +42,7 @@ function Contactus() {
           </div>
         </div>
       </section>
+
       <section className="text-gray-600 body-font relative">
         <div className="container px-5 py-24  mx-auto  flex flex-wrap ">
           <div className="lg:w-1/2 md:w-1/2     bg-gray-300 rounded-lg   p-0 flex flex-col items-center justify-start ">
@@ -117,7 +118,7 @@ function Contactus() {
             <div className="lg:w-24 md:w-20 sm:w-auto text-center">
               <Link
                 to="/Contactus"
-                className="bg-[#14406D] hover:bg-[#FE9800] hover:text-white text-white font-serif  text-lg border-0 py-1 px-3 focus:outline-none rounded-tr-xl rounded-bl-xl text-base mt-4 md:mt-0"
+                className="bg-[#14406D] hover:bg-[#FE9800] hover:text-white text-white font-serif  text-lg border-0 py-1 px-3 focus:outline-none rounded-tr-xl rounded-bl-xl mt-4 md:mt-0"
                 onClick={handalclick}
               >
                 Send

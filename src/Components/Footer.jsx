@@ -7,17 +7,17 @@ function Footer() {
     <div>
       <footer className="text-gray-600 body-font font-serif  bg-gradient-to-r from-orange-50 to-blue-50 ">
         <div className="container px-5 pt-10 pb-20  mx-auto my-0">
-          <div className="flex flex-wrap lg:text-start md:text-start text-center -mb-10 -mx-4 grid md:grid-cols-3  lg:grid-cols-3  sm:grid-cols-1">
+          <div className=" flex-wrap lg:text-start md:text-start text-center -mb-10 -mx-4 grid md:grid-cols-3  lg:grid-cols-3  sm:grid-cols-1">
             <div className=" lg:w-1/2 md:w-1/2 sm:mb-10 mb-10 w-full  px-4 text-[#14406D] ">
               <Link
                 to="/"
                 className="flex title-font font-medium  lg:inline-block items-center justify-center  text-gray-900  md:mb-0"
               >
                 {" "}
-                <span className="text-4xl text-[#14406D] leading-relaxed font-['Arial'] tracking-wider font-semibold">
+                <span className="text-4xl text-[#14406D] leading-relaxed font-['Arial'] tracking-wider font-semibold lg:whitespace-nowrap ">
                 Script-
               </span>
-              <span className="text-4xl text-[#FE9800] leading-relaxed font-['Arial'] tracking-wider font-semibold">
+              <span className="text-4xl text-[#FE9800] leading-relaxed font-['Arial'] tracking-wider font-semibold lg:whitespace-nowrap">
                 Jet
               </span>
               </Link>

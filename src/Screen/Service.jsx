@@ -24,35 +24,38 @@ function Service() {
 
   return (
     <div>
-      <div
-        className="bg-cover bg-center flex flex-col items-center  justify-center  "
-        style={{
-          backgroundImage: `url(${aboutus})`,
-          filter: "",
-          height: "450px",
-          maxHeight: "450px",
-          minHeight: "450px",
-        }}
-      >
-        <div className="flex flex-col items-center  justify-center  h-full  w-screen backdrop-brightness-50 bg-white/60 ">
-          <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-2xl text-center  text-[#14406D]  font-bold  font-serif cursor-pointer  ">
-            Service
-          </h1>
-          <div className="flex items-center justify-center pt-4 ">
-            <p className="sm:w-2/3  sm:leading-relaxed  text-center sm:mx-auto mx-5 lg:text-xl md:text-xl sm:text-lg min-[320px]:text-lg text-md font-serif text-gray-600">
-              At Script-jet, we offer a wide range of services to meet the needs
-              of businesses of all sizes. Our Services component is designed to
-              provide our clients with the support and expertise they need to
-              optimize their technology infrastructure and achieve their
-              business goals. Our team of experienced professionals is dedicated
-              to delivering customized solutions that are tailored to meet the
-              unique needs of each client. Whether it's network design and
-              implementation, cloud migration, or software development, we have
-              the expertise to deliver results that exceed expectations.
-            </p>
+      <section>
+        <div
+          className="bg-cover bg-center flex flex-col items-center  justify-center  "
+          style={{
+            backgroundImage: `url(${aboutus})`,
+            filter: "",
+            height: "450px",
+            maxHeight: "450px",
+            minHeight: "450px",
+          }}
+        >
+          <div className="flex flex-col items-center  justify-center  h-full  w-screen backdrop-brightness-50 bg-white/60 ">
+            <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-2xl text-center  text-[#14406D]  font-bold  font-serif cursor-pointer  ">
+              Service
+            </h1>
+            <div className="flex items-center justify-center pt-4 ">
+              <p className="sm:w-2/3  sm:leading-relaxed min-[350px]:leading-relaxed leading-tight text-justify sm:mx-auto min-[470px]:w-2/3 mx-4 lg:text-xl md:text-xl sm:text-lg min-[614px]:text-lg text-md font-serif text-gray-600">
+                At Script-jet, we offer a wide range of services to meet the
+                needs of businesses of all sizes. Our Services component is
+                designed to provide our clients with the support and expertise
+                they need to optimize their technology infrastructure and
+                achieve their business goals. Our team of experienced
+                professionals is dedicated to delivering customized solutions
+                that are tailored to meet the unique needs of each client.
+                Whether it's network design and implementation, cloud migration,
+                or software development, we have the expertise to deliver
+                results that exceed expectations.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <section
         className="text-gray-600 body-font font-serif bg-gradient-to-r from-orange-50 to-blue-50"
@@ -61,9 +64,9 @@ function Service() {
         <div className="container px-5 mx-auto flex lg:flex-row md:flex-row sm:flex-col-reverse flex-col-reverse lg:my-auto md:my-10 my-10 items-center justify-center ">
           <div className="flex flex-col lg:w-1/2 md:w-full mx-12 justify-center md:my-auto sm:my-10 ">
             <Link className="flex px-auto mx-auto mt-0 font-serif text-3xl font-bold text-[#14406D]  transition cursor-pointer ">
-              Web-Development
+              Web Development
             </Link>
-            <p className="mx-auto py-6 text-base text-justify font-serif text-2xl text-gray-500 ">
+            <p className="mx-auto py-6 text-base text-justify font-serif  text-gray-500 ">
               Our web development service is designed to help businesses build
               high-quality websites that drive results. We specialize in
               creating custom websites that are tailored to meet the unique
@@ -82,14 +85,14 @@ function Service() {
                 src={screen}
               />
             </div>
-            <div className="p-2 p-1 w-1/2">
+            <div className="p-2  w-1/2">
               <img
                 alt="gallery"
                 className="w-full object-cover h-full object-center block"
                 src={sc}
               />
             </div>
-            <div className="p-2 p-1 w-1/2">
+            <div className="p-2  w-1/2">
               <img
                 alt="gallery"
                 className="w-full object-cover h-full object-center block"
@@ -103,21 +106,21 @@ function Service() {
       <section className="text-gray-600 body-font  font-serif " id="mobile">
         <div className="container px-5 mx-auto flex lg:flex-row md:flex-row sm:flex-col flex-col lg:my-auto md:my-10 my-10 items-center justify-center ">
           <div className="flex flex-wrap lg:w-1/3 md:w-full bg-gray-100 md:p-1 sm:p-0 p-0 drop-shadow-xl md:-my-5 sm:my-10 my-10 md:mx-auto sm:mx-10 mx-5 ">
-            <div className="p-2 p-1 w-full ">
+            <div className="p-2  w-full ">
               <img
                 alt="gallery"
                 className="w-full h-full object-cover object-center block "
                 src={mb3}
               />
             </div>
-            <div className="p-2 p-1 w-1/2">
+            <div className="p-2  w-1/2">
               <img
                 alt="gallery"
                 className="w-full object-cover h-full object-center block"
                 src={mb2}
               />
             </div>
-            <div className="p-2 p-1 w-1/2">
+            <div className="p-2 w-1/2">
               <img
                 alt="gallery"
                 className="w-full object-cover h-full object-center block"
@@ -129,7 +132,7 @@ function Service() {
             <h3 className="flex px-auto mx-auto mt-0 font-serif text-3xl font-bold text-[#14406D] transition   cursor-pointer ">
               Mobile Development{" "}
             </h3>
-            <p className=" mx-auto py-4 text-justify text-base  text-2xl text-gray-500 ">
+            <p className=" mx-auto py-4 text-justify text-base   text-gray-500 ">
               Our mobile development service is designed to help businesses
               build mobile applications that are user-friendly, high-performing,
               and reliable. Our team of experienced developers specializes in
@@ -153,7 +156,7 @@ function Service() {
             <h3 className="flex px-auto mx-auto mt-0 font-serif text-3xl font-bold  transition  text-[#14406D] cursor-pointer">
               UI-UX Design
             </h3>
-            <p className="mx-auto py-6 text-base text-justify font-serif text-2xl text-gray-500">
+            <p className="mx-auto py-6 text-base text-justify font-serif  text-gray-500">
               Our UI/UX design service is designed to help businesses create
               visually stunning and user-friendly digital experiences. Our team
               of expert designers creates custom designs that are tailored to
@@ -171,14 +174,14 @@ function Service() {
                 src={us1}
               />
             </div>
-            <div className="p-2 p-1 w-1/2">
+            <div className="p-2  w-1/2">
               <img
                 alt="gallery"
-                className="w-50 object-cover h-full object-center block"
+                className="w-full object-cover h-full object-center block"
                 src={ui2}
               />
             </div>
-            <div className="p-2 p-1 w-1/2">
+            <div className="p-2  w-1/2">
               <img
                 alt="gallery"
                 className="w-full object-cover h-full object-center block"
@@ -192,21 +195,21 @@ function Service() {
       <section className="text-gray-600 body-font   font-serif " id="testing">
         <div className="container px-5 mx-auto flex lg:flex-row md:flex-row sm:flex-col flex-col lg:my-auto md:my-10 my-10 items-center justify-center ">
           <div className="flex flex-wrap lg:w-1/3 md:w-full bg-gray-100 md:p-1 sm:p-0 p-0 drop-shadow-xl md:-my-5 sm:my-10 my-10 md:mx-auto sm:mx-10 mx-5 ">
-            <div className="p-2 p-1 w-full ">
+            <div className="p-2  w-full ">
               <img
                 alt="gallery"
                 className="w-full h-full object-cover object-center block "
                 src={test}
               />
             </div>
-            <div className="p-2 p-1 w-1/2">
+            <div className="p-2  w-1/2">
               <img
                 alt="gallery"
                 className="w-full object-cover h-full object-center block"
                 src={qa2}
               />
             </div>
-            <div className="p-2 p-1 w-1/2">
+            <div className="p-2  w-1/2">
               <img
                 alt="gallery"
                 className="w-full object-cover h-full object-center block"
@@ -218,7 +221,7 @@ function Service() {
             <h3 className="flex px-auto mx-auto mt-0 font-serif text-3xl font-bold  transition  text-[#14406D] cursor-pointer ">
               QA and Testing
             </h3>
-            <p className="mx-auto py-4 text-justify text-base  text-2xl text-gray-500 ">
+            <p className="mx-auto py-4 text-justify text-base   text-gray-500 ">
               Our QA and testing service is designed to ensure that your
               software and applications are of the highest quality. Our team of
               experienced testers uses a range of testing techniques and tools

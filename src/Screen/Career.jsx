@@ -31,9 +31,9 @@ function Career() {
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap -m-4 text-center ">
-            <div className="p-4 h-62  md:w-1/3 sm:w-1/2 w-full">
+            <div className="p-4 lg:h-60 md:h-80 h-62  md:w-1/3 sm:w-1/2 w-full">
               <div className="border-2 border-gray-200 p-2 rounded-lg h-full ">
-                <div className="justify-center flex-col bg-gradient-to-r from-orange-50 to-blue-50 p-5">
+                <div className="flex justify-center h-full flex-col bg-gradient-to-r from-orange-50 to-blue-50 p-5">
                   <h2 className=" text-center text-lg font-bold font-serif  text-[#14406D] px-2 py-2 mb-2  cursor-pointer  ">
                     Web Development
                   </h2>
@@ -99,9 +99,9 @@ function Career() {
                 </div>
               </div>
             </div>
-            <div className="p-4 h-62 md:w-1/3 sm:w-1/2 w-full">
+            <div className="p-4 lg:h-60 md:h-80 h-62 md:w-1/3 sm:w-1/2 w-full">
               <div className="border-2 border-gray-200 p-2 rounded-lg h-full">
-                <div className="justify-center flex-col bg-gradient-to-r from-orange-50 to-blue-50 p-5">
+                <div className="flex justify-center flex-col h-full bg-gradient-to-r from-orange-50 to-blue-50 p-5">
                   <h2 className=" text-center text-lg font-bold font-serif text-[#14406D] px-2 py-2 mb-2   cursor-pointer ">
                     Mobile App Development
                   </h2>
@@ -167,9 +167,9 @@ function Career() {
                 </div>
               </div>
             </div>
-            <div className="p-4 h-62 md:w-1/3 sm:w-1/2 w-full  ">
+            <div className="p-4 lg:h-60 md:h-80 h-62 md:w-1/3 sm:w-1/2 w-full">
               <div className="border-2 h-full border-gray-200 p-2 rounded-lg">
-                <div className="justify-center flex-col bg-gradient-to-r from-orange-50 to-blue-50 p-5">
+                <div className="flex justify-center h-full flex-col bg-gradient-to-r from-orange-50 to-blue-50 p-5">
                   <p className="text-center  text-lg font-bold font-serif text-[#14406D] px-2 py-2 mb-2  cursor-pointer ">
                     Design
                   </p>
@@ -235,13 +235,13 @@ function Career() {
                 </div>
               </div>
             </div>
-            <div className="p-4 h-62 md:w-1/3 sm:w-1/2 w-full">
+            <div className="p-4 lg:h-60 md:h-80 h-62 md:w-1/3 sm:w-1/2 w-full">
               <div className="border-2 border-gray-200 p-2 rounded-lg h-full">
-                <div className="justify-center flex-col bg-gradient-to-r from-orange-50 to-blue-50 p-5">
+                <div className="flex h-full justify-center flex-col bg-gradient-to-r from-orange-50 to-blue-50 p-5">
                   <p className=" text-center text-lg font-bold font-serif text-[#14406D] px-2 py-2 mb-2  cursor-pointer ">
                     Backend Development
                   </p>
-                  <h5 className=" text-center  text-lg text-lg  font-serif text-[#FE9800] px-2 py-2 cursor-pointer">
+                  <h5 className=" text-center  text-lg   font-serif text-[#FE9800] px-2 py-2 cursor-pointer">
                     NodeJs
                   </h5>
                   <div className="grid grid-col-1 mt-6 items-center justify-center">
@@ -303,14 +303,14 @@ function Career() {
                 </div>
               </div>
             </div>
-            <div className="p-4 h-62 md:w-1/3  sm:w-1/2 w-full">
+            <div className="p-4 lg:h-60 md:h-80 h-62 md:w-1/3  sm:w-1/2 w-full">
               <div className="border-2 border-gray-200 p-2 rounded-lg h-full">
-                <div className="justify-center flex-col bg-gradient-to-r from-orange-50 to-blue-50 p-5">
+                <div className="flex h-full justify-center flex-col bg-gradient-to-r from-orange-50 to-blue-50 p-5">
                   <p className=" text-center text-lg font-serif font-bold text-[#14406D] px-2 py-2 mb-2  cursor-pointer ">
                     Mangement Department
                   </p>
                   <h5 className=" text-center  text-lg  font-serif text-[#FE9800] px-2 py-2 cursor-pointer">
-                    Bussiness Development Executive
+                   <span className="">Bussiness Development</span> Executive
                   </h5>
                   <div className="grid grid-col-1 mt-6 items-center justify-center">
                     <div className="flex text-center">
@@ -371,9 +371,9 @@ function Career() {
                 </div>
               </div>
             </div>
-            <div className="p-4 h-62 md:w-1/3 sm:w-1/2 w-full">
+            <div className="p-4 lg:h-60 md:h-80 h-62 md:w-1/3 sm:w-1/2 w-full">
               <div className="border-2 border-gray-200 p-2 rounded-lg h-full">
-                <div className="justify-center flex-col  p-5 bg-gradient-to-r from-orange-50 to-blue-50">
+                <div className="flex h-full justify-center flex-col  p-5 bg-gradient-to-r from-orange-50 to-blue-50">
                   <p className=" text-center text-lg font-serif font-bold text-[#14406D] px-2 py-2 mb-2  cursor-pointer ">
                     Mangement Department
                   </p>

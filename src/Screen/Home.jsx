@@ -33,8 +33,6 @@ function Home() {
     navigate("/Technologies");
   };
 
-  
-
   return (
     <div className="">
       <section className=" text-gray-600  body-font font-serif ">
@@ -76,21 +74,21 @@ function Home() {
       <section className="text-gray-600 body-font overflow-hidden font-serif ">
         <div className="mx-10 py-24 flex items-center justify-center flex-col  ">
           <div className="flex flex-col text-center w-full mb-20">
-            <h1 className="sm:text-4xl text-3xl font-medium text-[#14406D] title-font mb-2  transition hover:scale-105 hover:underline underline-offset-8 decoration-[#14406D] ">
+            <h1 className="sm:text-4xl text-3xl font-medium text-[#14406D] title-font mb-2  transition hover:scale-105 hover:underline underline-offset-8 decoration-[#14406D] cursor-pointer ">
               Our <span className="text-[#FE9800]">Service</span>
             </h1>
           </div>
           <div className="grid lg:grid-cols-4  md:grid-cols-2 sm:grid-cols-2  grid-cols-1 -m-2 ">
-            <div className="p-2 h-auto">
-              <div className="h-full p-4 rounded-lg border-2 border-gray-100 flex flex-col relative overflow-hidden bg-gradient-to-r from-orange-50 to-blue-50">
-                <div className="sm:text-center text-center md:text-center h-full">
+            <div className="p-2 ">
+              <div className="h-full p-4 rounded-lg border-2 border-gray-100 bg-gradient-to-r from-orange-50 to-blue-50">
+                <div className="flex items-center flex-col justify-center sm:text-center text-center md:text-center h-full">
                   <Link
                     to="/Service#webdev"
                     className=" text-2xl font-semibold text-[#14406D] hover:text-[#FE9800] transition "
                   >
                     Web Developement
                   </Link>
-                  <p className="flex-row items-center text-center mt-4 text-lg text-[#14406D] mb-8">
+                  <p className="flex-row items-center text-center mt-4 text-lg text-[#14406D]">
                     Web development involves creating websites and web
                     applications, using programming languages like HTML, CSS,
                     JavaScript, and frameworks like React and Angular.
@@ -98,16 +96,16 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="p-2 h-64">
-              <div className=" p-4 h-full rounded-lg border-2 border-gray-100 flex  flex-col relative overflow-hidden bg-gradient-to-r from-orange-50 to-blue-50">
-                <div className="sm:text-center text-center md:text-center">
+            <div className="p-2 ">
+              <div className=" p-4 h-full rounded-lg border-2 border-gray-100  bg-gradient-to-r from-orange-50 to-blue-50">
+                <div className="flex items-center flex-col justify-center h-full sm:text-center text-center md:text-center">
                   <Link
                     to="/Service#mobile"
                     className="text-2xl font-semibold text-center text-[#14406D] hover:text-[#FE9800] transition "
                   >
                     Mobile App-Devlopement
                   </Link>
-                  <p className="flex-row items-center text-center mt-4 text-lg text-[#14406D]  mb-8">
+                  <p className="flex-row items-center text-center mt-4 text-lg text-[#14406D]">
                     Mobile development involves creating apps for smartphones
                     and tablets, using programming languages like Java, Swift,
                     Kotlin, Flutter and React Native.
@@ -115,16 +113,16 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="p-2 h-64">
-              <div className=" p-4 h-full rounded-lg border-2 border-gray-100 flex flex-col relative overflow-hidden bg-gradient-to-r from-orange-50 to-blue-50">
-                <div className="sm:text-center text-center md:text-center">
+            <div className="p-2 ">
+              <div className=" p-4 h-full rounded-lg border-2 border-gray-100 bg-gradient-to-r from-orange-50 to-blue-50">
+                <div className="flex items-center flex-col justify-center h-full sm:text-center text-center md:text-center">
                   <Link
                     to="/Service#uiux"
                     className="text-2xl font-semibold text-center text-[#14406D] hover:text-[#FE9800] transition "
                   >
                     UI/Ux Design
                   </Link>
-                  <p className="flex-row items-center text-center mt-4 text-lg text-[#14406D]  mb-8">
+                  <p className="flex-row items-center text-center mt-4 text-lg text-[#14406D] ">
                     UI/UX design involves creating interfaces that are visually
                     appealing, easy to navigate, and intuitive for users to
                     interact with.
@@ -132,16 +130,16 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="p-2 h-64 ">
-              <div className=" p-4 h-full rounded-lg border-2 border-gray-100 flex flex-col relative overflow-hidden bg-gradient-to-r from-orange-50 to-blue-50">
-                <div className="sm:text-center text-center md:text-center">
+            <div className="p-2 ">
+              <div className=" p-4 h-full rounded-lg border-2 border-gray-100 bg-gradient-to-r from-orange-50 to-blue-50">
+                <div className="flex items-center flex-col justify-center h-full sm:text-center text-center md:text-center">
                   <Link
                     to="/Service#testing"
                     className="text-2xl font-semibold text-center text-[#14406D] hover:text-[#FE9800] transition  "
                   >
                     QA and Testing
                   </Link>
-                  <p className="flex-row items-center text-center mt-4 text-lg text-[#14406D] overflow-hidden  mb-8">
+                  <p className="flex-row items-center text-center mt-4 text-lg text-[#14406D] overflow-hidden">
                     QA and testing involve ensuring software quality,
                     identifying and fixing bugs, and ensuring user experience
                     meets expectations through testing methodologies.
@@ -157,7 +155,7 @@ function Home() {
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <h1 className="sm:text-4xl text-3xl mb-4  font-semibold text-[#14406D] cursor-pointer ">
-              WHY <spna className='text-[#FE9800]'>US</spna> 
+              WHY <spna className="text-[#FE9800]">US</spna>
             </h1>
             <p className="mb-8 leading-relaxed text-lg  ">
               Script-jet provides Consulting,ideas,and resources for people
@@ -199,7 +197,7 @@ function Home() {
             <div className="flex justify-center">
               <Link
                 to="/Contactus"
-                className="bg-[#14406D] hover:bg-[#FE9800] hover:text-white text-white font-serif  text-lg border-0 px-3 py-2 focus:outline-none rounded-lg text-base mt-0"
+                className="bg-[#14406D] hover:bg-[#FE9800] hover:text-white text-white font-serif  text-lg border-0 px-3 py-2 focus:outline-none rounded-lg  mt-0"
               >
                 Hire-Now
               </Link>
@@ -222,17 +220,17 @@ function Home() {
                   className="p-4 lg:w-1/4 sm:w-1/2 w-full flex flex-col items-center"
                   key={index}
                 >
-                  <h2 className="tracking-widest text-[#FE9800]  mb-4 text-2xl font-bold font-serif text-center sm:text-left cursor-pointer  ">
+                  <h2 className="tracking-widest text-[#FE9800]  mb-4 text-2xl font-bold font-serif text-center sm:text-left   cursor-pointer  ">
                     {tech.title}
                   </h2>
-                  <nav className="flex flex-col sm:items-start sm:text-left text-center items-center justify-center -mb-1 space-y-2.5 font-serif text-lg  text-[#14406D] ">
+                  <nav className="flex flex-col sm:items-start sm:text-left text-center items-start justify-center -mb-1 space-y-2.5 font-serif text-lg  text-[#14406D] ">
                     {tech.value.map((value, i) => {
                       return (
                         <div
-                          className="flex items-center justify-center "
+                          className="flex items-center justify-center  "
                           key={i}
                         >
-                          <span className="text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                          <span className="text-sky-800 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center ">
                             <svg
                               fill="none"
                               stroke="currentColor"
@@ -263,29 +261,33 @@ function Home() {
         </div>
       </section>
 
-      <div
-        className="bg-cover bg-center brightness-75  "
-        style={{
-          position: "relative",
-          backgroundImage: `url(${aboutus})`,
-          filter: "",
-          height: "50vh",
-        }}
-      >
-        <div className="flex flex-col items-center  justify-center  h-full  w-screen ">
-          <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-xl text-center  text-[#14406D]  font-bold  font-serif cursor-pointer  ">
-            More <spna className="text-[#FE9800]"> productive </spna> Business?
-          </h1>
-          <div className="flex items-center justify-center pt-10">
-            <Link
-              to="/Contactus"
-              className="bg-[#14406D] hover:bg-[#FE9800] hover:text-white text-white font-serif  text-lg border-0 py-2 px-3 focus:outline-none rounded-lg text-base mt-0"
-            >
-              Contact-Us
-            </Link>
+      <section>
+        <div
+          className="bg-cover bg-center brightness-75  "
+          style={{
+            position: "relative",
+            backgroundImage: `url(${aboutus})`,
+            filter: "",
+            height: "50vh",
+          }}
+        >
+          <div className="flex flex-col items-center  justify-center  h-full  w-screen ">
+            <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-xl text-center  text-[#14406D]  font-bold  font-serif cursor-pointer  ">
+              Are you ready for a better?
+            </h1>
+            <div className="flex items-center justify-center pt-10">
+              <Link
+                to="/Contactus"
+                className="bg-[#14406D] hover:bg-[#FE9800] hover:text-white text-white font-serif  text-lg border-0 py-2 px-3 focus:outline-none rounded-lg  mt-0"
+              >
+                Contact-Us
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+      
+
     </div>
   );
 }

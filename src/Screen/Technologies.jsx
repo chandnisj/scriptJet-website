@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {  useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import react from "../Screen/Images/Technologies/reactjs.jpg";
 import vue from "../Screen/Images/Technologies/Vuejs.jpeg";
 import angular from "../Screen/Images/Technologies/angular.jpeg";
@@ -166,28 +166,39 @@ function Technologies() {
 
   return (
     <div>
-    <div
-    className="bg-cover bg-center flex flex-col items-center  justify-center  "
-    style={{
-      backgroundImage: `url(${aboutus})`,
-      filter: "",
-      height: "450px",
-      maxHeight: "450px",
-      minHeight: "450px",
-    }}
-  >
-    <div className="flex flex-col items-center  justify-center  h-full  w-screen  backdrop-opacity-10 backdrop-invert bg-white/50  ">
-      <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-2xl text-center  text-[#14406D]  font-bold  font-serif cursor-pointer  ">
-      Technology
-      </h1>
-      <div className="flex items-center justify-center pt-4 ">
-        <p className="sm:w-2/3  sm:leading-relaxed  text-center sm:mx-auto mx-5 lg:text-lg md:text-xl sm:text-lg min-[320px]:text-md text-md font-serif text-gray-600">
-        At Script-jet, We offer a comprehensive suite of technology solutions to help businesses of all sizes leverage the power of technology to achieve their goals. We specialize in providing end-to-end services that cover everything from infrastructure design and implementation to software development and maintenance. Our team of highly skilled technology experts has years of experience in delivering cutting-edge solutions that drive business success. We understand the importance of staying ahead of the curve when it comes to technology, which is why we are constantly exploring new tools and methodologies to ensure our clients get the best possible outcomes.
-        </p>
-      </div>
-    </div>
-  </div>
-      
+      <section>
+        <div
+          className="bg-cover bg-center flex flex-col items-center  justify-center  "
+          style={{
+            backgroundImage: `url(${aboutus})`,
+            filter: "",
+            height: "450px",
+            maxHeight: "450px",
+            minHeight: "450px",
+          }}
+        >
+          <div className="flex flex-col items-center  justify-center  h-full  w-screen  backdrop-opacity-10 backdrop-invert bg-white/50  ">
+            <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-2xl text-center  text-[#14406D]  font-bold  font-serif cursor-pointer  ">
+              Technology
+            </h1>
+            <div className="pt-4 flex items-center  justify-center">
+              <p className="lg:text-lg md:text-lg sm:leading-relaxed sm:text-md sm:mx-auto min-[320px]:text-md min-[465px]:w-2/3 min-[410px]:leading-relaxed leading-tight text-justify text-sm mx-5 font-serif text-gray-600">
+                At Script-jet, We offer a comprehensive suite of technology
+                solutions to help businesses of all sizes leverage the power of
+                technology to achieve their goals. We specialize in providing
+                end-to-end services that cover everything from infrastructure
+                design and implementation to software development and
+                maintenance. Our team of highly skilled technology experts has
+                years of experience in delivering cutting-edge solutions that
+                drive business success. We understand the importance of staying
+                ahead of the curve when it comes to technology, which is why we
+                are constantly exploring new tools and methodologies to ensure
+                our clients get the best possible outcomes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="text-gray-600 body-font bg-gradient-to-r from-orange-50 to-blue-50 ">
         <div className="container px-5 py-20 mx-auto">
@@ -206,7 +217,7 @@ function Technologies() {
                   <h2 className="tracking-widest  mb-4 text-2xl font-serif font-bold text-[#14406D] hover:text-[#FE9800]  text-center sm:text-left cursor-pointer  ">
                     {tech.title}
                   </h2>
-                  <nav className="flex flex-col sm:items-start sm:text-left text-center items-center justify-center -mb-1 space-y-2.5 font-serif text-lg  text-[#14406D] ">
+                  <nav className="flex flex-col sm:items-start sm:text-left text-center items-start justify-center -mb-1 space-y-2.5 font-serif text-lg  text-[#14406D] ">
                     {tech.value.map((value, id) => {
                       return (
                         <div
@@ -247,11 +258,16 @@ function Technologies() {
         {contants.map((text, i) => {
           return (
             <div
-              className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center "
+              className="container mx-auto flex px-5 pt-20 md:flex-row flex-col items-center "
               key={i}
               id={text.title}
             >
               <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                <div className="sm:block md:hidden lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                  <h1 className="title-font sm:text-4xl text-3xl mb-6 font-semibold  text-[#14406D] cursor-pointer ">
+                    {text.title === "UIUX" ? "UI/UX" : text.title}
+                  </h1>
+                </div>
                 <img
                   className="object-cover object-center rounded"
                   alt="hero"
@@ -259,11 +275,10 @@ function Technologies() {
                 />
               </div>
               <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                <h1 className="title-font sm:text-4xl text-3xl mb-4 font-semibold  text-[#14406D] cursor-pointer ">
+                <h1 className="sm:hidden md:block hidden  title-font sm:text-4xl text-3xl mb-4 font-semibold  text-[#14406D] cursor-pointer ">
                   {text.title === "UIUX" ? "UI/UX" : text.title}
                 </h1>
-                <p className="mb-8 leading-relaxed text-gray-600">{text.con}</p>
-                
+                <p className=" leading-relaxed text-gray-600">{text.con}</p>
               </div>
             </div>
           );
