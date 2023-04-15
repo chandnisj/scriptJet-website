@@ -21,9 +21,15 @@ function Service() {
       target.scrollIntoView({ behavior: "smooth", block: "center" });
     }
   }, [location.hash]);
+  useEffect(() => {
+    const targetTop = document.querySelector("#top");
+    targetTop.scrollIntoView({ behavior: 'auto', block: "start" });
+    
+  }, []);
+
 
   return (
-    <div>
+    <div id="top">
       <section>
         <div
           className="bg-cover bg-center flex flex-col items-center  justify-center  "

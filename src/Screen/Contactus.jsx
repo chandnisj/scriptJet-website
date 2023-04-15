@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import cs from "../Screen/Images/contact.jpg";
 import { UserAddOutlined } from "@ant-design/icons";
 import { Input } from "antd";
@@ -23,9 +23,13 @@ function Contactus() {
     });
     //console.log(Contact)
   };
+  useEffect(() => {
+    const targetTop = document.querySelector("#top");
+    targetTop.scrollIntoView({ behavior: 'auto', block: "start" });
+  }, []);
 
   return (
-    <div>
+    <div id='top'>
       <section className=" text-gray-600  body-font">
         <div className="flex" style={{ position: "relative" }}>
           <img

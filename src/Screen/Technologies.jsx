@@ -163,9 +163,16 @@ function Technologies() {
       }, 200);
     }
   }, [location.hash, isRender]);
+  
+  useEffect(() => {
+    const targetTop = document.querySelector("#top");
+    targetTop.scrollIntoView({ behavior: 'auto', block: "start" });
+   
+  }, []);
+ 
 
   return (
-    <div>
+    <div id="top">
       <section>
         <div
           className="bg-cover bg-center flex flex-col items-center  justify-center  "
@@ -204,7 +211,7 @@ function Technologies() {
         <div className="container px-5 py-20 mx-auto">
           <div className="text-center mb-20">
             <h1 className="sm:text-3xl text-4xl font-serif font-bold text-center  text-[#14406D] hover:text-[#FE9800] mb-4 transition  hover:scale-105 hover:underline underline-offset-8 decoration-[#14406D] ">
-              Technology We work with
+              Technologies We work with
             </h1>
           </div>
           <div className="flex flex-wrap -m-4">
@@ -258,7 +265,7 @@ function Technologies() {
         {contants.map((text, i) => {
           return (
             <div
-              className="container mx-auto flex px-5 pt-20 md:flex-row flex-col items-center "
+              className="container mx-auto flex px-5 pt-20 pb-2 md:flex-row flex-col items-center "
               key={i}
               id={text.title}
             >

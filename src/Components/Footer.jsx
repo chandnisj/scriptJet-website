@@ -2,8 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 //import text from "../Image-logo/text.png";
 function Footer() {
-  
+  const currentyear = new Date().getFullYear();
   return (
+   
     <div>
       <footer className="text-gray-600 body-font font-serif  bg-gradient-to-r from-orange-50 to-blue-50 ">
         <div className="container px-5 pt-10 pb-20  mx-auto my-0">
@@ -21,12 +22,12 @@ function Footer() {
                 Jet
               </span>
               </Link>
-              <p>
+              <p className="text-xl">
               To revolutionize the IT industry with innovative solutions.
               </p>
             </div>
             <div className="lg:w-1/2 md:w-1/2 w-full  px-4  text-lg whitespace-nowrap" >
-              <h2 className="title-font text-2xl font-bold  text-[#FE9800] tracking-widest  mb-4 cursor-pointer">
+              <h2 className="text-2xl font-bold  text-[#FE9800] tracking-widest  mb-4 cursor-pointer">
                 Sloutions
               </h2>
               <nav className="list-none mb-5">
@@ -63,14 +64,7 @@ function Footer() {
                     QA and Testing
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    to="/Career"
-                    className="text-[#14406D] hover:text-[#FE9800] py-2"
-                  >
-                    Human-resource
-                  </Link>
-                </li>
+                
               </nav>
             </div>
 
@@ -117,7 +111,7 @@ function Footer() {
         <div className=" ">
           <div className="mx-auto items-center justify-center  py-4 px-5 flex flex-col sm:flex-row">
             <span className="sm:mt-0 mt-0 sm:w-auto w-full sm:text-center text-center  text-[#FE9800] text-lg">
-              Copyright 2023. All Rights Reserved by
+              Copyright {currentyear}.All Rights Reserved by
               <span className="text-[#14406D] cursor-pointer mx-1 ">
                  Script-Jet
               </span>

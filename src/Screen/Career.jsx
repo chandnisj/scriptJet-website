@@ -1,8 +1,15 @@
-import React from "react";
+import React,{useEffect} from "react";
 import aboutus from "../Screen/Images/more.jpeg";
 function Career() {
+  useEffect(() => {
+    const targetTop = document.querySelector("#top");
+    targetTop.scrollIntoView({ behavior: 'auto', block: "start" });
+   
+  }, []);
   return (
-    <div>
+
+   
+    <div id="top">
       <section>
         <div
           className="bg-cover bg-center flex flex-col items-center  justify-center  "

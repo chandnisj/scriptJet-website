@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import home from "../Screen/Images/home.jpg";
 import h2 from "../Screen/Images/home-2.jpg";
@@ -32,9 +32,14 @@ function Home() {
     localStorage.setItem("techValue", value);
     navigate("/Technologies");
   };
+  useEffect(() => {
+    const targetTop = document.querySelector("#top");
+    targetTop.scrollIntoView({ behavior: 'auto', block: "start" });
+   
+  }, []);
 
   return (
-    <div className="">
+    <div className="" id="top">
       <section className=" text-gray-600  body-font font-serif ">
         <div
           className="flex items-end justify-end w-screen"
@@ -155,7 +160,7 @@ function Home() {
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <h1 className="sm:text-4xl text-3xl mb-4  font-semibold text-[#14406D] cursor-pointer ">
-              WHY <spna className="text-[#FE9800]">US</spna>
+              WHY <span className="text-[#FE9800]">US</span>
             </h1>
             <p className="mb-8 leading-relaxed text-lg  ">
               Script-jet provides Consulting,ideas,and resources for people
@@ -210,7 +215,7 @@ function Home() {
         <div className="container px-5 py-24 mx-auto">
           <div className="text-center mb-20">
             <h1 className="sm:text-3xl text-4xl font-serif font-semibold text-center cursor-pointer  text-[#14406D] mb-4 transition hover:text-[#FE9800]  hover:scale-105 hover:underline underline-offset-8 decoration-[#14406D] ">
-              Technology We work with
+              Technologies We work with
             </h1>
           </div>
           <div className="flex flex-wrap -m-4">
@@ -261,7 +266,7 @@ function Home() {
         </div>
       </section>
 
-      <section>
+      <section> 
         <div
           className="bg-cover bg-center brightness-75  "
           style={{
@@ -271,9 +276,9 @@ function Home() {
             height: "50vh",
           }}
         >
-          <div className="flex flex-col items-center  justify-center  h-full  w-screen ">
-            <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-xl text-center  text-[#14406D]  font-bold  font-serif cursor-pointer  ">
-              Are you ready for a better?
+          <div className="flex flex-col items-center  justify-center  h-full  w-screen backdrop-opacity-10 backdrop-invert bg-white/50">
+            <h1 className="lg:text-5xl md:text-5xl sm:text-4xl text-xl text-center  text-[#14406D]  font-bold  font-serif cursor-pointer  ">
+              Are you ready for a Better & More productive Business?
             </h1>
             <div className="flex items-center justify-center pt-10">
               <Link
@@ -286,8 +291,6 @@ function Home() {
           </div>
         </div>
       </section>
-      
-
     </div>
   );
 }
