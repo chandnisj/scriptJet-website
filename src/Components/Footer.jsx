@@ -26,11 +26,11 @@ function Footer() {
               To revolutionize the IT industry with innovative solutions.
               </p>
             </div>
-            <div className="lg:w-1/2 md:w-1/2 w-full  px-4  text-lg whitespace-nowrap" >
+            <div className="lg:w-1/2 md:w-1/2 w-full  px-4   whitespace-nowrap" >
               <h2 className="text-2xl font-bold  text-[#FE9800] tracking-widest  mb-4 cursor-pointer">
                 Sloutions
               </h2>
-              <nav className="list-none mb-5">
+              <nav className="list-none mb-5 text-lg">
                 <li>
                   <Link
                     to="/Service#webdev"
@@ -113,7 +113,7 @@ function Footer() {
             <span className="sm:mt-0 mt-0 sm:w-auto w-full sm:text-center text-center  text-[#FE9800] text-lg">
               Copyright {currentyear}.All Rights Reserved by
               <span className="text-[#14406D] cursor-pointer mx-1 ">
-                 Script-Jet
+                 ScriptJet
               </span>
             </span>
           </div>

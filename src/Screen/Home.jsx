@@ -163,7 +163,7 @@ function Home() {
               WHY <span className="text-[#FE9800]">US</span>
             </h1>
             <p className="mb-8 leading-relaxed text-lg  ">
-              Script-jet provides Consulting,ideas,and resources for people
+              ScriptJet provides Consulting,ideas,and resources for people
               Working to create social change.we bring the right people together
               to challenge established thinking and drive transformation.We work
               with our client to build the capabilities that enable

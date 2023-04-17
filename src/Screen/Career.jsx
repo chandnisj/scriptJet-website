@@ -1,34 +1,31 @@
-import React,{useEffect} from "react";
-import aboutus from "../Screen/Images/more.jpeg";
+import React, { useEffect } from "react";
+import career from "../Screen/Images/career.jpg";
 function Career() {
   useEffect(() => {
     const targetTop = document.querySelector("#top");
-    targetTop.scrollIntoView({ behavior: 'auto', block: "start" });
-   
+    targetTop.scrollIntoView({ behavior: "auto", block: "start" });
   }, []);
   return (
-
-   
     <div id="top">
       <section>
         <div
-          className="bg-cover bg-center flex flex-col items-center  justify-center  "
+          className="bg-cover bg-center flex flex-col items-center  justify-center  brightness-90 "
           style={{
-            backgroundImage: `url(${aboutus})`,
+            backgroundImage: `url(${career})`,
             filter: "",
             height: "450px",
             maxHeight: "450px",
             minHeight: "450px",
           }}
         >
-          <div className="flex flex-col items-center  justify-center  h-full  w-screen  backdrop-opacity-10 backdrop-invert bg-white/50  ">
-            <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-2xl text-center  text-[#14406D]  font-bold  font-serif cursor-pointer  ">
-              Career At Script-Jet
+          <div className="flex flex-col items-center  justify-center  h-full  w-screen backdrop-brightness-50 bg-white/30">
+            <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-2xl text-center  text-[#14406D]   font-bold  font-serif cursor-pointer  ">
+              Career At ScriptJet
             </h1>
             <div className="flex items-center justify-center pt-4 ">
-              <p className="sm:w-2/3  sm:leading-relaxed  text-center sm:mx-auto mx-5 lg:text-lg md:text-xl sm:text-lg min-[320px]:text-md text-md font-serif text-gray-600">
-                Quality in a service or product is not what you put into it.
-                It’s what the client or customer gets out of it
+              <p className="sm:w-2/3  sm:leading-relaxed  text-center sm:mx-auto mx-5 lg:text-lg md:text-xl sm:text-lg min-[320px]:text-md text-md font-serif text-white">
+                Quality in a service or product is not what you put into it,
+                It’s what the client or customer gets out of it.
               </p>
             </div>
           </div>
@@ -317,7 +314,7 @@ function Career() {
                     Mangement Department
                   </p>
                   <h5 className=" text-center  text-lg  font-serif text-[#FE9800] px-2 py-2 cursor-pointer">
-                   <span className="">Bussiness Development</span> Executive
+                    <span className="">Bussiness Development</span> Executive
                   </h5>
                   <div className="grid grid-col-1 mt-6 items-center justify-center">
                     <div className="flex text-center">

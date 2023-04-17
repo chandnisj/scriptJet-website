@@ -1,7 +1,7 @@
 import React,{useEffect} from "react";
 import aboutus from "../Screen/Images/about.jpg";
 import about from "../Screen/Images/about-2.jpg";
-import { Link } from "react-router-dom";
+
 
 function Aboutus() {
   useEffect(() => {
@@ -12,16 +12,16 @@ function Aboutus() {
     <div id='top'>
       <section>
         <div
-          className="bg-cover bg-center flex flex-col items-center  justify-center contrast-50  "
+          className="bg-cover bg-center flex flex-col items-center  justify-center   "
           style={{
             backgroundImage: `url(${aboutus})`,
             filter: "",
-            height: "550px",
-            maxHeight: "550px",
-            minHeight: "550px",
+            height: "450px",
+            maxHeight: "450px",
+            minHeight: "450px",
           }}
         >
-          <div className="flex flex-col items-center  justify-center  h-full  w-screen   ">
+          <div className="flex flex-col items-center  justify-center  h-full  w-screen backdrop-brightness-50  bg-gray/30 backdrop-invert-0 bg-white/30   ">
             <h1 className="lg:text-7xl md:text-6xl sm:text-5xl text-5xl text-center  text-[#14406D]  font-bold  font-serif cursor-pointer  ">
               About-Us
             </h1>
@@ -89,29 +89,7 @@ function Aboutus() {
         </div>
       </section>
 
-      <section className=" text-gray-600  body-font font-serif  ">
-        <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-col text-center w-full mb-12">
-            <h1 className="text-3xl  font-medium title-font mb-4 text-[#FE9800] cursor-pointer">
-              {" "}
-              Are you ready for a better{" "}
-            </h1>
-            <p className="w-2/3  mx-auto leading-relaxed  text-xl text-[#14406D]">
-              Thank you for considering our IT service company for your
-              technology needs. We look forward to the opportunity to work with
-              you and help you achieve your business goals.
-            </p>
-            <div className="w-full flex  item-center justify-center py-2">
-              <Link
-                to="/Contactus"
-                className=" items-center  justify-center bg-[#FE9800] hover:bg-[#14406D] hover:text-white text-white  text-lg border-0 py-2 px-3 focus:outline-none rounded-lg  mt-4 md:mt-0"
-              >
-                Contact-Us
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+     
     </div>
   );
 }

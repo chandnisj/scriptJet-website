@@ -11,9 +11,17 @@ import ui2 from "../Screen/Images/Screen-Image/UI-UX2.jpeg";
 import ui3 from "../Screen/Images/Screen-Image/UI-UX3.jpeg";
 import qa2 from "../Screen/Images/Screen-Image/QA2.jpeg";
 import qa3 from "../Screen/Images/Screen-Image/QA3.jpeg";
-import aboutus from "../Screen/Images/more.jpeg";
+import service from "../Screen/Images/service.jpg"
 import { Link, useLocation } from "react-router-dom";
 function Service() {
+  useEffect(() => {
+    const targetTop = document.querySelector("#top");
+    targetTop.scrollIntoView({ behavior: "auto", block: "start" });
+  }, []);
+
+
+
+
   const location = useLocation();
   useEffect(() => {
     if (location.hash) {
@@ -21,33 +29,27 @@ function Service() {
       target.scrollIntoView({ behavior: "smooth", block: "center" });
     }
   }, [location.hash]);
-  useEffect(() => {
-    const targetTop = document.querySelector("#top");
-    targetTop.scrollIntoView({ behavior: 'auto', block: "start" });
-    
-  }, []);
-
 
   return (
     <div id="top">
       <section>
         <div
-          className="bg-cover bg-center flex flex-col items-center  justify-center  "
+          className="bg-cover bg-center flex flex-col items-center  justify-center brightness-100  "
           style={{
-            backgroundImage: `url(${aboutus})`,
+            backgroundImage: `url(${service})`,
             filter: "",
             height: "450px",
             maxHeight: "450px",
             minHeight: "450px",
           }}
         >
-          <div className="flex flex-col items-center  justify-center  h-full  w-screen backdrop-brightness-50 bg-white/60 ">
-            <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-2xl text-center  text-[#14406D]  font-bold  font-serif cursor-pointer  ">
+          <div className="flex flex-col items-center  justify-center  h-full  w-screen  backdrop-brightness-75 bg-white/30  ">
+            <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-2xl text-center  text-[#14406D]  font-bold  font-serif cursor-pointer   ">
               Service
             </h1>
             <div className="flex items-center justify-center pt-4 ">
-              <p className="sm:w-2/3  sm:leading-relaxed min-[350px]:leading-relaxed leading-tight text-justify sm:mx-auto min-[470px]:w-2/3 mx-4 lg:text-xl md:text-xl sm:text-lg min-[614px]:text-lg text-md font-serif text-gray-600">
-                At Script-jet, we offer a wide range of services to meet the
+              <p className="sm:w-2/3  sm:leading-relaxed min-[350px]:leading-relaxed leading-tight text-justify sm:mx-auto min-[470px]:w-2/3 mx-4 lg:text-xl md:text-xl sm:text-lg min-[614px]:text-lg text-md font-serif text-white">
+                At ScriptJet, we offer a wide range of services to meet the
                 needs of businesses of all sizes. Our Services component is
                 designed to provide our clients with the support and expertise
                 they need to optimize their technology infrastructure and
@@ -69,7 +71,7 @@ function Service() {
       >
         <div className="container px-5 mx-auto flex lg:flex-row md:flex-row sm:flex-col-reverse flex-col-reverse lg:my-auto md:my-10 my-10 items-center justify-center ">
           <div className="flex flex-col lg:w-1/2 md:w-full mx-12 justify-center md:my-auto sm:my-10 ">
-            <Link className="flex px-auto mx-auto mt-0 font-serif text-3xl font-bold text-[#14406D]  transition cursor-pointer ">
+            <Link className="flex px-auto mx-auto mt-0 font-serif text-3xl font-bold text-[#14406D]  transition cursor-pointer whitespace-nowrap">
               Web Development
             </Link>
             <p className="mx-auto py-6 text-base text-justify font-serif  text-gray-500 ">
@@ -135,7 +137,7 @@ function Service() {
             </div>
           </div>
           <div className="flex flex-col lg:w-1/2 md:w-full mx-10 my-10 justify-center md:my-auto sm:my-10 ">
-            <h3 className="flex px-auto mx-auto mt-0 font-serif text-3xl font-bold text-[#14406D] transition   cursor-pointer ">
+            <h3 className="flex px-auto mx-auto mt-0 font-serif text-3xl font-bold text-[#14406D] transition   cursor-pointer  whitespace-nowrap ">
               Mobile Development{" "}
             </h3>
             <p className=" mx-auto py-4 text-justify text-base   text-gray-500 ">

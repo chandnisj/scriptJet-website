@@ -17,7 +17,7 @@ import mongodb from "../Screen/Images/Technologies/mongoDB.jpeg";
 import ui from "../Screen/Images/Technologies/ui.jpg";
 import boostrap from "../Screen/Images/Technologies/bootstrap.png";
 import tailwind from "../Screen/Images/Technologies/tailwind.jpg";
-import aboutus from "../Screen/Images/more.jpeg";
+import tech from "../Screen/Images/technology.jpg";
 function Technologies() {
   // eslint-disable-next-line
   const [isRender, setIsRender] = useState(false);
@@ -175,22 +175,22 @@ function Technologies() {
     <div id="top">
       <section>
         <div
-          className="bg-cover bg-center flex flex-col items-center  justify-center  "
+          className="bg-cover bg-center flex flex-col items-center  justify-center   "
           style={{
-            backgroundImage: `url(${aboutus})`,
+            backgroundImage: `url(${tech})`,
             filter: "",
             height: "450px",
             maxHeight: "450px",
             minHeight: "450px",
           }}
         >
-          <div className="flex flex-col items-center  justify-center  h-full  w-screen  backdrop-opacity-10 backdrop-invert bg-white/50  ">
+          <div className="flex flex-col items-center  justify-center  h-full  w-screen  backdrop-brightness-50  bg-gray/30 backdrop-invert-0 bg-white/30">
             <h1 className="lg:text-6xl md:text-5xl sm:text-4xl text-2xl text-center  text-[#14406D]  font-bold  font-serif cursor-pointer  ">
               Technology
             </h1>
             <div className="pt-4 flex items-center  justify-center">
-              <p className="lg:text-lg md:text-lg sm:leading-relaxed sm:text-md sm:mx-auto min-[320px]:text-md min-[465px]:w-2/3 min-[410px]:leading-relaxed leading-tight text-justify text-sm mx-5 font-serif text-gray-600">
-                At Script-jet, We offer a comprehensive suite of technology
+              <p className="lg:text-lg md:text-lg sm:leading-relaxed sm:text-md sm:mx-auto min-[320px]:text-md min-[465px]:w-2/3 min-[410px]:leading-relaxed leading-tight text-justify text-sm mx-5 font-serif text-white">
+                At ScriptJet, We offer a comprehensive suite of technology
                 solutions to help businesses of all sizes leverage the power of
                 technology to achieve their goals. We specialize in providing
                 end-to-end services that cover everything from infrastructure

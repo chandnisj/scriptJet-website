@@ -30,22 +30,24 @@ function Contactus() {
 
   return (
     <div id='top'>
-      <section className=" text-gray-600  body-font">
-        <div className="flex" style={{ position: "relative" }}>
-          <img
-            src={cs}
-            alt=""
-            className="min-w-full  h-3/6 max-h-96 backdrop-blur-xl"
-            style={{ filter: " contrast(1.1) opacity(0.8)" }}
-          />
-          <div className="flex items-center justify-center absolute h-full   w-screen">
-            <h1 className=" text-5xl   text-white  font-semibold  font-serif cursor-pointer ">
-              {" "}
-              Contact-Us{" "}
-            </h1>
-          </div>
-        </div>
-      </section>
+    <section>
+    <div
+      className="bg-cover bg-center flex flex-col items-center  justify-center  "
+      style={{
+        backgroundImage: `url(${cs})`,
+        filter: "",
+        height: "450px",
+        maxHeight: "450px",
+        minHeight: "450px",
+      }}
+    >
+      <div className="flex flex-col items-center  justify-center  h-full  w-screen  backdrop-brightness-50  bg-gray/30 backdrop-invert-0 bg-white/30   ">
+        <h1 className="lg:text-7xl md:text-6xl sm:text-5xl text-5xl text-center  text-[#14406D]  font-bold  font-serif cursor-pointer  ">
+          Contact-Us
+        </h1>
+      </div>
+    </div>
+  </section>
 
       <section className="text-gray-600 body-font relative">
         <div className="container px-5 py-24  mx-auto  flex flex-wrap ">
@@ -122,7 +124,7 @@ function Contactus() {
             <div className="lg:w-24 md:w-20 sm:w-auto text-center">
               <Link
                 to="/Contactus"
-                className="bg-[#14406D] hover:bg-[#FE9800] hover:text-white text-white font-serif  text-lg border-0 py-1 px-3 focus:outline-none rounded-tr-xl rounded-bl-xl mt-4 md:mt-0"
+                className="bg-[#14406D] hover:bg-[#FE9800] hover:text-white text-white font-serif  text-lg border-0 py-1 px-3 focus:outline-none rounded-lg mt-4 md:mt-0"
                 onClick={handalclick}
               >
                 Send

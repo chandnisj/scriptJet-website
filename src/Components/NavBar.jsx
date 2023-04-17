@@ -25,7 +25,7 @@ function NavBar() {
               onClick={() => handleTechnology()}
             >
               <span className="md:text-5xl sm:text-4xl text-3xl text-[#14406D] leading-relaxed font-['Arial'] tracking-wider font-semibold">
-                Script-
+                Script
               </span>
               <span className="md:text-5xl sm:text-4xl text-3xl text-[#FE9800] leading-relaxed font-['Arial'] tracking-wider font-semibold">
                 Jet
