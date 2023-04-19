@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 function Footer() {
   const currentyear = new Date().getFullYear();
   return (
-   
     <div>
       <footer className="text-gray-600 body-font font-serif  bg-gradient-to-r from-orange-50 to-blue-50 ">
         <div className="container px-5 pt-10 pb-20  mx-auto my-0">
@@ -16,17 +15,17 @@ function Footer() {
               >
                 {" "}
                 <span className="text-4xl text-[#14406D] leading-relaxed font-['Arial'] tracking-wider font-semibold lg:whitespace-nowrap ">
-                Script-
-              </span>
-              <span className="text-4xl text-[#FE9800] leading-relaxed font-['Arial'] tracking-wider font-semibold lg:whitespace-nowrap">
-                Jet
-              </span>
+                  Script
+                </span>
+                <span className="text-4xl text-[#FE9800] leading-relaxed font-['Arial'] tracking-wider font-semibold lg:whitespace-nowrap">
+                  Jet
+                </span>
               </Link>
               <p className="text-xl">
-              To revolutionize the IT industry with innovative solutions.
+                To revolutionize the IT industry with innovative solutions.
               </p>
             </div>
-            <div className="lg:w-1/2 md:w-1/2 w-full  px-4   whitespace-nowrap" >
+            <div className="lg:w-1/2 md:w-1/2 w-full  px-4   whitespace-nowrap">
               <h2 className="text-2xl font-bold  text-[#FE9800] tracking-widest  mb-4 cursor-pointer">
                 Sloutions
               </h2>
@@ -35,7 +34,6 @@ function Footer() {
                   <Link
                     to="/Service#webdev"
                     className="text-[#14406D] hover:text-[#FE9800] py-2 "
-              
                   >
                     Web Devlopement
                   </Link>
@@ -45,7 +43,7 @@ function Footer() {
                     to="/Service#mobile"
                     className="text-[#14406D] hover:text-[#FE9800] py-2"
                   >
-                  Mobile App Devlopement
+                    Mobile App Devlopement
                   </Link>
                 </li>
                 <li>
@@ -64,7 +62,6 @@ function Footer() {
                     QA and Testing
                   </Link>
                 </li>
-                
               </nav>
             </div>
 
@@ -113,7 +110,7 @@ function Footer() {
             <span className="sm:mt-0 mt-0 sm:w-auto w-full sm:text-center text-center  text-[#FE9800] text-lg">
               Copyright {currentyear}.All Rights Reserved by
               <span className="text-[#14406D] cursor-pointer mx-1 ">
-                 ScriptJet
+                ScriptJet
               </span>
             </span>
           </div>

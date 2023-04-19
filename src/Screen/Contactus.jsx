@@ -1,8 +1,8 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import cs from "../Screen/Images/contact.jpg";
 import { UserAddOutlined } from "@ant-design/icons";
 import { Input } from "antd";
-import { Link } from "react-router-dom";
+
 function Contactus() {
   const [Contact, setContact] = useState({
     name: "",
@@ -25,31 +25,31 @@ function Contactus() {
   };
   useEffect(() => {
     const targetTop = document.querySelector("#top");
-    targetTop.scrollIntoView({ behavior: 'auto', block: "start" });
+    targetTop.scrollIntoView({ behavior: "auto", block: "start" });
   }, []);
 
   return (
-    <div id='top'>
-    <section>
-    <div
-      className="bg-cover bg-center flex flex-col items-center  justify-center  "
-      style={{
-        backgroundImage: `url(${cs})`,
-        filter: "",
-        height: "450px",
-        maxHeight: "450px",
-        minHeight: "450px",
-      }}
-    >
-      <div className="flex flex-col items-center  justify-center  h-full  w-screen  backdrop-brightness-50  bg-gray/30 backdrop-invert-0 bg-white/30   ">
-        <h1 className="lg:text-7xl md:text-6xl sm:text-5xl text-5xl text-center  text-[#14406D]  font-bold  font-serif cursor-pointer  ">
-          Contact-Us
-        </h1>
-      </div>
-    </div>
-  </section>
+    <div id="top">
+      <section>
+        <div
+          className="bg-cover bg-center flex flex-col items-center  justify-center  "
+          style={{
+            backgroundImage: `url(${cs})`,
+            filter: "",
+            height: "450px",
+            maxHeight: "450px",
+            minHeight: "450px",
+          }}
+        >
+          <div className="flex flex-col items-center  justify-center  h-full  w-screen  backdrop-brightness-50  bg-gray/30 backdrop-invert-0 bg-white/30   ">
+            <h1 className="lg:text-7xl md:text-6xl sm:text-5xl text-5xl text-center  text-[#14406D]  font-bold  font-serif cursor-pointer  ">
+              Contact-Us
+            </h1>
+          </div>
+        </div>
+      </section>
 
-      <section className="text-gray-600 body-font relative">
+      <section className="text-gray-600 body-font relative font-serif">
         <div className="container px-5 py-24  mx-auto  flex flex-wrap ">
           <div className="lg:w-1/2 md:w-1/2     bg-gray-300 rounded-lg   p-0 flex flex-col items-center justify-start ">
             <iframe
@@ -75,8 +75,11 @@ function Contactus() {
                 <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
                   EMAIL
                 </h2>
-                <a href="# " className="text-indigo-500  leading-relaxed">
-                  Scriptjet@gmail.com
+                <a
+                  href="mailto:contact@script-jet.com"
+                  className="text-indigo-500  leading-relaxed"
+                >
+                  contact@script-jet.com
                 </a>
                 <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
                   PHONE
@@ -122,13 +125,13 @@ function Contactus() {
               ></textarea>
             </div>
             <div className="lg:w-24 md:w-20 sm:w-auto text-center">
-              <Link
-                to="/Contactus"
+              <a
+                href={`mailto:contact@script-jet.com?subject=${Contact.name}!&body=${Contact.msg}`}
                 className="bg-[#14406D] hover:bg-[#FE9800] hover:text-white text-white font-serif  text-lg border-0 py-1 px-3 focus:outline-none rounded-lg mt-4 md:mt-0"
                 onClick={handalclick}
               >
                 Send
-              </Link>
+              </a>
             </div>
           </div>
         </div>
