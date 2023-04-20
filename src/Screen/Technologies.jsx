@@ -168,7 +168,7 @@ function Technologies() {
     const targetTop = document.querySelector("#top");
     targetTop.scrollIntoView({ behavior: 'auto', block: "start" });
    
-  }, []);
+  },[]);
  
 
   return (
