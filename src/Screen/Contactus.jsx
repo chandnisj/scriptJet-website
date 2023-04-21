@@ -11,27 +11,39 @@ function Contactus() {
   });
 
   const [submit, setSubmitted] = useState(false);
-  //const formref = useRef(null);
   const handalchnage = (event) => {
     setContact({ ...Contact, [event.target.name]: event.target.value });
   };
+  function sendEmail(name, email, text) {
+    fetch("https://api.sendinblue.com/v3/smtp/email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "api-key": process.env.REACT_APP_SENDINGBLUE_API_KEY,
+      },
+      body: JSON.stringify({
+        sender: { name: "Script-Jet", email: "abhishek.scriptjet@gmail.com" },
+        to: [{ email: "contact@script-jet.com" }],
+        subject: `Get new inquiry from ${email}!`,
+        htmlContent: `<html><body><p>Email : ${email}</p><p >Name : ${name}</p><p>Message : ${text}</p></body></html>`,
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch((error) => console.log(error));
+  }
   const handalclick = (event) => {
     event.preventDefault();
     setSubmitted(true);
+    sendEmail(Contact.name, Contact.email, Contact.msg);
     setTimeout(() => {
       setSubmitted(false);
-    }, 15000);
+    }, 2000);
     setContact({
       name: "",
       email: "",
       msg: "",
     });
-    storedata();
-  };
-  const storedata = () => {
-    const body = `Name:${Contact.name}%0D%0AEmail: ${Contact.email}%0D%0AMessage: ${Contact.msg}`;
-    const mailtourl = `mailto:chandani.scriptjet@gmail.com?subject=New message from ${Contact.name}&body=${body}`;
-    window.location.href = mailtourl;
   };
 
   const [formErrors, setFormErrors] = useState({});
@@ -50,12 +62,12 @@ function Contactus() {
     }
     setFormErrors(error);
     // eslint-disable-next-line
-  }, [formErrors]);
+  }, [Contact]);
 
   useEffect(() => {
     const targetTop = document.querySelector("#top");
     targetTop.scrollIntoView({ behavior: "auto", block: "start" });
-  },[]);
+  }, []);
 
   return (
     <div id="top">
@@ -106,7 +118,7 @@ function Contactus() {
                 </h2>
                 <a
                   href="mailto:chandani.scriptjet@gmail.com"
-                  className="text-indigo-500  leading-relaxed"
+                  className="text-[#14406D]  leading-relaxed"
                 >
                   chandani.scriptjet@gmail.com
                 </a>
@@ -136,6 +148,7 @@ function Contactus() {
                   onChange={handalchnage}
                   name="name"
                   value={Contact.name}
+                  required
                 />
                 {formErrors.name && (
                   <span className="text-[#14406D]">{formErrors.name}</span>
@@ -163,13 +176,14 @@ function Contactus() {
                   onChange={handalchnage}
                   value={Contact.msg}
                   name="msg"
+                  required
                 ></textarea>
                 {formErrors.msg && (
                   <span className="text-[#14406D]">{formErrors.msg}</span>
                 )}
               </div>
               <div className="lg:w-24 md:w-20 sm:w-auto text-center">
-                <button className="bg-[#14406D] hover:bg-[#FE9800] hover:text-white text-white font-serif  text-lg border-0 py-1 px-3 focus:outline-none rounded-lg mt-4 md:mt-0">
+                <button className="bg-[#14406D] hover:bg-[#FE9800] hover:text-white text-white font-serif  text-lg border-0 py-1 px-4 focus:outline-none rounded-lg mt-4 md:mt-0">
                   Send
                 </button>
               </div>
