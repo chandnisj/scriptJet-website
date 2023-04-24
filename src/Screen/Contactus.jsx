@@ -117,10 +117,10 @@ function Contactus() {
                   EMAIL
                 </h2>
                 <a
-                  href="mailto:chandani.scriptjet@gmail.com"
+                  href="mailto:contact@script-jet.com"
                   className="text-[#14406D]  leading-relaxed"
                 >
-                  chandani.scriptjet@gmail.com
+                contact@script-jet.com
                 </a>
                 <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
                   PHONE
